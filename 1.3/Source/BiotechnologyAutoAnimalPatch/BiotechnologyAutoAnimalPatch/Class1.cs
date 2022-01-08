@@ -8,7 +8,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 using Verse;
+using static RimWorld.ThingSetMaker_RandomGeneralGoods;
 
 namespace BiotechnologyAutoAnimalPatch
 {
@@ -20,8 +22,8 @@ namespace BiotechnologyAutoAnimalPatch
         }
     }
 
-    [HarmonyPatch(typeof(ShortHashGiver), "GiveAllShortHashes")]
-    public static class ShortHashGiver_Patch
+    [HarmonyPatch(typeof(DefGenerator), "GenerateImpliedDefs_PreResolve")]
+    public static class GenerateImpliedDefs_PreResolve_Patch
     {
         public static void Prefix()
         {
@@ -66,13 +68,10 @@ namespace BiotechnologyAutoAnimalPatch
                 ThingCategoryDef.Named("BiotechnologyCategory_Pet")
             };
             var recipeDef = GetRecipeDefForPet(capsuleDef, animal);
-            DefDatabase<ThingDef>.Add(capsuleDef);
-            DefDatabase<RecipeDef>.Add(recipeDef);
-            capsuleDef.ResolveReferences();
-            recipeDef.ResolveReferences();
             capsuleDef.PostLoad();
             recipeDef.PostLoad();
-            Log.Message("PET Added " + capsuleDef + " with " + recipeDef + " for " + animal);
+            DefDatabase<ThingDef>.Add(capsuleDef);
+            DefDatabase<RecipeDef>.Add(recipeDef);
         }
 
         private static RecipeDef GetRecipeDefForPet(ThingDef capsule, PawnKindDef animal)
@@ -101,13 +100,10 @@ namespace BiotechnologyAutoAnimalPatch
                 ThingCategoryDef.Named("BiotechnologyCategory_Insectoid")
             };
             var recipeDef = GetRecipeDefForInsect(capsuleDef, animal);
-            DefDatabase<ThingDef>.Add(capsuleDef);
-            DefDatabase<RecipeDef>.Add(recipeDef);
-            capsuleDef.ResolveReferences();
-            recipeDef.ResolveReferences();
             capsuleDef.PostLoad();
             recipeDef.PostLoad();
-            Log.Message("INSECT Added " + capsuleDef + " with " + recipeDef + " for " + animal);
+            DefDatabase<ThingDef>.Add(capsuleDef);
+            DefDatabase<RecipeDef>.Add(recipeDef);
         }
 
         private static RecipeDef GetRecipeDefForInsect(ThingDef capsule, PawnKindDef animal)
@@ -136,13 +132,10 @@ namespace BiotechnologyAutoAnimalPatch
                 ThingCategoryDef.Named("BiotechnologyCategory_Small")
             };
             var recipeDef = GetRecipeDefForSmallAnimal(capsuleDef, animal);
-            DefDatabase<ThingDef>.Add(capsuleDef);
-            DefDatabase<RecipeDef>.Add(recipeDef);
-            capsuleDef.ResolveReferences();
-            recipeDef.ResolveReferences();
             capsuleDef.PostLoad();
             recipeDef.PostLoad();
-            Log.Message("SMALL Added " + capsuleDef + " with " + recipeDef + " for " + animal);
+            DefDatabase<ThingDef>.Add(capsuleDef);
+            DefDatabase<RecipeDef>.Add(recipeDef);
         }
 
         private static RecipeDef GetRecipeDefForSmallAnimal(ThingDef capsule, PawnKindDef animal)
@@ -171,13 +164,10 @@ namespace BiotechnologyAutoAnimalPatch
                 ThingCategoryDef.Named("BiotechnologyCategory_Medium")
             };
             var recipeDef = GetRecipeDefForMediumAnimal(capsuleDef, animal);
-            DefDatabase<ThingDef>.Add(capsuleDef);
-            DefDatabase<RecipeDef>.Add(recipeDef);
-            capsuleDef.ResolveReferences();
-            recipeDef.ResolveReferences();
             capsuleDef.PostLoad();
             recipeDef.PostLoad();
-            Log.Message("MEDIUM Added " + capsuleDef + " with " + recipeDef + " for " + animal);
+            DefDatabase<ThingDef>.Add(capsuleDef);
+            DefDatabase<RecipeDef>.Add(recipeDef);
         }
 
         private static RecipeDef GetRecipeDefForMediumAnimal(ThingDef capsule, PawnKindDef animal)
@@ -206,13 +196,10 @@ namespace BiotechnologyAutoAnimalPatch
                 ThingCategoryDef.Named("BiotechnologyCategory_Large")
             };
             var recipeDef = GetRecipeDefForLargeAnimal(capsuleDef, animal);
-            DefDatabase<ThingDef>.Add(capsuleDef);
-            DefDatabase<RecipeDef>.Add(recipeDef);
-            capsuleDef.ResolveReferences();
-            recipeDef.ResolveReferences();
             capsuleDef.PostLoad();
             recipeDef.PostLoad();
-            Log.Message("LARGE Added " + capsuleDef + " with " + recipeDef + " for " + animal);
+            DefDatabase<ThingDef>.Add(capsuleDef);
+            DefDatabase<RecipeDef>.Add(recipeDef);
         }
 
         private static RecipeDef GetRecipeDefForLargeAnimal(ThingDef capsule, PawnKindDef animal)
@@ -272,11 +259,33 @@ namespace BiotechnologyAutoAnimalPatch
                     {
                         stat = StatDefOf.Mass,
                         value = 2
+                    },
+                    new StatModifier
+                    {
+                        stat = StatDefOf.Nutrition,
+                        value = 0.25f
+                    },
+                    new StatModifier
+                    {
+                        stat = StatDefOf.FoodPoisonChanceFixedHuman,
+                        value = 0.02f
+                    },
+                    new StatModifier
+                    {
+                        stat = StatDefOf.Beauty,
+                        value = -4
                     }
                 },
                 socialPropernessMatters = true,
                 comps = new List<CompProperties>
                 {
+                    new CompProperties_Forbiddable(),
+                    new CompProperties_Rottable
+                    {
+                        daysToRotStart = 15,
+                        rotDestroys = true,
+                        disableIfHatcher = true,
+                    },
                     new CompProperties_TemperatureRuinable
                     {
                         minSafeTemperature = -25,
@@ -289,7 +298,27 @@ namespace BiotechnologyAutoAnimalPatch
                         hatcherPawn = animal
                     }
                 },
-                stackLimit = 1
+                stackLimit = 1,
+                ingestible = new IngestibleProperties
+                {
+                    preferability = FoodPreferability.DesperateOnly,
+                    foodType = FoodTypeFlags.AnimalProduct,
+                    ingestEffect = EffecterDefOf.EatMeat,
+                    ingestSound = SoundDef.Named("RawMeat_Eat"),
+                    tasteThought = ThoughtDefOf.AteRawFood
+                },
+                allowedArchonexusCount = 10,
+                healthAffectsPrice = false,
+                category = ThingCategory.Item,
+                drawerType = DrawerType.MapMeshOnly,
+                resourceReadoutPriority = ResourceCountPriority.Middle,
+                useHitPoints = true,
+                selectable = true,
+                altitudeLayer = AltitudeLayer.Item,
+                alwaysHaulable = true,
+                drawGUIOverlay = true,
+                rotatable = false,
+                pathCost = 14
             };
         }
         private static RecipeDef GetBasicRecipeDef(ThingDef capsule, PawnKindDef animal)
