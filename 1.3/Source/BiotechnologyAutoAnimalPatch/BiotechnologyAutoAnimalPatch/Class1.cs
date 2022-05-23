@@ -25,36 +25,41 @@ namespace BiotechnologyAutoAnimalPatch
     [HarmonyPatch(typeof(DefGenerator), "GenerateImpliedDefs_PreResolve")]
     public static class GenerateImpliedDefs_PreResolve_Patch
     {
+        public static bool generated;
         public static void Prefix()
         {
-            var allCultures = DefDatabase<ThingDef>.AllDefs.Where(x => (x.thingCategories?.Any(thingCategory => thingCategory.defName.StartsWith("BiotechnologyCategory")) ?? false)
-            && x.comps.Any(compProperties => compProperties is CompProperties_Hatcher)).ToList();
-            foreach (var animal in DefDatabase<PawnKindDef>.AllDefs.OrderBy(x => x.race.race.baseBodySize))
+            if (!generated)
             {
-                var existingComp = allCultures.FirstOrDefault(x => x.GetCompProperties<CompProperties_Hatcher>().hatcherPawn == animal);
-                if (existingComp is null)
+                generated = true;
+                var allCultures = DefDatabase<ThingDef>.AllDefs.Where(x => (x.thingCategories?.Any(thingCategory => thingCategory.defName.StartsWith("BiotechnologyCategory")) ?? false)
+&& x.comps.Any(compProperties => compProperties is CompProperties_Hatcher)).ToList();
+                foreach (var animal in DefDatabase<PawnKindDef>.AllDefs.OrderBy(x => x.race.race.baseBodySize))
                 {
-                    if (animal.race.race.Animal || animal.race.race.Insect)
+                    var existingComp = allCultures.FirstOrDefault(x => x.GetCompProperties<CompProperties_Hatcher>().hatcherPawn == animal);
+                    if (existingComp is null && DefDatabase<ThingDef>.GetNamedSilentFail("Capsule" + animal.defName) is null)
                     {
-                        if (animal.race.race.petness >= 1f)
+                        if (animal.race.race.Animal || animal.race.race.Insect)
                         {
-                            PopulateCulturedPet(animal);
-                        }
-                        else if (animal.race.race.Insect)
-                        {
-                            PopulateCulturedInsect(animal);
-                        }
-                        else if (animal.race.race.baseBodySize <= 0.6f)
-                        {
-                            PopulateCulturedSmallAnimal(animal);
-                        }
-                        else if (animal.race.race.baseBodySize <= 2.1f)
-                        {
-                            PopulateCulturedMediumAnimal(animal);
-                        }
-                        else
-                        {
-                            PopulateCulturedLargeAnimal(animal);
+                            if (animal.race.race.petness >= 1f)
+                            {
+                                PopulateCulturedPet(animal);
+                            }
+                            else if (animal.race.race.Insect)
+                            {
+                                PopulateCulturedInsect(animal);
+                            }
+                            else if (animal.race.race.baseBodySize <= 0.6f)
+                            {
+                                PopulateCulturedSmallAnimal(animal);
+                            }
+                            else if (animal.race.race.baseBodySize <= 2.1f)
+                            {
+                                PopulateCulturedMediumAnimal(animal);
+                            }
+                            else
+                            {
+                                PopulateCulturedLargeAnimal(animal);
+                            }
                         }
                     }
                 }
@@ -64,9 +69,9 @@ namespace BiotechnologyAutoAnimalPatch
         {
             var capsuleDef = GetBasicCapsuleDef(animal);
             capsuleDef.thingCategories = new List<ThingCategoryDef>
-            {
-                ThingCategoryDef.Named("BiotechnologyCategory_Pet")
-            };
+                {
+                    ThingCategoryDef.Named("BiotechnologyCategory_Pet")
+                };
             var recipeDef = GetRecipeDefForPet(capsuleDef, animal);
             capsuleDef.PostLoad();
             recipeDef.PostLoad();
