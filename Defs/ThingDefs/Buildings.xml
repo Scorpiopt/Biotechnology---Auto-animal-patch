@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>Biotechnology_ResearchBench</defName>
+    <label>biotechnology research bench</label>
+    <description>A high-tech bench where various animal culture methods can be studied. All research related to biotechnology can be done.</description>
+    <thingClass>Building_ResearchBench</thingClass>
+    <size>(5,2)</size>
+    <minifiedDef />
+    <thingCategories Inherit="false" />
+    <costList>
+      <Steel>150</Steel>
+      <Plasteel>50</Plasteel>
+      <Uranium>20</Uranium>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <graphicData>
+      <texPath>Things/Buildings/BioResearch</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(7,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <ResearchSpeedFactor>1.1</ResearchSpeedFactor>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(73,123,138,0)</glowColor>
+      </li>	  
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>Biotechnology_DNAHologram</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <fillPercent>0.5</fillPercent>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>BiotechnologyDesignation</designationCategory>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Biotechnology_Reasearch</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Biotechnology_DNAHologram</defName>
+    <label>DNA Map</label>
+    <description>Increases the efficiency of biotechnology research and work. Must be placed near a biotech building.</description>
+    <graphicData>
+      <texPath>Things/Buildings/BioDNA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <uiIconScale>0.85</uiIconScale>
+    <researchPrerequisites><li>Biotechnology_Reasearch</li></researchPrerequisites>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>BiotechnologyDesignation</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <canOverlapZones>false</canOverlapZones>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>10000</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costList>
+      <Plasteel>50</Plasteel>
+      <Gold>20</Gold>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(73,123,138,0)</glowColor>
+      </li>	
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+		  <WorkTableWorkSpeedFactor>0.1</WorkTableWorkSpeedFactor>
+          <ResearchSpeedFactor>0.1</ResearchSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+  </ThingDef>
+  
+
+
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>Biotechnology_Incubator</defName>
+    <label>incubator</label>
+    <description>An incubator for storing the capsules being cultured.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/BioIncubator</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <designationCategory Inherit="false">BiotechnologyDesignation</designationCategory>	
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>10</Mass>
+      <WorkToBuild>3000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>1.0</Beauty>
+    </statBases>
+    <size>(3,1)</size>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <categories>
+            <li>BiotechnologyCategory_Main</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>BiotechnologyCategory_Main</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationHotKey>Misc12</designationHotKey>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>Biotechnology_Reasearch</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+
+
+
+
+
+   
+   <!-- Bench -->
+      
+   <ThingDef Abstract="True" Name="BioBenchBase" ParentName="BenchBase" >
+   
+		<thingClass>Building_WorkTable</thingClass>   
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<designationCategory>BiotechnologyDesignation</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<minifiedDef />
+		<thingCategories Inherit="false" />
+		<hasInteractionCell>True</hasInteractionCell>
+        <designationHotKey>Misc12</designationHotKey>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<recipes>
+		<li>Make_EmptyCapsule</li>
+		</recipes>		
+		<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(73,123,138,0)</glowColor>
+      </li>		
+			<li Class="CompProperties_AffectedByFacilities">
+            <linkableFacilities>
+            <li>Biotechnology_DNAHologram</li>
+            </linkableFacilities>
+            </li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>			
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		
+  </ThingDef>
+
+   
+    <!-- 2x1 Bench -->
+    <ThingDef Abstract="True" Name="BioSmallBenchBase" ParentName="BioBenchBase" >
+   
+		<size>(2,1)</size>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<graphicData>
+			<drawSize>(3.5,1.5)</drawSize>
+		</graphicData>		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+		</comps>		
+		<costList>
+			<Steel>100</Steel>
+			<Plasteel>20</Plasteel>
+			<Uranium>10</Uranium>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+
+    </ThingDef>
+
+
+    <!-- 3x1 Bench -->
+    <ThingDef Abstract="True" Name="BioMediumBenchBase" ParentName="BioBenchBase" >
+   
+		<size>(3,1)</size>
+		<statBases>
+			<WorkToBuild>10000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<graphicData>
+		  <drawSize>(3.5,1.5)</drawSize>
+		</graphicData>		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+		</comps>		
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>30</Plasteel>
+			<Uranium>20</Uranium>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+
+    </ThingDef>
+
+
+    <!-- 5x2 Bench -->
+    <ThingDef Abstract="True" Name="BioLargeBenchBase" ParentName="BioBenchBase" >
+   
+		<size>(5,2)</size>
+		<statBases>
+			<WorkToBuild>15000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<graphicData>
+		  <shaderType>CutoutComplex</shaderType>
+		  <drawSize>(7,4)</drawSize>
+		</graphicData>		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+		</comps>		
+		<costList>
+			<Steel>200</Steel>
+			<Plasteel>50</Plasteel>
+			<Uranium>20</Uranium>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+
+    </ThingDef>
+
+
+    <!-- 5x2 Special Bench -->
+    <ThingDef Abstract="True" Name="BioSpecialBenchBase" ParentName="BioBenchBase" >
+   
+		<size>(5,2)</size>
+		<statBases>
+			<WorkToBuild>20000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<graphicData>
+		  <shaderType>CutoutComplex</shaderType>
+		  <drawSize>(7,4)</drawSize>
+		</graphicData>		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>500</basePowerConsumption>
+			</li>
+		</comps>		
+		<costList>
+			<Steel>200</Steel>
+			<Plasteel>100</Plasteel>
+			<Uranium>50</Uranium>
+			<Gold>50</Gold>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+
+    </ThingDef>
+
+
+   <!-- Small Bench -->
+   <ThingDef ParentName="BioSmallBenchBase">
+		<defName>Biotechnology_SmallLab</defName>
+		<label>small animals lab</label>
+		<description>A laboratory capable of culture small animals.</description>
+		<graphicData>
+			<texPath>Things/Buildings/BioSmallLab</texPath>
+		</graphicData>
+		<researchPrerequisites>
+			<li>Biotechnology_Reasearch_Small</li>
+		</researchPrerequisites>		
+   </ThingDef>
+
+
+   <!-- Medium Bench -->
+   <ThingDef ParentName="BioMediumBenchBase">
+		<defName>Biotechnology_MediumLab</defName>
+		<label>medium animals lab</label>
+		<description>A laboratory capable of culture medium animals.</description>
+		<graphicData>
+		  <texPath>Things/Buildings/BioMediumLab</texPath>
+		</graphicData>
+		<researchPrerequisites>
+		<li>Biotechnology_Reasearch_Medium</li>
+		</researchPrerequisites>
+   </ThingDef>
+  
+
+   <!-- Large Bench -->
+   <ThingDef ParentName="BioLargeBenchBase">
+		<defName>Biotechnology_LargeLab</defName>
+		<label>large animals lab</label>
+		<description>A laboratory capable of culture large animals.</description>
+		<graphicData>
+		  <texPath>Things/Buildings/BioLargeLab</texPath>
+		</graphicData>
+		<researchPrerequisites>
+		<li>Biotechnology_Reasearch_Large</li>
+		</researchPrerequisites>
+   </ThingDef>
+
+
+   <!-- Special Bench -->
+   <ThingDef ParentName="BioSpecialBenchBase">
+		<defName>Biotechnology_SpecialLab</defName>
+		<label>special animals lab</label>
+		<description>A laboratory capable of culture special animals such as the Thrumbo.</description>
+		<graphicData>
+		  <texPath>Things/Buildings/BioSpecialLab</texPath>
+		</graphicData>
+		<researchPrerequisites>
+		<li>Biotechnology_Reasearch_Special</li>
+		</researchPrerequisites>
+   </ThingDef>
+   
+ 
+   <!-- Pets Bench -->
+   <ThingDef ParentName="BioSmallBenchBase">
+		<defName>Biotechnology_PetLab</defName>
+		<label>pets lab</label>
+		<description>A laboratory capable of culture pets such as dogs and cats.</description>
+		<graphicData>
+			<texPath>Things/Buildings/BioPetLab</texPath>
+		</graphicData>
+		<researchPrerequisites>
+			<li>Biotechnology_Reasearch_Pet</li>
+		</researchPrerequisites>
+   </ThingDef>
+
+
+   <!-- Insectoids Bench -->
+   <ThingDef ParentName="BioMediumBenchBase">
+		<defName>Biotechnology_InsectoidsLab</defName>
+		<label>insectoids lab</label>
+		<description>A laboratory capable of culture insectoids.</description>
+		<graphicData>
+		  <texPath>Things/Buildings/BioInsectoidsLab</texPath>
+		</graphicData>
+		<researchPrerequisites>
+		<li>Biotechnology_Reasearch_Insectoids</li>
+		</researchPrerequisites>
+   </ThingDef>
+
+
+ 
+</Defs>

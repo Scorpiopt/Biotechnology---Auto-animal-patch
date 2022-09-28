@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Vikings</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>			
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureSpecial">
+				<defName>CapsuleVFEV_Fenrir</defName>
+				<label>fenrir capsule</label>
+				<description>A capsule containing cultured fenrir.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20.00</hatcherDaystoHatch>
+				<hatcherPawn>VFEV_Fenrir</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>1000</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeSpecial">
+				<defName>Make_CapsuleVFEV_Fenrir</defName>
+				<label>make cultured fenrir.</label>
+				<description>Make a cultured fenrir.</description>
+				<workAmount>15000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>400.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleVFEV_Fenrir>1</CapsuleVFEV_Fenrir>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureSpecial">
+				<defName>CapsuleVFEV_Lothurr</defName>
+				<label>lothurr capsule</label>
+				<description>A capsule containing cultured lothurr.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20.00</hatcherDaystoHatch>
+				<hatcherPawn>VFEV_Lothurr</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>2000</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeSpecial">
+				<defName>Make_CapsuleVFEV_Lothurr</defName>
+				<label>make cultured lothurr.</label>
+				<description>Make a cultured lothurr.</description>
+				<workAmount>21000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>800.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleVFEV_Lothurr>1</CapsuleVFEV_Lothurr>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureSpecial">
+				<defName>CapsuleVFEV_Njorun</defName>
+				<label>njorun capsule</label>
+				<description>A capsule containing cultured njorun.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>25.00</hatcherDaystoHatch>
+				<hatcherPawn>VFEV_Njorun</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>1000</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeSpecial">
+				<defName>Make_CapsuleVFEV_Njorun</defName>
+				<label>make cultured njorun.</label>
+				<description>Make a cultured njorun.</description>
+				<workAmount>25000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>1000.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleVFEV_Njorun>1</CapsuleVFEV_Njorun>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleVFEV_Wolfhound</defName>
+				<label>wolfhound capsule</label>
+				<description>A capsule containing cultured wolfhound.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6.00</hatcherDaystoHatch>
+				<hatcherPawn>VFEV_Wolfhound</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>350</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleVFEV_Wolfhound</defName>
+				<label>make cultured wolfhound.</label>
+				<description>Make a cultured wolfhound.</description>
+				<workAmount>11000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>130.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleVFEV_Wolfhound>1</CapsuleVFEV_Wolfhound>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureLarge">
+				<defName>CapsuleVFEV_WoolyCow</defName>
+				<label>wooly cow capsule</label>
+				<description>A capsule containing cultured wooly cow.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>9.00</hatcherDaystoHatch>
+				<hatcherPawn>VFEV_WoolyCow</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>800</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeLarge">
+				<defName>Make_CapsuleVFEV_WoolyCow</defName>
+				<label>make cultured wooly cow.</label>
+				<description>Make a cultured wooly cow.</description>
+				<workAmount>15000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>300.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>3</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleVFEV_WoolyCow>1</CapsuleVFEV_WoolyCow>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+
+
+			
+			</operations>
+		</match>
+		
+	</Operation>
+
+
+	
+</Patch>

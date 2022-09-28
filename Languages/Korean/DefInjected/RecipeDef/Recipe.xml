@@ -1,0 +1,923 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <Make_EmptyCapsule.label>빈 캡슐 만들기</Make_EmptyCapsule.label>
+  <Make_EmptyCapsule.description>빈 캡슐을 만듭니다.</Make_EmptyCapsule.description>
+  <Make_EmptyCapsule.jobString>빈 캡슐 만드는 중.</Make_EmptyCapsule.jobString>
+
+
+  <Make_CapsuleRat.label>쥐 배양하기</Make_CapsuleRat.label>
+  <Make_CapsuleRat.description>쥐를 배양합니다.</Make_CapsuleRat.description>
+  <Make_CapsuleRat.jobString>배양 중.</Make_CapsuleRat.jobString>
+
+  <Make_CapsuleSquirrel.label>다람쥐 배양하기</Make_CapsuleSquirrel.label>
+  <Make_CapsuleSquirrel.description>다람쥐를 배양합니다.</Make_CapsuleSquirrel.description>
+  <Make_CapsuleSquirrel.jobString>배양 중.</Make_CapsuleSquirrel.jobString>
+ 
+  <Make_CapsuleChinchilla.label>털실쥐 배양하기</Make_CapsuleChinchilla.label>
+  <Make_CapsuleChinchilla.description>털실쥐를 배양합니다.</Make_CapsuleChinchilla.description>
+  <Make_CapsuleChinchilla.jobString>배양 중.</Make_CapsuleChinchilla.jobString>
+ 
+  <Make_CapsuleBoomrat.label>폭탄쥐 배양하기</Make_CapsuleBoomrat.label>
+  <Make_CapsuleBoomrat.description>폭탄쥐를 배양합니다.</Make_CapsuleBoomrat.description>
+  <Make_CapsuleBoomrat.jobString>배양 중.</Make_CapsuleBoomrat.jobString>
+ 
+  <Make_CapsuleGuineaPig.label>기니피그 배양하기</Make_CapsuleGuineaPig.label>
+  <Make_CapsuleGuineaPig.description>기니피그를 배양합니다.</Make_CapsuleGuineaPig.description>
+  <Make_CapsuleGuineaPig.jobString>배양 중.</Make_CapsuleGuineaPig.jobString>
+ 
+  <Make_CapsuleHare.label>멧토끼 배양하기</Make_CapsuleHare.label>
+  <Make_CapsuleHare.description>멧토끼를 배양합니다.</Make_CapsuleHare.description>
+  <Make_CapsuleHare.jobString>배양 중.</Make_CapsuleHare.jobString>
+ 
+  <Make_CapsuleSnowhare.label>눈토끼 배양하기</Make_CapsuleSnowhare.label>
+  <Make_CapsuleSnowhare.description>눈토끼를 배양합니다.</Make_CapsuleSnowhare.description>
+  <Make_CapsuleSnowhare.jobString>배양 중.</Make_CapsuleSnowhare.jobString>
+ 
+  <Make_CapsuleRaccoon.label>너구리 배양하기</Make_CapsuleRaccoon.label>
+  <Make_CapsuleRaccoon.description>너구리를 배양합니다.</Make_CapsuleRaccoon.description>
+  <Make_CapsuleRaccoon.jobString>배양 중.</Make_CapsuleRaccoon.jobString>
+ 
+  <Make_CapsuleAlphabeaver.label>알파비버 배양하기</Make_CapsuleAlphabeaver.label>
+  <Make_CapsuleAlphabeaver.description>알파비버를 배양합니다.</Make_CapsuleAlphabeaver.description>
+  <Make_CapsuleAlphabeaver.jobString>배양 중.</Make_CapsuleAlphabeaver.jobString>
+ 
+  <Make_CapsuleDuck.label>오리 배양하기</Make_CapsuleDuck.label>
+  <Make_CapsuleDuck.description>오리를 배양합니다.</Make_CapsuleDuck.description>
+  <Make_CapsuleDuck.jobString>배양 중.</Make_CapsuleDuck.jobString>
+ 
+  <Make_CapsuleChicken.label>닭 배양하기</Make_CapsuleChicken.label>
+  <Make_CapsuleChicken.description>닭을 배양합니다.</Make_CapsuleChicken.description>
+  <Make_CapsuleChicken.jobString>배양 중.</Make_CapsuleChicken.jobString>
+ 
+  <Make_CapsuleEmu.label>에뮤 배양하기</Make_CapsuleEmu.label>
+  <Make_CapsuleEmu.description>에뮤를 배양합니다.</Make_CapsuleEmu.description>
+  <Make_CapsuleEmu.jobString>배양 중.</Make_CapsuleEmu.jobString>
+ 
+  <Make_CapsuleGoose.label>거위 배양하기</Make_CapsuleGoose.label>
+  <Make_CapsuleGoose.description>거위를 배양합니다.</Make_CapsuleGoose.description>
+  <Make_CapsuleGoose.jobString>배양 중.</Make_CapsuleGoose.jobString>
+ 
+  <Make_CapsuleTurkey.label>칠면조 배양하기</Make_CapsuleTurkey.label>
+  <Make_CapsuleTurkey.description>칠면조를 배양합니다.</Make_CapsuleTurkey.description>
+  <Make_CapsuleTurkey.jobString>배양 중.</Make_CapsuleTurkey.jobString>
+
+  <Make_CapsuleCassowary.label>화식조 배양하기</Make_CapsuleCassowary.label>
+  <Make_CapsuleCassowary.description>화식조를 배양합니다.</Make_CapsuleCassowary.description>
+  <Make_CapsuleCassowary.jobString>배양 중.</Make_CapsuleCassowary.jobString>
+ 
+  <Make_CapsuleIguana.label>이구아나 배양하기</Make_CapsuleIguana.label>
+  <Make_CapsuleIguana.description>이구아나를 배양합니다.</Make_CapsuleIguana.description>
+  <Make_CapsuleIguana.jobString>배양 중.</Make_CapsuleIguana.jobString>
+ 
+  <Make_CapsuleCobra.label>코브라 배양하기</Make_CapsuleCobra.label>
+  <Make_CapsuleCobra.description>코브라를 배양합니다.</Make_CapsuleCobra.description>
+  <Make_CapsuleCobra.jobString>배양 중.</Make_CapsuleCobra.jobString>
+ 
+  <Make_CapsuleTortoise.label>거북이 배양하기</Make_CapsuleTortoise.label>
+  <Make_CapsuleTortoise.description>거북이를 배양합니다.</Make_CapsuleTortoise.description>
+  <Make_CapsuleTortoise.jobString>배양 중.</Make_CapsuleTortoise.jobString>
+ 
+  <Make_CapsuleMonkey.label>원숭이 배양하기</Make_CapsuleMonkey.label>
+  <Make_CapsuleMonkey.description>원숭이를 배양합니다.</Make_CapsuleMonkey.description>
+  <Make_CapsuleMonkey.jobString>배양 중.</Make_CapsuleMonkey.jobString>
+ 
+  <Make_CapsuleFox_Fennec.label>사막여우 배양하기</Make_CapsuleFox_Fennec.label>
+  <Make_CapsuleFox_Fennec.description>사막여우를 배양합니다.</Make_CapsuleFox_Fennec.description>
+  <Make_CapsuleFox_Fennec.jobString>배양 중.</Make_CapsuleFox_Fennec.jobString>
+ 
+  <Make_CapsuleFox_Red.label>붉은여우 배양하기</Make_CapsuleFox_Red.label>
+  <Make_CapsuleFox_Red.description>붉은여우를 배양합니다.</Make_CapsuleFox_Red.description>
+  <Make_CapsuleFox_Red.jobString>배양 중.</Make_CapsuleFox_Red.jobString>
+ 
+  <Make_CapsuleFox_Arctic.label>북극여우 배양하기</Make_CapsuleFox_Arctic.label>
+  <Make_CapsuleFox_Arctic.description>북극여우를 배양합니다.</Make_CapsuleFox_Arctic.description>
+  <Make_CapsuleFox_Arctic.jobString>배양 중.</Make_CapsuleFox_Arctic.jobString>
+
+  <Make_CapsuleLynx.label>스라소니 배양하기</Make_CapsuleLynx.label>
+  <Make_CapsuleLynx.description>스라소니를 배양합니다.</Make_CapsuleLynx.description>
+  <Make_CapsuleLynx.jobString>배양 중.</Make_CapsuleLynx.jobString>  
+ 
+ 
+  <Make_CapsuleCapybara.label>카피바라 배양하기</Make_CapsuleCapybara.label>
+  <Make_CapsuleCapybara.description>카피바라를 배양합니다.</Make_CapsuleCapybara.description>
+  <Make_CapsuleCapybara.jobString>배양 중.</Make_CapsuleCapybara.jobString>  
+ 
+  <Make_CapsuleSheep.label>양 배양하기</Make_CapsuleSheep.label>
+  <Make_CapsuleSheep.description>양을 배양합니다.</Make_CapsuleSheep.description>
+  <Make_CapsuleSheep.jobString>배양 중.</Make_CapsuleSheep.jobString>  
+ 
+  <Make_CapsuleGoat.label>염소 배양하기</Make_CapsuleGoat.label>
+  <Make_CapsuleGoat.description>염소를 배양합니다.</Make_CapsuleGoat.description>
+  <Make_CapsuleGoat.jobString>배양 중.</Make_CapsuleGoat.jobString>  
+ 
+  <Make_CapsuleGazelle.label>가젤 배양하기</Make_CapsuleGazelle.label>
+  <Make_CapsuleGazelle.description>가젤을 배양합니다.</Make_CapsuleGazelle.description>
+  <Make_CapsuleGazelle.jobString>배양 중.</Make_CapsuleGazelle.jobString>  
+ 
+  <Make_CapsuleCaribou.label>순록 배양하기</Make_CapsuleCaribou.label>
+  <Make_CapsuleCaribou.description>순록을 배양합니다.</Make_CapsuleCaribou.description>
+  <Make_CapsuleCaribou.jobString>배양 중.</Make_CapsuleCaribou.jobString>  
+ 
+  <Make_CapsuleIbex.label>산양 배양하기</Make_CapsuleIbex.label>
+  <Make_CapsuleIbex.description>산양을 배양합니다.</Make_CapsuleIbex.description>
+  <Make_CapsuleIbex.jobString>배양 중.</Make_CapsuleIbex.jobString>  
+ 
+  <Make_CapsuleAlpaca.label>알파카 배양하기</Make_CapsuleAlpaca.label>
+  <Make_CapsuleAlpaca.description>알파카를 배양합니다.</Make_CapsuleAlpaca.description>
+  <Make_CapsuleAlpaca.jobString>배양 중.</Make_CapsuleAlpaca.jobString>  
+ 
+  <Make_CapsuleLynx.label>스라소니 배양하기</Make_CapsuleLynx.label>
+  <Make_CapsuleLynx.description>스라소니를 배양합니다.</Make_CapsuleLynx.description>
+  <Make_CapsuleLynx.jobString>배양 중.</Make_CapsuleLynx.jobString>  
+ 
+  <Make_CapsuleDeer.label>사슴 배양하기</Make_CapsuleDeer.label>
+  <Make_CapsuleDeer.description>사슴을 배양합니다.</Make_CapsuleDeer.description>
+  <Make_CapsuleDeer.jobString>배양 중.</Make_CapsuleDeer.jobString>  
+ 
+  <Make_CapsuleBoomalope.label>폭탄사슴 배양하기</Make_CapsuleBoomalope.label>
+  <Make_CapsuleBoomalope.description>폭탄사슴을 배양합니다.</Make_CapsuleBoomalope.description>
+  <Make_CapsuleBoomalope.jobString>배양 중.</Make_CapsuleBoomalope.jobString>  
+ 
+  <Make_CapsuleOstrich.label>타조 배양하기</Make_CapsuleOstrich.label>
+  <Make_CapsuleOstrich.description>타조를 배양합니다.</Make_CapsuleOstrich.description>
+  <Make_CapsuleOstrich.jobString>배양 중.</Make_CapsuleOstrich.jobString>  
+ 
+  <Make_CapsuleDonkey.label>당나귀 배양하기</Make_CapsuleDonkey.label>
+  <Make_CapsuleDonkey.description>당나귀를 배양합니다.</Make_CapsuleDonkey.description>
+  <Make_CapsuleDonkey.jobString>배양 중.</Make_CapsuleDonkey.jobString>  
+ 
+  <Make_CapsuleHorse.label>말 배양하기</Make_CapsuleHorse.label>
+  <Make_CapsuleHorse.description>말을 배양합니다.</Make_CapsuleHorse.description>
+  <Make_CapsuleHorse.jobString>배양 중.</Make_CapsuleHorse.jobString>  
+ 
+  <Make_CapsuleDromedary.label>낙타 배양하기</Make_CapsuleDromedary.label>
+  <Make_CapsuleDromedary.description>낙타를 배양합니다.</Make_CapsuleDromedary.description>
+  <Make_CapsuleDromedary.jobString>배양 중.</Make_CapsuleDromedary.jobString>  
+ 
+  <Make_CapsuleElk.label>엘크 배양하기</Make_CapsuleElk.label>
+  <Make_CapsuleElk.description>엘크를 배양합니다.</Make_CapsuleElk.description>
+  <Make_CapsuleElk.jobString>배양 중.</Make_CapsuleElk.jobString>  
+ 
+  <Make_CapsuleYak.label>야크 배양하기</Make_CapsuleYak.label>
+  <Make_CapsuleYak.description>야크를 배양합니다.</Make_CapsuleYak.description>
+  <Make_CapsuleYak.jobString>배양 중.</Make_CapsuleYak.jobString>  
+ 
+  <Make_CapsulePig.label>돼지 배양하기</Make_CapsulePig.label>
+  <Make_CapsulePig.description>돼지를 배양합니다.</Make_CapsulePig.description>
+  <Make_CapsulePig.jobString>배양 중.</Make_CapsulePig.jobString>  
+ 
+  <Make_CapsuleWildBoar.label>멧돼지 배양하기</Make_CapsuleWildBoar.label>
+  <Make_CapsuleWildBoar.description>멧돼지를 배양합니다.</Make_CapsuleWildBoar.description>
+  <Make_CapsuleWildBoar.jobString>배양 중.</Make_CapsuleWildBoar.jobString>  
+ 
+  <Make_CapsuleWarg.label>와르그 배양하기</Make_CapsuleWarg.label>
+  <Make_CapsuleWarg.description>와르그를 배양합니다.</Make_CapsuleWarg.description>
+  <Make_CapsuleWarg.jobString>배양 중.</Make_CapsuleWarg.jobString>  
+ 
+  <Make_CapsuleWolf_Arctic.label>북극늑대 배양하기</Make_CapsuleWolf_Arctic.label>
+  <Make_CapsuleWolf_Arctic.description>북극늑대를 배양합니다.</Make_CapsuleWolf_Arctic.description>
+  <Make_CapsuleWolf_Arctic.jobString>배양 중.</Make_CapsuleWolf_Arctic.jobString>  
+ 
+  <Make_CapsuleWolf_Timber.label>회색늑대 배양하기</Make_CapsuleWolf_Timber.label>
+  <Make_CapsuleWolf_Timber.description>회색늑대를 배양합니다.</Make_CapsuleWolf_Timber.description>
+  <Make_CapsuleWolf_Timber.jobString>배양 중.</Make_CapsuleWolf_Timber.jobString>  
+ 
+  <Make_CapsuleCougar.label>퓨마 배양하기</Make_CapsuleCougar.label>
+  <Make_CapsuleCougar.description>퓨마를 배양합니다.</Make_CapsuleCougar.description>
+  <Make_CapsuleCougar.jobString>배양 중.</Make_CapsuleCougar.jobString>  
+  
+  <Make_CapsulePanther.label>표범 배양하기</Make_CapsulePanther.label>
+  <Make_CapsulePanther.description>표범을 배양합니다.</Make_CapsulePanther.description>
+  <Make_CapsulePanther.jobString>배양 중.</Make_CapsulePanther.jobString>   
+ 
+
+  <Make_CapsuleCow.label>소 배양하기</Make_CapsuleCow.label>
+  <Make_CapsuleCow.description>소를 배양합니다.</Make_CapsuleCow.description>
+  <Make_CapsuleCow.jobString>배양 중.</Make_CapsuleCow.jobString>   
+ 
+  <Make_CapsuleMuffalo.label>머팔로 배양하기</Make_CapsuleMuffalo.label>
+  <Make_CapsuleMuffalo.description>머팔로를 배양합니다.</Make_CapsuleMuffalo.description>
+  <Make_CapsuleMuffalo.jobString>배양 중.</Make_CapsuleMuffalo.jobString>  
+
+  <Make_CapsuleBison.label>들소 배양하기</Make_CapsuleBison.label>
+  <Make_CapsuleBison.description>들소를 배양합니다.</Make_CapsuleBison.description>
+  <Make_CapsuleBison.jobString>배양 중.</Make_CapsuleBison.jobString>  
+
+  <Make_CapsuleBear_Polar.label>북극곰 배양하기</Make_CapsuleBear_Polar.label>
+  <Make_CapsuleBear_Polar.description>북극곰을 배양합니다.</Make_CapsuleBear_Polar.description>
+  <Make_CapsuleBear_Polar.jobString>배양 중.</Make_CapsuleBear_Polar.jobString>  
+
+  <Make_CapsuleBear_Grizzly.label>회색곰 배양하기</Make_CapsuleBear_Grizzly.label>
+  <Make_CapsuleBear_Grizzly.description>회색곰을 배양합니다.</Make_CapsuleBear_Grizzly.description>
+  <Make_CapsuleBear_Grizzly.jobString>배양 중.</Make_CapsuleBear_Grizzly.jobString>  
+
+  <Make_CapsuleRhinoceros.label>코뿔소 배양하기</Make_CapsuleRhinoceros.label>
+  <Make_CapsuleRhinoceros.description>코뿔소를 배양합니다.</Make_CapsuleRhinoceros.description>
+  <Make_CapsuleRhinoceros.jobString>배양 중.</Make_CapsuleRhinoceros.jobString>  
+
+  <Make_CapsuleMegasloth.label>거대늘보 배양하기</Make_CapsuleMegasloth.label>
+  <Make_CapsuleMegasloth.description>거대늘보를 배양합니다.</Make_CapsuleMegasloth.description>
+  <Make_CapsuleMegasloth.jobString>배양 중.</Make_CapsuleMegasloth.jobString>  
+
+  <Make_CapsuleElephant.label>코끼리 배양하기</Make_CapsuleElephant.label>
+  <Make_CapsuleElephant.description>코끼리를 배양합니다.</Make_CapsuleElephant.description>
+  <Make_CapsuleElephant.jobString>배양 중.</Make_CapsuleElephant.jobString>    
+ 
+ 
+  <Make_CapsuleThrumbo.label>트럼보 배양하기</Make_CapsuleThrumbo.label>
+  <Make_CapsuleThrumbo.description>트럼보를 배양합니다.</Make_CapsuleThrumbo.description>
+  <Make_CapsuleThrumbo.jobString>배양 중.</Make_CapsuleThrumbo.jobString>   
+ 
+ 
+  <Make_CapsuleYorkshireTerrier.label>요크셔테리어 배양하기</Make_CapsuleYorkshireTerrier.label>
+  <Make_CapsuleYorkshireTerrier.description>요크셔테리어를 배양합니다.</Make_CapsuleYorkshireTerrier.description>
+  <Make_CapsuleYorkshireTerrier.jobString>배양 중.</Make_CapsuleYorkshireTerrier.jobString>  
+ 
+  <Make_CapsuleLabradorRetriever.label>래브라도 리트리버 배양하기</Make_CapsuleLabradorRetriever.label>
+  <Make_CapsuleLabradorRetriever.description>래브라도 리트리버를 배양합니다.</Make_CapsuleLabradorRetriever.description>
+  <Make_CapsuleLabradorRetriever.jobString>배양 중.</Make_CapsuleLabradorRetriever.jobString>  
+ 
+  <Make_CapsuleHusky.label>허스키 배양하기</Make_CapsuleHusky.label>
+  <Make_CapsuleHusky.description>허스키를 배양합니다.</Make_CapsuleHusky.description>
+  <Make_CapsuleHusky.jobString>배양 중.</Make_CapsuleHusky.jobString>  
+ 
+  <Make_CapsuleCat.label>고양이 배양하기</Make_CapsuleCat.label>
+  <Make_CapsuleCat.description>고양이를 배양합니다.</Make_CapsuleCat.description>
+  <Make_CapsuleCat.jobString>배양 중.</Make_CapsuleCat.jobString>   
+ 
+ 
+ 
+ 
+  <Make_CapsuleVAECaves_BlindSalamander.label>장님 도롱뇽 배양하기</Make_CapsuleVAECaves_BlindSalamander.label>
+  <Make_CapsuleVAECaves_BlindSalamander.description>장님 도롱뇽을 배양합니다.</Make_CapsuleVAECaves_BlindSalamander.description>
+  <Make_CapsuleVAECaves_BlindSalamander.jobString>배양 중.</Make_CapsuleVAECaves_BlindSalamander.jobString>  
+ 
+  <Make_CapsuleVAECaves_GiantSpiderHatchling.label>자이언트 새끼 거미 배양하기</Make_CapsuleVAECaves_GiantSpiderHatchling.label>
+  <Make_CapsuleVAECaves_GiantSpiderHatchling.description>자이언트 새끼 거미를 배양합니다.</Make_CapsuleVAECaves_GiantSpiderHatchling.description>
+  <Make_CapsuleVAECaves_GiantSpiderHatchling.jobString>배양 중.</Make_CapsuleVAECaves_GiantSpiderHatchling.jobString>  
+ 
+  <Make_CapsuleVAECaves_Wyrm.label>웜 배양하기</Make_CapsuleVAECaves_Wyrm.label>
+  <Make_CapsuleVAECaves_Wyrm.description>웜을 배양합니다.</Make_CapsuleVAECaves_Wyrm.description>
+  <Make_CapsuleVAECaves_Wyrm.jobString>배양 중.</Make_CapsuleVAECaves_Wyrm.jobString>  
+ 
+  <Make_CapsuleVAECaves_CaveBear.label>동굴곰 배양하기</Make_CapsuleVAECaves_CaveBear.label>
+  <Make_CapsuleVAECaves_CaveBear.description>동굴곰을 배양합니다.</Make_CapsuleVAECaves_CaveBear.description>
+  <Make_CapsuleVAECaves_CaveBear.jobString>배양 중.</Make_CapsuleVAECaves_CaveBear.jobString>   
+ 
+ 
+  <Make_CapsuleRoyalThrumbo.label>왕실 트럼보 배양하기</Make_CapsuleRoyalThrumbo.label>
+  <Make_CapsuleRoyalThrumbo.description>왕실 트럼보를 배양합니다.</Make_CapsuleRoyalThrumbo.description>
+  <Make_CapsuleRoyalThrumbo.jobString>배양 중.</Make_CapsuleRoyalThrumbo.jobString>   
+ 
+ 
+  <Make_CapsuleVFEV_Fenrir.label>펜리르 배양하기</Make_CapsuleVFEV_Fenrir.label>
+  <Make_CapsuleVFEV_Fenrir.description>펜리르를 배양합니다.</Make_CapsuleVFEV_Fenrir.description>
+  <Make_CapsuleVFEV_Fenrir.jobString>배양 중.</Make_CapsuleVFEV_Fenrir.jobString>  
+ 
+  <Make_CapsuleVFEV_Lothurr.label>로두르 배양하기</Make_CapsuleVFEV_Lothurr.label>
+  <Make_CapsuleVFEV_Lothurr.description>로두르를 배양합니다.</Make_CapsuleVFEV_Lothurr.description>
+  <Make_CapsuleVFEV_Lothurr.jobString>배양 중.</Make_CapsuleVFEV_Lothurr.jobString>  
+ 
+  <Make_CapsuleVFEV_Njorun.label>뇨룬 배양하기</Make_CapsuleVFEV_Njorun.label>
+  <Make_CapsuleVFEV_Njorun.description>뇨룬을 배양합니다.</Make_CapsuleVFEV_Njorun.description>
+  <Make_CapsuleVFEV_Njorun.jobString>배양 중.</Make_CapsuleVFEV_Njorun.jobString>  
+ 
+  <Make_CapsuleVFEV_Wolfhound.label>울프하운드 배양하기</Make_CapsuleVFEV_Wolfhound.label>
+  <Make_CapsuleVFEV_Wolfhound.description>울프하운드를 배양합니다.</Make_CapsuleVFEV_Wolfhound.description>
+  <Make_CapsuleVFEV_Wolfhound.jobString>배양 중.</Make_CapsuleVFEV_Wolfhound.jobString>   
+ 
+  <Make_CapsuleVFEV_WoolyCow.label>양털 소 배양하기</Make_CapsuleVFEV_WoolyCow.label>
+  <Make_CapsuleVFEV_WoolyCow.description>양털 소를 배양합니다.</Make_CapsuleVFEV_WoolyCow.description>
+  <Make_CapsuleVFEV_WoolyCow.jobString>배양 중.</Make_CapsuleVFEV_WoolyCow.jobString>   
+
+
+  <Make_CapsuleAEXP_RockhopperPenguin.label>바위뛰기 펭귄 배양하기</Make_CapsuleAEXP_RockhopperPenguin.label>
+  <Make_CapsuleAEXP_RockhopperPenguin.description>바위뛰기 펭귄을 배양합니다.</Make_CapsuleAEXP_RockhopperPenguin.description>
+  <Make_CapsuleAEXP_RockhopperPenguin.jobString>배양 중.</Make_CapsuleAEXP_RockhopperPenguin.jobString>   
+
+  <Make_CapsuleAEXP_BlackFootedFerret.label>검은발족제비 배양하기</Make_CapsuleAEXP_BlackFootedFerret.label>
+  <Make_CapsuleAEXP_BlackFootedFerret.description>검은발족제비를 배양합니다.</Make_CapsuleAEXP_BlackFootedFerret.description>
+  <Make_CapsuleAEXP_BlackFootedFerret.jobString>배양 중.</Make_CapsuleAEXP_BlackFootedFerret.jobString>   
+  
+  <Make_CapsuleAEXP_Pangolin.label>거대 천산갑 배양하기</Make_CapsuleAEXP_Pangolin.label>
+  <Make_CapsuleAEXP_Pangolin.description>거대 천산갑을 배양합니다.</Make_CapsuleAEXP_Pangolin.description>
+  <Make_CapsuleAEXP_Pangolin.jobString>배양 중.</Make_CapsuleAEXP_Pangolin.jobString>   
+
+  <Make_CapsuleAEXP_Bonobo.label>보노보 배양하기</Make_CapsuleAEXP_Bonobo.label>
+  <Make_CapsuleAEXP_Bonobo.description>보노보를 배양합니다.</Make_CapsuleAEXP_Bonobo.description>
+  <Make_CapsuleAEXP_Bonobo.jobString>배양 중.</Make_CapsuleAEXP_Bonobo.jobString>    
+  
+  <Make_CapsuleAEXP_TasmanianDevil.label>태즈메이니아데블 배양하기</Make_CapsuleAEXP_TasmanianDevil.label>
+  <Make_CapsuleAEXP_TasmanianDevil.description>태즈메이니아데블을 배양합니다.</Make_CapsuleAEXP_TasmanianDevil.description>
+  <Make_CapsuleAEXP_TasmanianDevil.jobString>배양 중.</Make_CapsuleAEXP_TasmanianDevil.jobString>   
+
+  <Make_CapsuleAEXP_AfricanWildDog.label>아프리카들개 배양하기</Make_CapsuleAEXP_AfricanWildDog.label>
+  <Make_CapsuleAEXP_AfricanWildDog.description>아프리카들개를 배양합니다.</Make_CapsuleAEXP_AfricanWildDog.description>
+  <Make_CapsuleAEXP_AfricanWildDog.jobString>배양 중.</Make_CapsuleAEXP_AfricanWildDog.jobString>   
+  
+  <Make_CapsuleAEXP_Thylacine.label>주머니늑대 배양하기</Make_CapsuleAEXP_Thylacine.label>
+  <Make_CapsuleAEXP_Thylacine.description>주머니늑대를 배양합니다.</Make_CapsuleAEXP_Thylacine.description>
+  <Make_CapsuleAEXP_Thylacine.jobString>배양 중.</Make_CapsuleAEXP_Thylacine.jobString>   
+
+  <Make_CapsuleAEXP_Moa.label>모아 배양하기</Make_CapsuleAEXP_Moa.label>
+  <Make_CapsuleAEXP_Moa.description>모아를 배양합니다.</Make_CapsuleAEXP_Moa.description>
+  <Make_CapsuleAEXP_Moa.jobString>배양 중.</Make_CapsuleAEXP_Moa.jobString>     
+  
+  <Make_CapsuleAEXP_Quagga.label>콰가 배양하기</Make_CapsuleAEXP_Quagga.label>
+  <Make_CapsuleAEXP_Quagga.description>콰가를 배양합니다.</Make_CapsuleAEXP_Quagga.description>
+  <Make_CapsuleAEXP_Quagga.jobString>배양 중.</Make_CapsuleAEXP_Quagga.jobString>   
+  
+  <Make_CapsuleAEXP_Panda.label>대왕판다 배양하기</Make_CapsuleAEXP_Panda.label>
+  <Make_CapsuleAEXP_Panda.description>대왕판다를 배양합니다.</Make_CapsuleAEXP_Panda.description>
+  <Make_CapsuleAEXP_Panda.jobString>배양 중.</Make_CapsuleAEXP_Panda.jobString>   
+
+  <Make_CapsuleAEXP_BlackRhino.label>검은코뿔소 배양하기</Make_CapsuleAEXP_BlackRhino.label>
+  <Make_CapsuleAEXP_BlackRhino.description>검은코뿔소를 배양합니다.</Make_CapsuleAEXP_BlackRhino.description>
+  <Make_CapsuleAEXP_BlackRhino.jobString>배양 중.</Make_CapsuleAEXP_BlackRhino.jobString>     
+  
+  
+  <Make_CapsuleAEXP_Penguin.label>펭귄 배양하기</Make_CapsuleAEXP_Penguin.label>
+  <Make_CapsuleAEXP_Penguin.description>펭귄을 배양합니다.</Make_CapsuleAEXP_Penguin.description>
+  <Make_CapsuleAEXP_Penguin.jobString>배양 중.</Make_CapsuleAEXP_Penguin.jobString>   
+  
+  <Make_CapsuleAEXP_Seal.label>바다표범 배양하기</Make_CapsuleAEXP_Seal.label>
+  <Make_CapsuleAEXP_Seal.description>바다표범을 배양합니다.</Make_CapsuleAEXP_Seal.description>
+  <Make_CapsuleAEXP_Seal.jobString>배양 중.</Make_CapsuleAEXP_Seal.jobString>   
+
+  <Make_CapsuleAEXP_Walrus.label>바다코끼리 배양하기</Make_CapsuleAEXP_Walrus.label>
+  <Make_CapsuleAEXP_Walrus.description>바다코끼리를 배양합니다.</Make_CapsuleAEXP_Walrus.description>
+  <Make_CapsuleAEXP_Walrus.jobString>배양 중.</Make_CapsuleAEXP_Walrus.jobString>     
+   
+  
+  <Make_CapsuleAEXP_Porcupine.label>호저 배양하기</Make_CapsuleAEXP_Porcupine.label>
+  <Make_CapsuleAEXP_Porcupine.description>호저를 배양합니다.</Make_CapsuleAEXP_Porcupine.description>
+  <Make_CapsuleAEXP_Porcupine.jobString>배양 중.</Make_CapsuleAEXP_Porcupine.jobString>   
+  
+  <Make_CapsuleAEXP_Moose.label>무스 배양하기</Make_CapsuleAEXP_Moose.label>
+  <Make_CapsuleAEXP_Moose.description>무스를 배양합니다.</Make_CapsuleAEXP_Moose.description>
+  <Make_CapsuleAEXP_Moose.jobString>배양 중.</Make_CapsuleAEXP_Moose.jobString>   
+
+  <Make_CapsuleAEXP_Muskox.label>사향소 배양하기</Make_CapsuleAEXP_Muskox.label>
+  <Make_CapsuleAEXP_Muskox.description>사향소를 배양합니다.</Make_CapsuleAEXP_Muskox.description>
+  <Make_CapsuleAEXP_Muskox.jobString>배양 중.</Make_CapsuleAEXP_Muskox.jobString>     
+ 
+  <Make_CapsuleAEXP_MegaWolverine.label>메가 울버린 배양하기</Make_CapsuleAEXP_MegaWolverine.label>
+  <Make_CapsuleAEXP_MegaWolverine.description>메가 울버린을 배양합니다.</Make_CapsuleAEXP_MegaWolverine.description>
+  <Make_CapsuleAEXP_MegaWolverine.jobString>배양 중.</Make_CapsuleAEXP_MegaWolverine.jobString>      
+  
+  
+  <Make_CapsuleAEXP_Otter.label>수달 배양하기</Make_CapsuleAEXP_Otter.label>
+  <Make_CapsuleAEXP_Otter.description>수달을 배양합니다.</Make_CapsuleAEXP_Otter.description>
+  <Make_CapsuleAEXP_Otter.jobString>배양 중.</Make_CapsuleAEXP_Otter.jobString>   
+  
+  <Make_CapsuleAEXP_ArcticCoyote.label>북극 코요테 배양하기</Make_CapsuleAEXP_ArcticCoyote.label>
+  <Make_CapsuleAEXP_ArcticCoyote.description>북극 코요테를 배양합니다.</Make_CapsuleAEXP_ArcticCoyote.description>
+  <Make_CapsuleAEXP_ArcticCoyote.jobString>배양 중.</Make_CapsuleAEXP_ArcticCoyote.jobString>   
+
+  <Make_CapsuleAEXP_BlackBear.label>흑곰 배양하기</Make_CapsuleAEXP_BlackBear.label>
+  <Make_CapsuleAEXP_BlackBear.description>흑곰을 배양합니다.</Make_CapsuleAEXP_BlackBear.description>
+  <Make_CapsuleAEXP_BlackBear.jobString>배양 중.</Make_CapsuleAEXP_BlackBear.jobString>     
+
+
+  <Make_CapsuleAEXP_Alligator.label>민물악어 배양하기</Make_CapsuleAEXP_Alligator.label>
+  <Make_CapsuleAEXP_Alligator.description>민물악어를 배양합니다.</Make_CapsuleAEXP_Alligator.description>
+  <Make_CapsuleAEXP_Alligator.jobString>배양 중.</Make_CapsuleAEXP_Alligator.jobString>   
+
+  <Make_CapsuleAEXP_Anaconda.label>아나콘다 배양하기</Make_CapsuleAEXP_Anaconda.label>
+  <Make_CapsuleAEXP_Anaconda.description>아나콘다를 배양합니다.</Make_CapsuleAEXP_Anaconda.description>
+  <Make_CapsuleAEXP_Anaconda.jobString>배양 중.</Make_CapsuleAEXP_Anaconda.jobString>     
+ 
+  <Make_CapsuleAEXP_IndianElephant.label>인도 코끼리 배양하기</Make_CapsuleAEXP_IndianElephant.label>
+  <Make_CapsuleAEXP_IndianElephant.description>인도 코끼리를 배양합니다.</Make_CapsuleAEXP_IndianElephant.description>
+  <Make_CapsuleAEXP_IndianElephant.jobString>배양 중.</Make_CapsuleAEXP_IndianElephant.jobString>  
+
+
+  <Make_CapsuleAEXP_Coyote.label>코요테 배양하기</Make_CapsuleAEXP_Coyote.label>
+  <Make_CapsuleAEXP_Coyote.description>코요테를 배양합니다.</Make_CapsuleAEXP_Coyote.description>
+  <Make_CapsuleAEXP_Coyote.jobString>배양 중.</Make_CapsuleAEXP_Coyote.jobString>   
+
+  <Make_CapsuleAEXP_Crocodile.label>악어 배양하기</Make_CapsuleAEXP_Crocodile.label>
+  <Make_CapsuleAEXP_Crocodile.description>악어를 배양합니다.</Make_CapsuleAEXP_Crocodile.description>
+  <Make_CapsuleAEXP_Crocodile.jobString>배양 중.</Make_CapsuleAEXP_Crocodile.jobString>   
+  
+  <Make_CapsuleAEXP_Zebra.label>얼룩말 배양하기</Make_CapsuleAEXP_Zebra.label>
+  <Make_CapsuleAEXP_Zebra.description>얼룩말을 배양합니다.</Make_CapsuleAEXP_Zebra.description>
+  <Make_CapsuleAEXP_Zebra.jobString>배양 중.</Make_CapsuleAEXP_Zebra.jobString>   
+
+  <Make_CapsuleAEXP_Cheetah.label>치타 배양하기</Make_CapsuleAEXP_Cheetah.label>
+  <Make_CapsuleAEXP_Cheetah.description>치타를 배양합니다.</Make_CapsuleAEXP_Cheetah.description>
+  <Make_CapsuleAEXP_Cheetah.jobString>배양 중.</Make_CapsuleAEXP_Cheetah.jobString>     
+  
+  <Make_CapsuleAEXP_Wildebeest.label>누 배양하기</Make_CapsuleAEXP_Wildebeest.label>
+  <Make_CapsuleAEXP_Wildebeest.description>누를 배양합니다.</Make_CapsuleAEXP_Wildebeest.description>
+  <Make_CapsuleAEXP_Wildebeest.jobString>배양 중.</Make_CapsuleAEXP_Wildebeest.jobString>   
+  
+  <Make_CapsuleAEXP_Giraffe.label>기린 배양하기</Make_CapsuleAEXP_Giraffe.label>
+  <Make_CapsuleAEXP_Giraffe.description>기린을 배양합니다.</Make_CapsuleAEXP_Giraffe.description>
+  <Make_CapsuleAEXP_Giraffe.jobString>배양 중.</Make_CapsuleAEXP_Giraffe.jobString>   
+
+  <Make_CapsuleAEXP_Hippopotamus.label>하마 배양하기</Make_CapsuleAEXP_Hippopotamus.label>
+  <Make_CapsuleAEXP_Hippopotamus.description>하마를 배양합니다.</Make_CapsuleAEXP_Hippopotamus.description>
+  <Make_CapsuleAEXP_Hippopotamus.jobString>배양 중.</Make_CapsuleAEXP_Hippopotamus.jobString>     
+  
+ 
+  <Make_CapsuleAEXP_GilaMonster.label>독도마뱀 배양하기</Make_CapsuleAEXP_GilaMonster.label>
+  <Make_CapsuleAEXP_GilaMonster.description>독도마뱀을 배양합니다.</Make_CapsuleAEXP_GilaMonster.description>
+  <Make_CapsuleAEXP_GilaMonster.jobString>배양 중.</Make_CapsuleAEXP_GilaMonster.jobString>     
+  
+  <Make_CapsuleAEXP_DesertTortoise.label>사막 거북이 배양하기</Make_CapsuleAEXP_DesertTortoise.label>
+  <Make_CapsuleAEXP_DesertTortoise.description>사막 거북이를 배양합니다.</Make_CapsuleAEXP_DesertTortoise.description>
+  <Make_CapsuleAEXP_DesertTortoise.jobString>배양 중.</Make_CapsuleAEXP_DesertTortoise.jobString>   
+  
+  <Make_CapsuleAEXP_Hyena.label>하이에나 배양하기</Make_CapsuleAEXP_Hyena.label>
+  <Make_CapsuleAEXP_Hyena.description>하이에나를 배양합니다.</Make_CapsuleAEXP_Hyena.description>
+  <Make_CapsuleAEXP_Hyena.jobString>배양 중.</Make_CapsuleAEXP_Hyena.jobString>   
+
+  <Make_CapsuleAEXP_Lion.label>사자 배양하기</Make_CapsuleAEXP_Lion.label>
+  <Make_CapsuleAEXP_Lion.description>사자를 배양합니다.</Make_CapsuleAEXP_Lion.description>
+  <Make_CapsuleAEXP_Lion.jobString>배양 중.</Make_CapsuleAEXP_Lion.jobString>     
+   
+  
+  <Make_CapsuleAEXP_Rattlesnake.label>방울뱀 배양하기</Make_CapsuleAEXP_Rattlesnake.label>
+  <Make_CapsuleAEXP_Rattlesnake.description>방울뱀을 배양합니다.</Make_CapsuleAEXP_Rattlesnake.description>
+  <Make_CapsuleAEXP_Rattlesnake.jobString>배양 중.</Make_CapsuleAEXP_Rattlesnake.jobString>
+
+  <Make_CapsuleAEXP_Camel.label>쌍봉낙타 배양하기</Make_CapsuleAEXP_Camel.label>
+  <Make_CapsuleAEXP_Camel.description>쌍봉낙타를 배양합니다.</Make_CapsuleAEXP_Camel.description>
+  <Make_CapsuleAEXP_Camel.jobString>배양 중.</Make_CapsuleAEXP_Camel.jobString>
+
+  <Make_CapsuleAEXP_Megascorpion.label>거대전갈 배양하기</Make_CapsuleAEXP_Megascorpion.label>
+  <Make_CapsuleAEXP_Megascorpion.description>거대전갈을 배양합니다.</Make_CapsuleAEXP_Megascorpion.description>
+  <Make_CapsuleAEXP_Megascorpion.jobString>배양 중.</Make_CapsuleAEXP_Megascorpion.jobString> 
+  
+  
+  <Make_CapsuleAEXP_Hedgehog.label>고슴도치 배양하기</Make_CapsuleAEXP_Hedgehog.label>
+  <Make_CapsuleAEXP_Hedgehog.description>고슴도치를 배양합니다.</Make_CapsuleAEXP_Hedgehog.description>
+  <Make_CapsuleAEXP_Hedgehog.jobString>배양 중.</Make_CapsuleAEXP_Hedgehog.jobString>   
+
+  <Make_CapsuleAEXP_RedPanda.label>너구리 판다 배양하기</Make_CapsuleAEXP_RedPanda.label>
+  <Make_CapsuleAEXP_RedPanda.description>너구리 판다를 배양합니다.</Make_CapsuleAEXP_RedPanda.description>
+  <Make_CapsuleAEXP_RedPanda.jobString>배양 중.</Make_CapsuleAEXP_RedPanda.jobString>     
+  
+  <Make_CapsuleAEXP_WildGoose.label>기러기 배양하기</Make_CapsuleAEXP_WildGoose.label>
+  <Make_CapsuleAEXP_WildGoose.description>기러기를 배양합니다.</Make_CapsuleAEXP_WildGoose.description>
+  <Make_CapsuleAEXP_WildGoose.jobString>배양 중.</Make_CapsuleAEXP_WildGoose.jobString>   
+  
+  <Make_CapsuleAEXP_Beaver.label>비버 배양하기</Make_CapsuleAEXP_Beaver.label>
+  <Make_CapsuleAEXP_Beaver.description>비버를 배양합니다.</Make_CapsuleAEXP_Beaver.description>
+  <Make_CapsuleAEXP_Beaver.jobString>배양 중.</Make_CapsuleAEXP_Beaver.jobString>   
+
+  <Make_CapsuleAEXP_Badger.label>오소리 배양하기</Make_CapsuleAEXP_Badger.label>
+  <Make_CapsuleAEXP_Badger.description>오소리를 배양합니다.</Make_CapsuleAEXP_Badger.description>
+  <Make_CapsuleAEXP_Badger.jobString>배양 중.</Make_CapsuleAEXP_Badger.jobString>     
+
+
+  <Make_CapsuleAEXP_Koala.label>코알라 배양하기</Make_CapsuleAEXP_Koala.label>
+  <Make_CapsuleAEXP_Koala.description>코알라를 배양합니다.</Make_CapsuleAEXP_Koala.description>
+  <Make_CapsuleAEXP_Koala.jobString>배양 중.</Make_CapsuleAEXP_Koala.jobString>     
+  
+  <Make_CapsuleAEXP_Platypus.label>오리너구리 배양하기</Make_CapsuleAEXP_Platypus.label>
+  <Make_CapsuleAEXP_Platypus.description>오리너구리를 배양합니다.</Make_CapsuleAEXP_Platypus.description>
+  <Make_CapsuleAEXP_Platypus.jobString>배양 중.</Make_CapsuleAEXP_Platypus.jobString>   
+  
+  <Make_CapsuleAEXP_Boombat.label>폭탄 웜뱃 배양하기</Make_CapsuleAEXP_Boombat.label>
+  <Make_CapsuleAEXP_Boombat.description>폭탄 웜뱃을 배양합니다.</Make_CapsuleAEXP_Boombat.description>
+  <Make_CapsuleAEXP_Boombat.jobString>배양 중.</Make_CapsuleAEXP_Boombat.jobString>   
+
+  <Make_CapsuleAEXP_Kangaroo.label>캥거루 배양하기</Make_CapsuleAEXP_Kangaroo.label>
+  <Make_CapsuleAEXP_Kangaroo.description>캥거루를 배양합니다.</Make_CapsuleAEXP_Kangaroo.description>
+  <Make_CapsuleAEXP_Kangaroo.jobString>배양 중.</Make_CapsuleAEXP_Kangaroo.jobString>     
+
+
+  <Make_CapsuleAEXP_Lemur.label>여우원숭이 배양하기</Make_CapsuleAEXP_Lemur.label>
+  <Make_CapsuleAEXP_Lemur.description>여우원숭이를 배양합니다.</Make_CapsuleAEXP_Lemur.description>
+  <Make_CapsuleAEXP_Lemur.jobString>배양 중.</Make_CapsuleAEXP_Lemur.jobString>   
+  
+  <Make_CapsuleAEXP_Mandrill.label>개코원숭이 배양하기</Make_CapsuleAEXP_Mandrill.label>
+  <Make_CapsuleAEXP_Mandrill.description>개코원숭이를 배양합니다.</Make_CapsuleAEXP_Mandrill.description>
+  <Make_CapsuleAEXP_Mandrill.jobString>배양 중.</Make_CapsuleAEXP_Mandrill.jobString>   
+
+  <Make_CapsuleAEXP_Tapir.label>맥 배양하기</Make_CapsuleAEXP_Tapir.label>
+  <Make_CapsuleAEXP_Tapir.description>맥을 배양합니다.</Make_CapsuleAEXP_Tapir.description>
+  <Make_CapsuleAEXP_Tapir.jobString>배양 중.</Make_CapsuleAEXP_Tapir.jobString>     
+  
+  <Make_CapsuleAEXP_Jaguar.label>재규어 배양하기</Make_CapsuleAEXP_Jaguar.label>
+  <Make_CapsuleAEXP_Jaguar.description>재규어를 배양합니다.</Make_CapsuleAEXP_Jaguar.description>
+  <Make_CapsuleAEXP_Jaguar.jobString>배양 중.</Make_CapsuleAEXP_Jaguar.jobString>   
+  
+  <Make_CapsuleAEXP_Tiger.label>호랑이 배양하기</Make_CapsuleAEXP_Tiger.label>
+  <Make_CapsuleAEXP_Tiger.description>호랑이를 배양합니다.</Make_CapsuleAEXP_Tiger.description>
+  <Make_CapsuleAEXP_Tiger.jobString>배양 중.</Make_CapsuleAEXP_Tiger.jobString>   
+
+  <Make_CapsuleAEXP_Gorilla.label>고릴라 배양하기</Make_CapsuleAEXP_Gorilla.label>
+  <Make_CapsuleAEXP_Gorilla.description>고릴라를 배양합니다.</Make_CapsuleAEXP_Gorilla.description>
+  <Make_CapsuleAEXP_Gorilla.jobString>배양 중.</Make_CapsuleAEXP_Gorilla.jobString>     
+
+
+  <Make_CapsuleAEXP_Chihuahua.label>치와와 배양하기</Make_CapsuleAEXP_Chihuahua.label>
+  <Make_CapsuleAEXP_Chihuahua.description>치와와를 배양합니다.</Make_CapsuleAEXP_Chihuahua.description>
+  <Make_CapsuleAEXP_Chihuahua.jobString>배양 중.</Make_CapsuleAEXP_Chihuahua.jobString>   
+  
+  <Make_CapsuleAEXP_Beagle.label>비글 배양하기</Make_CapsuleAEXP_Beagle.label>
+  <Make_CapsuleAEXP_Beagle.description>비글을 배양합니다.</Make_CapsuleAEXP_Beagle.description>
+  <Make_CapsuleAEXP_Beagle.jobString>배양 중.</Make_CapsuleAEXP_Beagle.jobString>   
+  
+  <Make_CapsuleAEXP_Pug.label>퍼그 배양하기</Make_CapsuleAEXP_Pug.label>
+  <Make_CapsuleAEXP_Pug.description>퍼그를 배양합니다.</Make_CapsuleAEXP_Pug.description>
+  <Make_CapsuleAEXP_Pug.jobString>배양 중.</Make_CapsuleAEXP_Pug.jobString>   
+  
+  <Make_CapsuleAEXP_Shih-Tzu.label>시츄 배양하기</Make_CapsuleAEXP_Shih-Tzu.label>
+  <Make_CapsuleAEXP_Shih-Tzu.description>시츄를 배양합니다.</Make_CapsuleAEXP_Shih-Tzu.description>
+  <Make_CapsuleAEXP_Shih-Tzu.jobString>배양 중.</Make_CapsuleAEXP_Shih-Tzu.jobString>    
+  
+  <Make_CapsuleAEXP_Corgi.label>코기 배양하기</Make_CapsuleAEXP_Corgi.label>
+  <Make_CapsuleAEXP_Corgi.description>코기를 배양합니다.</Make_CapsuleAEXP_Corgi.description>
+  <Make_CapsuleAEXP_Corgi.jobString>배양 중.</Make_CapsuleAEXP_Corgi.jobString>   
+  
+  <Make_CapsuleAEXP_FrenchBulldog.label>프렌치 불독 배양하기</Make_CapsuleAEXP_FrenchBulldog.label>
+  <Make_CapsuleAEXP_FrenchBulldog.description>프렌치 불독을 배양합니다.</Make_CapsuleAEXP_FrenchBulldog.description>
+  <Make_CapsuleAEXP_FrenchBulldog.jobString>배양 중.</Make_CapsuleAEXP_FrenchBulldog.jobString>   
+  
+  <Make_CapsuleAEXP_Poodle.label>푸들 배양하기</Make_CapsuleAEXP_Poodle.label>
+  <Make_CapsuleAEXP_Poodle.description>푸들을 배양합니다.</Make_CapsuleAEXP_Poodle.description>
+  <Make_CapsuleAEXP_Poodle.jobString>배양 중.</Make_CapsuleAEXP_Poodle.jobString>   
+  
+  <Make_CapsuleAEXP_Rottweiler.label>로트와일러 배양하기</Make_CapsuleAEXP_Rottweiler.label>
+  <Make_CapsuleAEXP_Rottweiler.description>로트와일러를 배양합니다.</Make_CapsuleAEXP_Rottweiler.description>
+  <Make_CapsuleAEXP_Rottweiler.jobString>배양 중.</Make_CapsuleAEXP_Rottweiler.jobString>     
+  
+  <Make_CapsuleAEXP_WelshTerrier.label>웰시 테리어 배양하기</Make_CapsuleAEXP_WelshTerrier.label>
+  <Make_CapsuleAEXP_WelshTerrier.description>웰시 테리어를 배양합니다.</Make_CapsuleAEXP_WelshTerrier.description>
+  <Make_CapsuleAEXP_WelshTerrier.jobString>배양 중.</Make_CapsuleAEXP_WelshTerrier.jobString>   
+  
+  <Make_CapsuleAEXP_GermanShepherd.label>저먼 셰퍼드 배양하기</Make_CapsuleAEXP_GermanShepherd.label>
+  <Make_CapsuleAEXP_GermanShepherd.description>저먼 셰퍼드를 배양합니다.</Make_CapsuleAEXP_GermanShepherd.description>
+  <Make_CapsuleAEXP_GermanShepherd.jobString>배양 중.</Make_CapsuleAEXP_GermanShepherd.jobString>   
+  
+  <Make_CapsuleAEXP_GreatDane.label>그레이트 데인 배양하기</Make_CapsuleAEXP_GreatDane.label>
+  <Make_CapsuleAEXP_GreatDane.description>그레이트 데인을 배양합니다.</Make_CapsuleAEXP_GreatDane.description>
+  <Make_CapsuleAEXP_GreatDane.jobString>배양 중.</Make_CapsuleAEXP_GreatDane.jobString>   
+  
+  <Make_CapsuleAEXP_CatAbyssinian.label>아비시니안 고양이 배양하기</Make_CapsuleAEXP_CatAbyssinian.label>
+  <Make_CapsuleAEXP_CatAbyssinian.description>아비시니안 고양이를 배양합니다.</Make_CapsuleAEXP_CatAbyssinian.description>
+  <Make_CapsuleAEXP_CatAbyssinian.jobString>배양 중.</Make_CapsuleAEXP_CatAbyssinian.jobString>    
+  
+  <Make_CapsuleAEXP_CatBengal.label>뱅갈 고양이 배양하기</Make_CapsuleAEXP_CatBengal.label>
+  <Make_CapsuleAEXP_CatBengal.description>뱅갈 고양이를 배양합니다.</Make_CapsuleAEXP_CatBengal.description>
+  <Make_CapsuleAEXP_CatBengal.jobString>배양 중.</Make_CapsuleAEXP_CatBengal.jobString>   
+  
+  <Make_CapsuleAEXP_CatBritishShorthair.label>브리티시 숏헤어 고양이 배양하기</Make_CapsuleAEXP_CatBritishShorthair.label>
+  <Make_CapsuleAEXP_CatBritishShorthair.description>브리티시 숏헤어 고양이를 배양합니다.</Make_CapsuleAEXP_CatBritishShorthair.description>
+  <Make_CapsuleAEXP_CatBritishShorthair.jobString>배양 중.</Make_CapsuleAEXP_CatBritishShorthair.jobString>   
+  
+  <Make_CapsuleAEXP_CatMunchkin.label>먼치킨 고양이 배양하기</Make_CapsuleAEXP_CatMunchkin.label>
+  <Make_CapsuleAEXP_CatMunchkin.description>먼치킨 고양이를 배양합니다.</Make_CapsuleAEXP_CatMunchkin.description>
+  <Make_CapsuleAEXP_CatMunchkin.jobString>배양 중.</Make_CapsuleAEXP_CatMunchkin.jobString>   
+  
+  <Make_CapsuleAEXP_CatPersian.label>페르시안 고양이 배양하기</Make_CapsuleAEXP_CatPersian.label>
+  <Make_CapsuleAEXP_CatPersian.description>페르시안 고양이를 배양합니다.</Make_CapsuleAEXP_CatPersian.description>
+  <Make_CapsuleAEXP_CatPersian.jobString>배양 중.</Make_CapsuleAEXP_CatPersian.jobString>      
+  
+  <Make_CapsuleAEXP_CatSiamese.label>샴 고양이 배양하기</Make_CapsuleAEXP_CatSiamese.label>
+  <Make_CapsuleAEXP_CatSiamese.description>샴 고양이를 배양합니다.</Make_CapsuleAEXP_CatSiamese.description>
+  <Make_CapsuleAEXP_CatSiamese.jobString>배양 중.</Make_CapsuleAEXP_CatSiamese.jobString>    
+  
+  <Make_CapsuleAEXP_CatSomali.label>소말리아 고양이 배양하기</Make_CapsuleAEXP_CatSomali.label>
+  <Make_CapsuleAEXP_CatSomali.description>소말리아 고양이를 배양합니다.</Make_CapsuleAEXP_CatSomali.description>
+  <Make_CapsuleAEXP_CatSomali.jobString>배양 중.</Make_CapsuleAEXP_CatSomali.jobString>   
+  
+  <Make_CapsuleAEXP_CatSphynx.label>스핑크스 고양이 배양하기</Make_CapsuleAEXP_CatSphynx.label>
+  <Make_CapsuleAEXP_CatSphynx.description>스핑크스 고양이를 배양합니다.</Make_CapsuleAEXP_CatSphynx.description>
+  <Make_CapsuleAEXP_CatSphynx.jobString>배양 중.</Make_CapsuleAEXP_CatSphynx.jobString>   
+  
+  <Make_CapsuleAEXP_CatNorwegianForest.label>노르웨이 숲 고양이 배양하기</Make_CapsuleAEXP_CatNorwegianForest.label>
+  <Make_CapsuleAEXP_CatNorwegianForest.description>노르웨이 숲 고양이를 배양합니다.</Make_CapsuleAEXP_CatNorwegianForest.description>
+  <Make_CapsuleAEXP_CatNorwegianForest.jobString>배양 중.</Make_CapsuleAEXP_CatNorwegianForest.jobString>   
+  
+  <Make_CapsuleAEXP_CatMaineCoon.label>메인쿤 고양이 배양하기</Make_CapsuleAEXP_CatMaineCoon.label>
+  <Make_CapsuleAEXP_CatMaineCoon.description>메인쿤 고양이를 배양합니다.</Make_CapsuleAEXP_CatMaineCoon.description>
+  <Make_CapsuleAEXP_CatMaineCoon.jobString>배양 중.</Make_CapsuleAEXP_CatMaineCoon.jobString> 
+
+
+  <Make_CapsuleMeganeura.label>메가네우라 배양하기</Make_CapsuleMeganeura.label>
+  <Make_CapsuleMeganeura.description>메가네우라를 배양합니다.</Make_CapsuleMeganeura.description>
+  <Make_CapsuleMeganeura.jobString>배양 중.</Make_CapsuleMeganeura.jobString>   
+  
+  <Make_CapsulePulmonoscorpius.label>풀모노스콜피우스 배양하기</Make_CapsulePulmonoscorpius.label>
+  <Make_CapsulePulmonoscorpius.description>풀모노스콜피우스를 배양합니다.</Make_CapsulePulmonoscorpius.description>
+  <Make_CapsulePulmonoscorpius.jobString>배양 중.</Make_CapsulePulmonoscorpius.jobString>   
+  
+  <Make_CapsuleArthropleura.label>아트로플레우라 배양하기</Make_CapsuleArthropleura.label>
+  <Make_CapsuleArthropleura.description>아트로플레우라를 배양합니다.</Make_CapsuleArthropleura.description>
+  <Make_CapsuleArthropleura.jobString>배양 중.</Make_CapsuleArthropleura.jobString> 
+
+  <Make_CapsuleCastoroides.label>카스토로이데스 배양하기</Make_CapsuleCastoroides.label>
+  <Make_CapsuleCastoroides.description>카스토로이데스를 배양합니다.</Make_CapsuleCastoroides.description>
+  <Make_CapsuleCastoroides.jobString>배양 중.</Make_CapsuleCastoroides.jobString> 
+
+  <Make_CapsuleSmilodon.label>스밀로돈 배양하기</Make_CapsuleSmilodon.label>
+  <Make_CapsuleSmilodon.description>스밀로돈을 배양합니다.</Make_CapsuleSmilodon.description>
+  <Make_CapsuleSmilodon.jobString>배양 중.</Make_CapsuleSmilodon.jobString> 
+
+  <Make_CapsuleDinopithecus.label>디노피테쿠스 배양하기</Make_CapsuleDinopithecus.label>
+  <Make_CapsuleDinopithecus.description>디노피테쿠스를 배양합니다.</Make_CapsuleDinopithecus.description>
+  <Make_CapsuleDinopithecus.jobString>배양 중.</Make_CapsuleDinopithecus.jobString> 
+
+  <Make_CapsulePalaeeudyptes.label>필라에에우딥테스 배양하기</Make_CapsulePalaeeudyptes.label>
+  <Make_CapsulePalaeeudyptes.description>필라에에우딥테스를 배양합니다.</Make_CapsulePalaeeudyptes.description>
+  <Make_CapsulePalaeeudyptes.jobString>배양 중.</Make_CapsulePalaeeudyptes.jobString> 
+
+  <Make_CapsuleEnhydriodon.label>수달 배양하기</Make_CapsuleEnhydriodon.label>
+  <Make_CapsuleEnhydriodon.description>수달을 배양합니다.</Make_CapsuleEnhydriodon.description>
+  <Make_CapsuleEnhydriodon.jobString>배양 중.</Make_CapsuleEnhydriodon.jobString> 
+
+  <Make_CapsuleMegalania.label>메갈라니아 배양하기</Make_CapsuleMegalania.label>
+  <Make_CapsuleMegalania.description>메갈라니아를 배양합니다.</Make_CapsuleMegalania.description>
+  <Make_CapsuleMegalania.jobString>배양 중.</Make_CapsuleMegalania.jobString> 
+
+  <Make_CapsuleProcoptodon.label>프롭코토돈 배양하기</Make_CapsuleProcoptodon.label>
+  <Make_CapsuleProcoptodon.description>프롭코토돈을 배양합니다.</Make_CapsuleProcoptodon.description>
+  <Make_CapsuleProcoptodon.jobString>배양 중.</Make_CapsuleProcoptodon.jobString> 
+
+  <Make_CapsuleDoedicurus.label>도에디쿠루스 배양하기</Make_CapsuleDoedicurus.label>
+  <Make_CapsuleDoedicurus.description>도에디쿠루스를 배양합니다.</Make_CapsuleDoedicurus.description>
+  <Make_CapsuleDoedicurus.jobString>배양 중.</Make_CapsuleDoedicurus.jobString> 
+
+  <Make_CapsuleDaeodon.label>다에오돈 배양하기</Make_CapsuleDaeodon.label>
+  <Make_CapsuleDaeodon.description>다에오돈을 배양합니다.</Make_CapsuleDaeodon.description>
+  <Make_CapsuleDaeodon.jobString>배양 중.</Make_CapsuleDaeodon.jobString> 
+
+  <Make_CapsuleTitanis.label>티타니스 배양하기</Make_CapsuleTitanis.label>
+  <Make_CapsuleTitanis.description>티타니스를 배양합니다.</Make_CapsuleTitanis.description>
+  <Make_CapsuleTitanis.jobString>배양 중.</Make_CapsuleTitanis.jobString> 
+
+  <Make_CapsuleAurochs.label>오록스 배양하기</Make_CapsuleAurochs.label>
+  <Make_CapsuleAurochs.description>오록스를 배양합니다.</Make_CapsuleAurochs.description>
+  <Make_CapsuleAurochs.jobString>배양 중.</Make_CapsuleAurochs.jobString> 
+  
+  <Make_CapsuleQuinkana.label>쿠인카나 배양하기</Make_CapsuleQuinkana.label>
+  <Make_CapsuleQuinkana.description>쿠인카나를 배양합니다.</Make_CapsuleQuinkana.description>
+  <Make_CapsuleQuinkana.jobString>배양 중.</Make_CapsuleQuinkana.jobString> 
+
+  <Make_CapsuleDinocrocuta.label>디노크로쿠타 배양하기</Make_CapsuleDinocrocuta.label>
+  <Make_CapsuleDinocrocuta.description>디노크로쿠타를 배양합니다.</Make_CapsuleDinocrocuta.description>
+  <Make_CapsuleDinocrocuta.jobString>배양 중.</Make_CapsuleDinocrocuta.jobString> 
+
+  <Make_CapsuleGigantopithecus.label>기간토피테쿠스 배양하기</Make_CapsuleGigantopithecus.label>
+  <Make_CapsuleGigantopithecus.description>기간토피테쿠스를 배양합니다.</Make_CapsuleGigantopithecus.description>
+  <Make_CapsuleGigantopithecus.jobString>배양 중.</Make_CapsuleGigantopithecus.jobString> 
+
+  <Make_CapsuleMacrauchenia.label>마크라우케니아 배양하기</Make_CapsuleMacrauchenia.label>
+  <Make_CapsuleMacrauchenia.description>마크라우케니아를 배양합니다.</Make_CapsuleMacrauchenia.description>
+  <Make_CapsuleMacrauchenia.jobString>배양 중.</Make_CapsuleMacrauchenia.jobString> 
+
+  <Make_CapsuleMegaloceros.label>메갈로세로스 배양하기</Make_CapsuleMegaloceros.label>
+  <Make_CapsuleMegaloceros.description>메갈로세로스를 배양합니다.</Make_CapsuleMegaloceros.description>
+  <Make_CapsuleMegaloceros.jobString>배양 중.</Make_CapsuleMegaloceros.jobString> 
+
+  <Make_CapsuleChalicotherium.label>칼리코테리움 배양하기</Make_CapsuleChalicotherium.label>
+  <Make_CapsuleChalicotherium.description>칼리코테리움을 배양합니다.</Make_CapsuleChalicotherium.description>
+  <Make_CapsuleChalicotherium.jobString>배양 중.</Make_CapsuleChalicotherium.jobString> 
+
+  <Make_CapsuleElasmotherium.label>엘라스모테리움 배양하기</Make_CapsuleElasmotherium.label>
+  <Make_CapsuleElasmotherium.description>엘라스모테리움을 배양합니다.</Make_CapsuleElasmotherium.description>
+  <Make_CapsuleElasmotherium.jobString>배양 중.</Make_CapsuleElasmotherium.jobString> 
+
+  <Make_CapsuleJosephoartigasia.label>요제파오르티가시아 배양하기</Make_CapsuleJosephoartigasia.label>
+  <Make_CapsuleJosephoartigasia.description>요제파오르티가시아를 배양합니다.</Make_CapsuleJosephoartigasia.description>
+  <Make_CapsuleJosephoartigasia.jobString>배양 중.</Make_CapsuleJosephoartigasia.jobString> 
+
+  <Make_CapsuleDiprotodon.label>디프로토돈 배양하기</Make_CapsuleDiprotodon.label>
+  <Make_CapsuleDiprotodon.description>디프로토돈을 배양합니다.</Make_CapsuleDiprotodon.description>
+  <Make_CapsuleDiprotodon.jobString>배양 중.</Make_CapsuleDiprotodon.jobString> 
+
+  <Make_CapsuleShortfacedBear.label>짧은얼굴곰 배양하기</Make_CapsuleShortfacedBear.label>
+  <Make_CapsuleShortfacedBear.description>짧은얼굴곰을 배양합니다.</Make_CapsuleShortfacedBear.description>
+  <Make_CapsuleShortfacedBear.jobString>배양 중.</Make_CapsuleShortfacedBear.jobString> 
+
+  <Make_CapsuleMegalochelys.label>메갈로켈리스 배양하기</Make_CapsuleMegalochelys.label>
+  <Make_CapsuleMegalochelys.description>메갈로켈리스를 배양합니다.</Make_CapsuleMegalochelys.description>
+  <Make_CapsuleMegalochelys.jobString>배양 중.</Make_CapsuleMegalochelys.jobString> 
+
+  <Make_CapsulePlatybelodon.label>플라티벨로돈 배양하기</Make_CapsulePlatybelodon.label>
+  <Make_CapsulePlatybelodon.description>플라티벨로돈을 배양합니다.</Make_CapsulePlatybelodon.description>
+  <Make_CapsulePlatybelodon.jobString>배양 중.</Make_CapsulePlatybelodon.jobString> 
+
+  <Make_CapsuleUintatherium.label>우인타테리움 배양하기</Make_CapsuleUintatherium.label>
+  <Make_CapsuleUintatherium.description>우인타테리움을 배양합니다.</Make_CapsuleUintatherium.description>
+  <Make_CapsuleUintatherium.jobString>배양 중.</Make_CapsuleUintatherium.jobString> 
+
+  <Make_CapsuleDinornis.label>디노르니스 배양하기</Make_CapsuleDinornis.label>
+  <Make_CapsuleDinornis.description>디노르니스를 배양합니다.</Make_CapsuleDinornis.description>
+  <Make_CapsuleDinornis.jobString>배양 중.</Make_CapsuleDinornis.jobString> 
+
+  <Make_CapsuleAndrewsarchus.label>앤드류사르쿠스 배양하기</Make_CapsuleAndrewsarchus.label>
+  <Make_CapsuleAndrewsarchus.description>앤드류사르쿠스를 배양합니다.</Make_CapsuleAndrewsarchus.description>
+  <Make_CapsuleAndrewsarchus.jobString>배양 중.</Make_CapsuleAndrewsarchus.jobString> 
+
+  <Make_CapsuleGomphotaria.label>곰포타리아 배양하기</Make_CapsuleGomphotaria.label>
+  <Make_CapsuleGomphotaria.description>곰포타리아를 배양합니다.</Make_CapsuleGomphotaria.description>
+  <Make_CapsuleGomphotaria.jobString>배양 중.</Make_CapsuleGomphotaria.jobString> 
+
+  <Make_CapsuleWoollyMammoth.label>털매머드 배양하기</Make_CapsuleWoollyMammoth.label>
+  <Make_CapsuleWoollyMammoth.description>털매머드를 배양합니다.</Make_CapsuleWoollyMammoth.description>
+  <Make_CapsuleWoollyMammoth.jobString>배양 중.</Make_CapsuleWoollyMammoth.jobString> 
+
+  <Make_CapsuleZygolophodon.label>지골로포돈 배양하기</Make_CapsuleZygolophodon.label>
+  <Make_CapsuleZygolophodon.description>지골로포돈을 배양합니다.</Make_CapsuleZygolophodon.description>
+  <Make_CapsuleZygolophodon.jobString>배양 중.</Make_CapsuleZygolophodon.jobString> 
+
+  <Make_CapsuleDeinotherium.label>데이노테리움 배양하기</Make_CapsuleDeinotherium.label>
+  <Make_CapsuleDeinotherium.description>데이노테리움을 배양합니다.</Make_CapsuleDeinotherium.description>
+  <Make_CapsuleDeinotherium.jobString>배양 중.</Make_CapsuleDeinotherium.jobString> 
+
+  <Make_CapsuleSivatherium.label>시바테리움 배양하기</Make_CapsuleSivatherium.label>
+  <Make_CapsuleSivatherium.description>시바테리움을 배양합니다.</Make_CapsuleSivatherium.description>
+  <Make_CapsuleSivatherium.jobString>배양 중.</Make_CapsuleSivatherium.jobString> 
+
+  <Make_CapsulePurussaurus.label>푸루스사우르스 배양하기</Make_CapsulePurussaurus.label>
+  <Make_CapsulePurussaurus.description>푸루스사우르스를 배양합니다.</Make_CapsulePurussaurus.description>
+  <Make_CapsulePurussaurus.jobString>배양 중.</Make_CapsulePurussaurus.jobString> 
+
+  <Make_CapsuleGigantophis.label>기간토피스 배양하기</Make_CapsuleGigantophis.label>
+  <Make_CapsuleGigantophis.description>기간토피스를 배양합니다.</Make_CapsuleGigantophis.description>
+  <Make_CapsuleGigantophis.jobString>배양 중.</Make_CapsuleGigantophis.jobString> 
+
+  <Make_CapsuleTitanoboa.label>티타노보아 배양하기</Make_CapsuleTitanoboa.label>
+  <Make_CapsuleTitanoboa.description>티타노보아를 배양합니다.</Make_CapsuleTitanoboa.description>
+  <Make_CapsuleTitanoboa.jobString>배양 중.</Make_CapsuleTitanoboa.jobString> 
+
+  <Make_CapsuleParaceratherium.label>인드리코티어 배양하기</Make_CapsuleParaceratherium.label>
+  <Make_CapsuleParaceratherium.description>인드리코티어를 배양합니다.</Make_CapsuleParaceratherium.description>
+  <Make_CapsuleParaceratherium.jobString>배양 중.</Make_CapsuleParaceratherium.jobString> 
+
+
+  <Make_CapsuleDryosaurus.label>드리오사우르스 배양하기</Make_CapsuleDryosaurus.label>
+  <Make_CapsuleDryosaurus.description>드리오사우르스를 배양합니다.</Make_CapsuleDryosaurus.description>
+  <Make_CapsuleDryosaurus.jobString>배양 중.</Make_CapsuleDryosaurus.jobString> 
+
+  <Make_CapsuleStygimoloch.label>스티기몰로크 배양하기</Make_CapsuleStygimoloch.label>
+  <Make_CapsuleStygimoloch.description>스티기몰로크를 배양합니다.</Make_CapsuleStygimoloch.description>
+  <Make_CapsuleStygimoloch.jobString>배양 중.</Make_CapsuleStygimoloch.jobString> 
+
+  <Make_CapsuleCompsognathus.label>콤프소그나투스 배양하기</Make_CapsuleCompsognathus.label>
+  <Make_CapsuleCompsognathus.description>콤프소그나투스를 배양합니다.</Make_CapsuleCompsognathus.description>
+  <Make_CapsuleCompsognathus.jobString>배양 중.</Make_CapsuleCompsognathus.jobString> 
+
+  <Make_CapsuleProtoceratops.label>프로토케라톱스 배양하기</Make_CapsuleProtoceratops.label>
+  <Make_CapsuleProtoceratops.description>프로토케라톱스를 배양합니다.</Make_CapsuleProtoceratops.description>
+  <Make_CapsuleProtoceratops.jobString>배양 중.</Make_CapsuleProtoceratops.jobString> 
+
+  <Make_CapsulePteranodon.label>프테라노돈 배양하기</Make_CapsulePteranodon.label>
+  <Make_CapsulePteranodon.description>프테라노돈을 배양합니다.</Make_CapsulePteranodon.description>
+  <Make_CapsulePteranodon.jobString>배양 중.</Make_CapsulePteranodon.jobString> 
+
+  <Make_CapsulePachycephalosaurus.label>파키케팔로사우르스 배양하기</Make_CapsulePachycephalosaurus.label>
+  <Make_CapsulePachycephalosaurus.description>파키케팔로사우르스를 배양합니다.</Make_CapsulePachycephalosaurus.description>
+  <Make_CapsulePachycephalosaurus.jobString>배양 중.</Make_CapsulePachycephalosaurus.jobString> 
+
+  <Make_CapsuleVelociraptor.label>벨로키랍토르 배양하기</Make_CapsuleVelociraptor.label>
+  <Make_CapsuleVelociraptor.description>벨로키랍토르를 배양합니다.</Make_CapsuleVelociraptor.description>
+  <Make_CapsuleVelociraptor.jobString>배양 중.</Make_CapsuleVelociraptor.jobString> 
+
+  <Make_CapsuleGallimimus.label>갈리미무스 배양하기</Make_CapsuleGallimimus.label>
+  <Make_CapsuleGallimimus.description>갈리미무스를 배양합니다.</Make_CapsuleGallimimus.description>
+  <Make_CapsuleGallimimus.jobString>배양 중.</Make_CapsuleGallimimus.jobString> 
+
+  <Make_CapsuleGigantoraptor.label>기간토랍토르 배양하기</Make_CapsuleGigantoraptor.label>
+  <Make_CapsuleGigantoraptor.description>기간토랍토르를 배양합니다.</Make_CapsuleGigantoraptor.description>
+  <Make_CapsuleGigantoraptor.jobString>배양 중.</Make_CapsuleGigantoraptor.jobString> 
+
+  <Make_CapsuleIguanodon.label>이구아나돈 배양하기</Make_CapsuleIguanodon.label>
+  <Make_CapsuleIguanodon.description>이구아나돈을 배양합니다.</Make_CapsuleIguanodon.description>
+  <Make_CapsuleIguanodon.jobString>배양 중.</Make_CapsuleIguanodon.jobString> 
+  
+  <Make_CapsuleParasaur.label>파라사우르스 배양하기</Make_CapsuleParasaur.label>
+  <Make_CapsuleParasaur.description>파라사우르스를 배양합니다.</Make_CapsuleParasaur.description>
+  <Make_CapsuleParasaur.jobString>배양 중.</Make_CapsuleParasaur.jobString> 
+
+  <Make_CapsuleCorythosaurus.label>코리토사우르스 배양하기</Make_CapsuleCorythosaurus.label>
+  <Make_CapsuleCorythosaurus.description>코리토사우르스를 배양합니다.</Make_CapsuleCorythosaurus.description>
+  <Make_CapsuleCorythosaurus.jobString>배양 중.</Make_CapsuleCorythosaurus.jobString> 
+
+  <Make_CapsuleDeinocheirus.label>데이노케리루스 배양하기</Make_CapsuleDeinocheirus.label>
+  <Make_CapsuleDeinocheirus.description>데이노케리루스를 배양합니다.</Make_CapsuleDeinocheirus.description>
+  <Make_CapsuleDeinocheirus.jobString>배양 중.</Make_CapsuleDeinocheirus.jobString> 
+
+  <Make_CapsuleTherizinosaurus.label>테리지노사우르스 배양하기</Make_CapsuleTherizinosaurus.label>
+  <Make_CapsuleTherizinosaurus.description>테리지노사우르스를 배양합니다.</Make_CapsuleTherizinosaurus.description>
+  <Make_CapsuleTherizinosaurus.jobString>배양 중.</Make_CapsuleTherizinosaurus.jobString> 
+
+  <Make_CapsuleMinmi.label>민미 배양하기</Make_CapsuleMinmi.label>
+  <Make_CapsuleMinmi.description>민미를 배양합니다.</Make_CapsuleMinmi.description>
+  <Make_CapsuleMinmi.jobString>배양 중.</Make_CapsuleMinmi.jobString> 
+
+  <Make_CapsuleUtahraptor.label>유타랍토르 배양하기</Make_CapsuleUtahraptor.label>
+  <Make_CapsuleUtahraptor.description>유타랍토르를 배양합니다.</Make_CapsuleUtahraptor.description>
+  <Make_CapsuleUtahraptor.jobString>배양 중.</Make_CapsuleUtahraptor.jobString> 
+
+  <Make_CapsuleDakotaraptor.label>다코타랍토르 배양하기</Make_CapsuleDakotaraptor.label>
+  <Make_CapsuleDakotaraptor.description>다코타랍토르를 배양합니다.</Make_CapsuleDakotaraptor.description>
+  <Make_CapsuleDakotaraptor.jobString>배양 중.</Make_CapsuleDakotaraptor.jobString> 
+
+  <Make_CapsuleDilophosaurus.label>딜로포사우르스 배양하기</Make_CapsuleDilophosaurus.label>
+  <Make_CapsuleDilophosaurus.description>딜로포사우르스를 배양합니다.</Make_CapsuleDilophosaurus.description>
+  <Make_CapsuleDilophosaurus.jobString>배양 중.</Make_CapsuleDilophosaurus.jobString> 
+
+  <Make_CapsuleQuetzalcoatlus.label>케찰코아틀루스 배양하기</Make_CapsuleQuetzalcoatlus.label>
+  <Make_CapsuleQuetzalcoatlus.description>케찰코아틀루스를 배양합니다.</Make_CapsuleQuetzalcoatlus.description>
+  <Make_CapsuleQuetzalcoatlus.jobString>배양 중.</Make_CapsuleQuetzalcoatlus.jobString> 
+
+  <Make_CapsuleMagyarosaurus.label>마기아로사우르스 배양하기</Make_CapsuleMagyarosaurus.label>
+  <Make_CapsuleMagyarosaurus.description>마기아로사우르스를 배양합니다.</Make_CapsuleMagyarosaurus.description>
+  <Make_CapsuleMagyarosaurus.jobString>배양 중.</Make_CapsuleMagyarosaurus.jobString>   
+
+  <Make_CapsuleStegosaurus.label>스테고사우르스 배양하기</Make_CapsuleStegosaurus.label>
+  <Make_CapsuleStegosaurus.description>스테고사우르스를 배양합니다.</Make_CapsuleStegosaurus.description>
+  <Make_CapsuleStegosaurus.jobString>배양 중.</Make_CapsuleStegosaurus.jobString> 
+
+  <Make_CapsuleAnkylosaurus.label>안킬로사우르스 배양하기</Make_CapsuleAnkylosaurus.label>
+  <Make_CapsuleAnkylosaurus.description>안킬로사우르스를 배양합니다.</Make_CapsuleAnkylosaurus.description>
+  <Make_CapsuleAnkylosaurus.jobString>배양 중.</Make_CapsuleAnkylosaurus.jobString> 
+
+  <Make_CapsuleCarnotaurus.label>카르노타우르스 배양하기</Make_CapsuleCarnotaurus.label>
+  <Make_CapsuleCarnotaurus.description>카르노타우르스를 배양합니다.</Make_CapsuleCarnotaurus.description>
+  <Make_CapsuleCarnotaurus.jobString>배양 중.</Make_CapsuleCarnotaurus.jobString> 
+
+  <Make_CapsuleAllosaurus.label>알로사우르스 배양하기</Make_CapsuleAllosaurus.label>
+  <Make_CapsuleAllosaurus.description>알로사우르스를 배양합니다.</Make_CapsuleAllosaurus.description>
+  <Make_CapsuleAllosaurus.jobString>배양 중.</Make_CapsuleAllosaurus.jobString> 
+
+  <Make_CapsuleTriceratops.label>트리케라톱스 배양하기</Make_CapsuleTriceratops.label>
+  <Make_CapsuleTriceratops.description>트리케라톱스를 배양합니다.</Make_CapsuleTriceratops.description>
+  <Make_CapsuleTriceratops.jobString>배양 중.</Make_CapsuleTriceratops.jobString> 
+  
+  <Make_CapsuleYutyrannus.label>유티라누스 배양하기</Make_CapsuleYutyrannus.label>
+  <Make_CapsuleYutyrannus.description>유티라누스를 배양합니다.</Make_CapsuleYutyrannus.description>
+  <Make_CapsuleYutyrannus.jobString>배양 중.</Make_CapsuleYutyrannus.jobString> 
+
+  <Make_CapsuleBaryonyx.label>바리오닉스 배양하기</Make_CapsuleBaryonyx.label>
+  <Make_CapsuleBaryonyx.description>바리오닉스를 배양합니다.</Make_CapsuleBaryonyx.description>
+  <Make_CapsuleBaryonyx.jobString>배양 중.</Make_CapsuleBaryonyx.jobString> 
+
+  <Make_CapsuleTyrannosaurusRex.label>티라노사우르스 렉스 배양하기</Make_CapsuleTyrannosaurusRex.label>
+  <Make_CapsuleTyrannosaurusRex.description>티라노사우르스 렉스를 배양합니다.</Make_CapsuleTyrannosaurusRex.description>
+  <Make_CapsuleTyrannosaurusRex.jobString>배양 중.</Make_CapsuleTyrannosaurusRex.jobString> 
+
+  <Make_CapsuleSpinosaurus.label>스피노사우르스 배양하기</Make_CapsuleSpinosaurus.label>
+  <Make_CapsuleSpinosaurus.description>스피노사우르스를 배양합니다.</Make_CapsuleSpinosaurus.description>
+  <Make_CapsuleSpinosaurus.jobString>배양 중.</Make_CapsuleSpinosaurus.jobString> 
+
+  <Make_CapsuleDiplodocus.label>디플로도쿠스 배양하기</Make_CapsuleDiplodocus.label>
+  <Make_CapsuleDiplodocus.description>디플로도쿠스를 배양합니다.</Make_CapsuleDiplodocus.description>
+  <Make_CapsuleDiplodocus.jobString>배양 중.</Make_CapsuleDiplodocus.jobString>   
+
+  <Make_CapsuleBrontosaurus.label>브론토사우르스 배양하기</Make_CapsuleBrontosaurus.label>
+  <Make_CapsuleBrontosaurus.description>브론토사우르스를 배양합니다.</Make_CapsuleBrontosaurus.description>
+  <Make_CapsuleBrontosaurus.jobString>배양 중.</Make_CapsuleBrontosaurus.jobString> 
+
+  <Make_CapsuleBrachiosaurus.label>브라키오사우르스 배양하기</Make_CapsuleBrachiosaurus.label>
+  <Make_CapsuleBrachiosaurus.description>브라키오사우르스를 배양합니다.</Make_CapsuleBrachiosaurus.description>
+  <Make_CapsuleBrachiosaurus.jobString>배양 중.</Make_CapsuleBrachiosaurus.jobString>   
+
+  <Make_CapsuleGallatross.label>갈라트로스 배양하기</Make_CapsuleGallatross.label>
+  <Make_CapsuleGallatross.description>갈라트로스를 배양합니다.</Make_CapsuleGallatross.description>
+  <Make_CapsuleGallatross.jobString>배양 중.</Make_CapsuleGallatross.jobString>   
+
+  <Make_CapsuleTarGuzzler.label>타르 거즐러 배양하기</Make_CapsuleTarGuzzler.label>
+  <Make_CapsuleTarGuzzler.description>타르 거즐러를 배양합니다.</Make_CapsuleTarGuzzler.description>
+  <Make_CapsuleTarGuzzler.jobString>배양 중.</Make_CapsuleTarGuzzler.jobString> 
+
+  <Make_CapsuleTeratogenicOriginator.label>기형 생명공학체 배양하기</Make_CapsuleTeratogenicOriginator.label>
+  <Make_CapsuleTeratogenicOriginator.description>기형 생명공학체를 배양합니다.</Make_CapsuleTeratogenicOriginator.description>
+  <Make_CapsuleTeratogenicOriginator.jobString>배양 중.</Make_CapsuleTeratogenicOriginator.jobString>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <Make_CapsuleMegascarab.label>메가스케럽 배양하기</Make_CapsuleMegascarab.label>
+  <Make_CapsuleMegascarab.description>메가스케럽을 배양합니다.</Make_CapsuleMegascarab.description>
+  <Make_CapsuleMegascarab.jobString>배양 중.</Make_CapsuleMegascarab.jobString>
+
+  <Make_CapsuleSpelopede.label>스펠로피드 배양하기</Make_CapsuleSpelopede.label>
+  <Make_CapsuleSpelopede.description>스펠로피드를 배양합니다.</Make_CapsuleSpelopede.description>
+  <Make_CapsuleSpelopede.jobString>배양 중.</Make_CapsuleSpelopede.jobString>
+
+  <Make_CapsuleMegaspider.label>메가스파이더 배양하기</Make_CapsuleMegaspider.label>
+  <Make_CapsuleMegaspider.description>메가스파이더를 배양합니다.</Make_CapsuleMegaspider.description>
+  <Make_CapsuleMegaspider.jobString>배양 중.</Make_CapsuleMegaspider.jobString>
+  
+</LanguageData>

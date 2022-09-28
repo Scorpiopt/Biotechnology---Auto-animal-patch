@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <EmptyCapsule.label>빈 캡슐</EmptyCapsule.label>
+  <EmptyCapsule.description>배양된 세포를 넣을 수 있는 빈 캡슐입니다.</EmptyCapsule.description>
+
+  <CapsuleRat.label>쥐 캡슐</CapsuleRat.label>
+  <CapsuleRat.description>배양된 쥐가 들어있는 캡슐입니다.</CapsuleRat.description>
+ 
+  <CapsuleSquirrel.label>다람쥐 캡슐</CapsuleSquirrel.label>
+  <CapsuleSquirrel.description>배양된 다람쥐가 들어있는 캡슐입니다.</CapsuleSquirrel.description>
+  
+  <CapsuleBoomrat.label>폭탄쥐 캡슐</CapsuleBoomrat.label>
+  <CapsuleBoomrat.description>배양된 폭탄쥐가 들어있는 캡슐입니다.</CapsuleBoomrat.description>
+
+  <CapsuleGuineaPig.label>기니피그 캡슐</CapsuleGuineaPig.label>
+  <CapsuleGuineaPig.description>배양된 기니피그가 들어있는 캡슐입니다.</CapsuleGuineaPig.description>
+
+  <CapsuleHare.label>멧토끼 캡슐</CapsuleHare.label>
+  <CapsuleHare.description>배양된 멧토끼가 들어있는 캡슐입니다.</CapsuleHare.description>
+
+  <CapsuleSnowhare.label>눈토끼 캡슐</CapsuleSnowhare.label>
+  <CapsuleSnowhare.description>배양된 눈토끼가 들어있는 캡슐입니다.</CapsuleSnowhare.description>
+
+  <CapsuleCobra.label>코브라 캡슐</CapsuleCobra.label>
+  <CapsuleCobra.description>배양된 코브라가 들어있는 캡슐입니다.</CapsuleCobra.description>
+
+  <CapsuleDuck.label>오리 캡슐</CapsuleDuck.label>
+  <CapsuleDuck.description>배양된 오리가 들어있는 캡슐입니다.</CapsuleDuck.description>
+
+  <CapsuleChicken.label>닭 캡슐</CapsuleChicken.label>
+  <CapsuleChicken.description>배양된 닭이 들어있는 캡슐입니다.</CapsuleChicken.description>
+
+  <CapsuleEmu.label>에뮤 캡슐</CapsuleEmu.label>
+  <CapsuleEmu.description>배양된 에뮤가 들어있는 캡슐입니다.</CapsuleEmu.description>
+
+  <CapsuleGoose.label>거위 캡슐</CapsuleGoose.label>
+  <CapsuleGoose.description>배양된 거위가 들어있는 캡슐입니다.</CapsuleGoose.description>
+
+  <CapsuleTurkey.label>칠면조 캡슐</CapsuleTurkey.label>
+  <CapsuleTurkey.description>배양된 칠면조가 들어있는 캡슐입니다.</CapsuleTurkey.description>
+
+  <CapsuleCassowary.label>화식조 캡슐</CapsuleCassowary.label>
+  <CapsuleCassowary.description>배양된 화식조가 들어있는 캡슐입니다.</CapsuleCassowary.description>  
+
+  <CapsuleMonkey.label>원숭이 캡슐</CapsuleMonkey.label>
+  <CapsuleMonkey.description>배양된 원숭이가 들어있는 캡슐입니다.</CapsuleMonkey.description>
+
+  <CapsuleChinchilla.label>털실쥐 캡슐</CapsuleChinchilla.label>
+  <CapsuleChinchilla.description>배양된 털실쥐가 들어있는 캡슐입니다.</CapsuleChinchilla.description>
+
+  <CapsuleRaccoon.label>너구리 캡슐</CapsuleRaccoon.label>
+  <CapsuleRaccoon.description>배양된 너구리가 들어있는 캡슐입니다.</CapsuleRaccoon.description>
+
+  <CapsuleIguana.label>이구아나 캡슐</CapsuleIguana.label>
+  <CapsuleIguana.description>배양된 이구아나가 들어있는 캡슐입니다.</CapsuleIguana.description>
+
+  <CapsuleAlphabeaver.label>알파비버 캡슐</CapsuleAlphabeaver.label>
+  <CapsuleAlphabeaver.description>배양된 알파비버가 들어있는 캡슐입니다.</CapsuleAlphabeaver.description>
+
+  <CapsuleTortoise.label>거북이 캡슐</CapsuleTortoise.label>
+  <CapsuleTortoise.description>배양된 거북이가 들어있는 캡슐입니다.</CapsuleTortoise.description>
+
+  <CapsuleFox_Fennec.label>사막여우 캡슐</CapsuleFox_Fennec.label>
+  <CapsuleFox_Fennec.description>배양된 사막여우가 들어있는 캡슐입니다.</CapsuleFox_Fennec.description>
+
+  <CapsuleFox_Red.label>붉은여우 캡슐</CapsuleFox_Red.label>
+  <CapsuleFox_Red.description>배양된 붉은여우가 들어있는 캡슐입니다.</CapsuleFox_Red.description>
+
+  <CapsuleFox_Arctic.label>북극여우 캡슐</CapsuleFox_Arctic.label>
+  <CapsuleFox_Arctic.description>배양된 북극여우가 들어있는 캡슐입니다.</CapsuleFox_Arctic.description>
+
+  <CapsuleLynx.label>스라소니 캡슐</CapsuleLynx.label>
+  <CapsuleLynx.description>배양된 스라소니가 들어있는 캡슐입니다.</CapsuleLynx.description>
+
+
+
+  <CapsuleCapybara.label>카피바라 캡슐</CapsuleCapybara.label>
+  <CapsuleCapybara.description>배양된 카피바라가 들어있는 캡슐입니다.</CapsuleCapybara.description>
+  
+  <CapsuleSheep.label>양 캡슐</CapsuleSheep.label>
+  <CapsuleSheep.description>배양된 양이 들어있는 캡슐입니다.</CapsuleSheep.description>
+   
+  <CapsuleGoat.label>염소 캡슐</CapsuleGoat.label>
+  <CapsuleGoat.description>배양된 염소가 들어있는 캡슐입니다.</CapsuleGoat.description>
+ 
+  <CapsuleGazelle.label>가젤 캡슐</CapsuleGazelle.label>
+  <CapsuleGazelle.description>배양된 가젤이 들어있는 캡슐입니다.</CapsuleGazelle.description>
+ 
+  <CapsuleCaribou.label>순록 캡슐</CapsuleCaribou.label>
+  <CapsuleCaribou.description>배양된 순록이 들어있는 캡슐입니다.</CapsuleCaribou.description>
+ 
+  <CapsuleIbex.label>산양 캡슐</CapsuleIbex.label>
+  <CapsuleIbex.description>배양된 산양이 들어있는 캡슐입니다.</CapsuleIbex.description>
+ 
+  <CapsuleAlpaca.label>알파카 캡슐</CapsuleAlpaca.label>
+  <CapsuleAlpaca.description>배양된 알파카가 들어있는 캡슐입니다.</CapsuleAlpaca.description>
+ 
+  <CapsuleDeer.label>사슴 캡슐</CapsuleDeer.label>
+  <CapsuleDeer.description>배양된 사슴이 들어있는 캡슐입니다.</CapsuleDeer.description>
+ 
+  <CapsuleBoomalope.label>폭탄사슴 캡슐</CapsuleBoomalope.label>
+  <CapsuleBoomalope.description>배양된 폭탄사슴이 들어있는 캡슐입니다.</CapsuleBoomalope.description>
+
+  <CapsuleOstrich.label>타조 캡슐</CapsuleOstrich.label>
+  <CapsuleOstrich.description>배양된 타조가 들어있는 캡슐입니다.</CapsuleOstrich.description>
+ 
+  <CapsuleDonkey.label>당나귀 캡슐</CapsuleDonkey.label>
+  <CapsuleDonkey.description>배양된 당나귀가 들어있는 캡슐입니다.</CapsuleDonkey.description>
+ 
+  <CapsuleHorse.label>말 캡슐</CapsuleHorse.label>
+  <CapsuleHorse.description>배양된 말이 들어있는 캡슐입니다.</CapsuleHorse.description>
+ 
+  <CapsuleDromedary.label>낙타 캡슐</CapsuleDromedary.label>
+  <CapsuleDromedary.description>배양된 낙타가 들어있는 캡슐입니다.</CapsuleDromedary.description>
+ 
+  <CapsuleElk.label>엘크 캡슐</CapsuleElk.label>
+  <CapsuleElk.description>배양된 엘크가 들어있는 캡슐입니다.</CapsuleElk.description>
+ 
+  <CapsuleYak.label>야크 캡슐</CapsuleYak.label>
+  <CapsuleYak.description>배양된 야크가 들어있는 캡슐입니다.</CapsuleYak.description>
+ 
+  <CapsulePig.label>돼지 캡슐</CapsulePig.label>
+  <CapsulePig.description>배양된 돼지가 들어있는 캡슐입니다.</CapsulePig.description>
+ 
+  <CapsuleWildBoar.label>멧돼지 캡슐</CapsuleWildBoar.label>
+  <CapsuleWildBoar.description>배양된 멧돼지가 들어있는 캡슐입니다.</CapsuleWildBoar.description>
+ 
+  <CapsuleWarg.label>와르그 캡슐</CapsuleWarg.label>
+  <CapsuleWarg.description>배양된 와르그가 들어있는 캡슐입니다.</CapsuleWarg.description>
+ 
+  <CapsuleWolf_Arctic.label>북극늑대 캡슐</CapsuleWolf_Arctic.label>
+  <CapsuleWolf_Arctic.description>배양된 북극늑대가 들어있는 캡슐입니다.</CapsuleWolf_Arctic.description>
+ 
+  <CapsuleWolf_Timber.label>회색늑대 캡슐</CapsuleWolf_Timber.label>
+  <CapsuleWolf_Timber.description>배양된 회색늑대가 들어있는 캡슐입니다.</CapsuleWolf_Timber.description>
+ 
+  <CapsuleCougar.label>퓨마 캡슐</CapsuleCougar.label>
+  <CapsuleCougar.description>배양된 퓨마가 들어있는 캡슐입니다.</CapsuleCougar.description>
+ 
+  <CapsulePanther.label>표범 캡슐</CapsulePanther.label>
+  <CapsulePanther.description>배양된 표범이 들어있는 캡슐입니다.</CapsulePanther.description>
+ 
+
+  <CapsuleCow.label>소 캡슐</CapsuleCow.label>
+  <CapsuleCow.description>배양된 소가 들어있는 캡슐입니다.</CapsuleCow.description>
+ 
+  <CapsuleMuffalo.label>머팔로 캡슐</CapsuleMuffalo.label>
+  <CapsuleMuffalo.description>배양된 머팔로가 들어있는 캡슐입니다.</CapsuleMuffalo.description>
+ 
+  <CapsuleBison.label>들소 캡슐</CapsuleBison.label>
+  <CapsuleBison.description>배양된 들소가 들어있는 캡슐입니다.</CapsuleBison.description>
+ 
+  <CapsuleBear_Polar.label>북극곰 캡슐</CapsuleBear_Polar.label>
+  <CapsuleBear_Polar.description>배양된 북극곰이 들어있는 캡슐입니다.</CapsuleBear_Polar.description>
+ 
+  <CapsuleBear_Grizzly.label>회색곰 캡슐</CapsuleBear_Grizzly.label>
+  <CapsuleBear_Grizzly.description>배양된 회색곰이 들어있는 캡슐입니다.</CapsuleBear_Grizzly.description>
+ 
+  <CapsuleRhinoceros.label>코뿔소 캡슐</CapsuleRhinoceros.label>
+  <CapsuleRhinoceros.description>배양된 코뿔소가 들어있는 캡슐입니다.</CapsuleRhinoceros.description>
+
+  <CapsuleMegasloth.label>거대늘보 캡슐</CapsuleMegasloth.label>
+  <CapsuleMegasloth.description>배양된 거대늘보가 들어있는 캡슐입니다.</CapsuleMegasloth.description>
+
+  <CapsuleElephant.label>코끼리 캡슐</CapsuleElephant.label>
+  <CapsuleElephant.description>배양된 코끼리가 들어있는 캡슐입니다.</CapsuleElephant.description>
+
+
+  <CapsuleThrumbo.label>트럼보 캡슐</CapsuleThrumbo.label>
+  <CapsuleThrumbo.description>배양된 트럼보가 들어있는 캡슐입니다.</CapsuleThrumbo.description>
+
+
+  <CapsuleYorkshireTerrier.label>요크셔테리어 캡슐</CapsuleYorkshireTerrier.label>
+  <CapsuleYorkshireTerrier.description>배양된 요크셔테리어가 들어있는 캡슐입니다.</CapsuleYorkshireTerrier.description>
+  
+  <CapsuleLabradorRetriever.label>래브라도 리트리버 캡슐</CapsuleLabradorRetriever.label>
+  <CapsuleLabradorRetriever.description>배양된 래브라도 리트리버가 들어있는 캡슐입니다.</CapsuleLabradorRetriever.description>
+  
+  <CapsuleHusky.label>허스키 캡슐</CapsuleHusky.label>
+  <CapsuleHusky.description>배양된 허스키가 들어있는 캡슐입니다.</CapsuleHusky.description>
+  
+  <CapsuleCat.label>고양이 캡슐</CapsuleCat.label>
+  <CapsuleCat.description>배양된 고양이가 들어있는 캡슐입니다.</CapsuleCat.description>
+
+
+  <CapsuleVAECaves_BlindSalamander.label>장님 도롱뇽 캡슐</CapsuleVAECaves_BlindSalamander.label>
+  <CapsuleVAECaves_BlindSalamander.description>배양된 장님 도롱뇽이 들어있는 캡슐입니다.</CapsuleVAECaves_BlindSalamander.description>
+  
+  <CapsuleVAECaves_GiantSpiderHatchling.label>자이언트 새끼 거미 캡슐</CapsuleVAECaves_GiantSpiderHatchling.label>
+  <CapsuleVAECaves_GiantSpiderHatchling.description>자이언트 새끼 거미가 들어있는 캡슐입니다.</CapsuleVAECaves_GiantSpiderHatchling.description>
+  
+  <CapsuleVAECaves_Wyrm.label>웜 캡슐</CapsuleVAECaves_Wyrm.label>
+  <CapsuleVAECaves_Wyrm.description>배양된 웜이 들어있는 캡슐입니다.</CapsuleVAECaves_Wyrm.description>
+  
+  <CapsuleVAECaves_CaveBear.label>동굴곰 캡슐</CapsuleVAECaves_CaveBear.label>
+  <CapsuleVAECaves_CaveBear.description>배양된 동굴곰이 들어있는 캡슐입니다.</CapsuleVAECaves_CaveBear.description>
+
+
+  <CapsuleRoyalThrumbo.label>왕실 트럼보 캡슐</CapsuleRoyalThrumbo.label>
+  <CapsuleRoyalThrumbo.description>배양된 왕실 트럼보가 들어있는 캡슐입니다.</CapsuleRoyalThrumbo.description>
+
+
+  <CapsuleVFEV_Lothurr.label>로두르 캡슐</CapsuleVFEV_Lothurr.label>
+  <CapsuleVFEV_Lothurr.description>배양된 로두르가 들어있는 캡슐입니다.</CapsuleVFEV_Lothurr.description>
+  
+  <CapsuleVFEV_Fenrir.label>펜리르 캡슐</CapsuleVFEV_Fenrir.label>
+  <CapsuleVFEV_Fenrir.description>배양된 펜리르가 들어있는 캡슐입니다.</CapsuleVFEV_Fenrir.description>
+  
+  <CapsuleVFEV_Njorun.label>뇨룬 캡슐</CapsuleVFEV_Njorun.label>
+  <CapsuleVFEV_Njorun.description>배양된 뇨룬이 들어있는 캡슐입니다.</CapsuleVFEV_Njorun.description>
+  
+  <CapsuleVFEV_Wolfhound.label>울프하운드 캡슐</CapsuleVFEV_Wolfhound.label>
+  <CapsuleVFEV_Wolfhound.description>배양된 울프하운드가 들어있는 캡슐입니다.</CapsuleVFEV_Wolfhound.description>
+
+  <CapsuleVFEV_WoolyCow.label>양털 소 캡슐</CapsuleVFEV_WoolyCow.label>
+  <CapsuleVFEV_WoolyCow.description>배양된 양털 소가 들어있는 캡슐입니다.</CapsuleVFEV_WoolyCow.description>
+
+
+  <CapsuleAEXP_RockhopperPenguin.label>바위뛰기 펭귄 캡슐</CapsuleAEXP_RockhopperPenguin.label>
+  <CapsuleAEXP_RockhopperPenguin.description>배양된 바위뛰기 펭귄이 들어있는 캡슐입니다.</CapsuleAEXP_RockhopperPenguin.description>
+  
+  <CapsuleAEXP_BlackFootedFerret.label>검은발족제비 캡슐</CapsuleAEXP_BlackFootedFerret.label>
+  <CapsuleAEXP_BlackFootedFerret.description>배양된 검은발족제비가 들어있는 캡슐입니다.</CapsuleAEXP_BlackFootedFerret.description>
+  
+  <CapsuleAEXP_Pangolin.label>거대 천산갑 캡슐</CapsuleAEXP_Pangolin.label>
+  <CapsuleAEXP_Pangolin.description>배양된 거대 천산갑이 들어있는 캡슐입니다.</CapsuleAEXP_Pangolin.description>
+  
+  <CapsuleAEXP_Bonobo.label>보노보 캡슐</CapsuleAEXP_Bonobo.label>
+  <CapsuleAEXP_Bonobo.description>배양된 보노보가 들어있는 캡슐입니다.</CapsuleAEXP_Bonobo.description>
+
+  <CapsuleAEXP_TasmanianDevil.label>태즈메이니아데블 캡슐</CapsuleAEXP_TasmanianDevil.label>
+  <CapsuleAEXP_TasmanianDevil.description>배양된 태즈메이니아데블이 들어있는 캡슐입니다.</CapsuleAEXP_TasmanianDevil.description>
+  
+  <CapsuleAEXP_AfricanWildDog.label>아프리카들개 캡슐</CapsuleAEXP_AfricanWildDog.label>
+  <CapsuleAEXP_AfricanWildDog.description>배양된 아프리카들개가 들어있는 캡슐입니다.</CapsuleAEXP_AfricanWildDog.description>
+  
+  <CapsuleAEXP_Thylacine.label>주머니늑대 캡슐</CapsuleAEXP_Thylacine.label>
+  <CapsuleAEXP_Thylacine.description>배양된 주머니늑대가 들어있는 캡슐입니다.</CapsuleAEXP_Thylacine.description>
+  
+  <CapsuleAEXP_Moa.label>모아 캡슐</CapsuleAEXP_Moa.label>
+  <CapsuleAEXP_Moa.description>배양된 모아가 들어있는 캡슐입니다.</CapsuleAEXP_Moa.description>
+
+  <CapsuleAEXP_Quagga.label>콰가 캡슐</CapsuleAEXP_Quagga.label>
+  <CapsuleAEXP_Quagga.description>배양된 콰가가 들어있는 캡슐입니다.</CapsuleAEXP_Quagga.description>
+  
+  <CapsuleAEXP_Panda.label>대왕판다 캡슐</CapsuleAEXP_Panda.label>
+  <CapsuleAEXP_Panda.description>배양된 대왕판다가 들어있는 캡슐입니다.</CapsuleAEXP_Panda.description>
+  
+  <CapsuleAEXP_BlackRhino.label>검은코뿔소 캡슐</CapsuleAEXP_BlackRhino.label>
+  <CapsuleAEXP_BlackRhino.description>배양된 검은코뿔소가 들어있는 캡슐입니다.</CapsuleAEXP_BlackRhino.description>
+  
+
+  <CapsuleAEXP_Penguin.label>펭귄 캡슐</CapsuleAEXP_Penguin.label>
+  <CapsuleAEXP_Penguin.description>배양된 펭귄이 들어있는 캡슐입니다.</CapsuleAEXP_Penguin.description>
+  
+  <CapsuleAEXP_Seal.label>바다표범 캡슐</CapsuleAEXP_Seal.label>
+  <CapsuleAEXP_Seal.description>배양된 바다표범이 들어있는 캡슐입니다.</CapsuleAEXP_Seal.description>
+  
+  <CapsuleAEXP_Walrus.label>바다코끼리 캡슐</CapsuleAEXP_Walrus.label>
+  <CapsuleAEXP_Walrus.description>배양된 바다코끼리가 들어있는 캡슐입니다.</CapsuleAEXP_Walrus.description>
+  
+
+  <CapsuleAEXP_Porcupine.label>호저 캡슐</CapsuleAEXP_Porcupine.label>
+  <CapsuleAEXP_Porcupine.description>배양된 호저가 들어있는 캡슐입니다.</CapsuleAEXP_Porcupine.description>
+  
+  <CapsuleAEXP_Moose.label>무스 캡슐</CapsuleAEXP_Moose.label>
+  <CapsuleAEXP_Moose.description>배양된 무스가 들어있는 캡슐입니다.</CapsuleAEXP_Moose.description>
+  
+  <CapsuleAEXP_Muskox.label>사향소 캡슐</CapsuleAEXP_Muskox.label>
+  <CapsuleAEXP_Muskox.description>배양된 사향소가 들어있는 캡슐입니다.</CapsuleAEXP_Muskox.description>
+  
+  <CapsuleAEXP_MegaWolverine.label>메가 울버린 캡슐</CapsuleAEXP_MegaWolverine.label>
+  <CapsuleAEXP_MegaWolverine.description>배양된 메가 울버린이 들어있는 캡슐입니다.</CapsuleAEXP_MegaWolverine.description>
+
+
+  <CapsuleAEXP_Otter.label>수달 캡슐</CapsuleAEXP_Otter.label>
+  <CapsuleAEXP_Otter.description>배양된 수달이 들어있는 캡슐입니다.</CapsuleAEXP_Otter.description>
+  
+  <CapsuleAEXP_ArcticCoyote.label>북극 코요테 캡슐</CapsuleAEXP_ArcticCoyote.label>
+  <CapsuleAEXP_ArcticCoyote.description>배양된 북극 코요테가 들어있는 캡슐입니다.</CapsuleAEXP_ArcticCoyote.description>
+  
+  <CapsuleAEXP_BlackBear.label>흑곰 캡슐</CapsuleAEXP_BlackBear.label>
+  <CapsuleAEXP_BlackBear.description>배양된 흑곰이 들어있는 캡슐입니다.</CapsuleAEXP_BlackBear.description>
+
+
+  <CapsuleAEXP_Alligator.label>민물악어 캡슐</CapsuleAEXP_Alligator.label>
+  <CapsuleAEXP_Alligator.description>배양된 민물악어가 들어있는 캡슐입니다.</CapsuleAEXP_Alligator.description>
+  
+  <CapsuleAEXP_Anaconda.label>아나콘다 캡슐</CapsuleAEXP_Anaconda.label>
+  <CapsuleAEXP_Anaconda.description>배양된 아나콘다가 들어있는 캡슐입니다.</CapsuleAEXP_Anaconda.description>
+  
+  <CapsuleAEXP_IndianElephant.label>인도 코끼리 캡슐</CapsuleAEXP_IndianElephant.label>
+  <CapsuleAEXP_IndianElephant.description>배양된 인도 코끼리가 들어있는 캡슐입니다.</CapsuleAEXP_IndianElephant.description>
+
+
+  <CapsuleAEXP_Coyote.label>코요테 캡슐</CapsuleAEXP_Coyote.label>
+  <CapsuleAEXP_Coyote.description>배양된 코요테가 들어있는 캡슐입니다.</CapsuleAEXP_Coyote.description>
+  
+  <CapsuleAEXP_Crocodile.label>악어 캡슐</CapsuleAEXP_Crocodile.label>
+  <CapsuleAEXP_Crocodile.description>배양된 악어가 들어있는 캡슐입니다.</CapsuleAEXP_Crocodile.description>
+  
+  <CapsuleAEXP_Zebra.label>얼룩말 캡슐</CapsuleAEXP_Zebra.label>
+  <CapsuleAEXP_Zebra.description>배양된 얼룩말이 들어있는 캡슐입니다.</CapsuleAEXP_Zebra.description>
+  
+  <CapsuleAEXP_Cheetah.label>치타 캡슐</CapsuleAEXP_Cheetah.label>
+  <CapsuleAEXP_Cheetah.description>배양된 치타가 들어있는 캡슐입니다.</CapsuleAEXP_Cheetah.description>
+
+  <CapsuleAEXP_Wildebeest.label>누 캡슐</CapsuleAEXP_Wildebeest.label>
+  <CapsuleAEXP_Wildebeest.description>배양된 누가 들어있는 캡슐입니다.</CapsuleAEXP_Wildebeest.description>
+  
+  <CapsuleAEXP_Giraffe.label>기린 캡슐</CapsuleAEXP_Giraffe.label>
+  <CapsuleAEXP_Giraffe.description>배양된 기린이 들어있는 캡슐입니다.</CapsuleAEXP_Giraffe.description>
+  
+  <CapsuleAEXP_Hippopotamus.label>하마 캡슐</CapsuleAEXP_Hippopotamus.label>
+  <CapsuleAEXP_Hippopotamus.description>배양된 하마가 들어있는 캡슐입니다.</CapsuleAEXP_Hippopotamus.description>
+  
+
+  <CapsuleAEXP_GilaMonster.label>독도마뱀 캡슐</CapsuleAEXP_GilaMonster.label>
+  <CapsuleAEXP_GilaMonster.description>배양된 독도마뱀이 들어있는 캡슐입니다.</CapsuleAEXP_GilaMonster.description>
+
+  <CapsuleAEXP_DesertTortoise.label>사막 거북이 캡슐</CapsuleAEXP_DesertTortoise.label>
+  <CapsuleAEXP_DesertTortoise.description>배양된 사막 거북이가 들어있는 캡슐입니다.</CapsuleAEXP_DesertTortoise.description>
+  
+  <CapsuleAEXP_Hyena.label>하이에나 캡슐</CapsuleAEXP_Hyena.label>
+  <CapsuleAEXP_Hyena.description>배양된 하이에나가 들어있는 캡슐입니다.</CapsuleAEXP_Hyena.description>
+  
+  <CapsuleAEXP_Lion.label>사자 캡슐</CapsuleAEXP_Lion.label>
+  <CapsuleAEXP_Lion.description>배양된 사자가 들어있는 캡슐입니다.</CapsuleAEXP_Lion.description>
+
+
+  <CapsuleAEXP_Rattlesnake.label>방울뱀 캡슐</CapsuleAEXP_Rattlesnake.label>
+  <CapsuleAEXP_Rattlesnake.description>배양된 방울뱀이 들어있는 캡슐입니다.</CapsuleAEXP_Rattlesnake.description>
+  
+  <CapsuleAEXP_Camel.label>쌍봉낙타 캡슐</CapsuleAEXP_Camel.label>
+  <CapsuleAEXP_Camel.description>배양된 쌍봉낙타가 들어있는 캡슐입니다.</CapsuleAEXP_Camel.description>
+
+  <CapsuleAEXP_Megascorpion.label>거대전갈 캡슐</CapsuleAEXP_Megascorpion.label>
+  <CapsuleAEXP_Megascorpion.description>배양된 거대전갈이 들어있는 캡슐입니다.</CapsuleAEXP_Megascorpion.description>  
+
+
+  <CapsuleAEXP_Hedgehog.label>고슴도치 캡슐</CapsuleAEXP_Hedgehog.label>
+  <CapsuleAEXP_Hedgehog.description>배양된 고슴도치가 들어있는 캡슐입니다.</CapsuleAEXP_Hedgehog.description>
+  
+  <CapsuleAEXP_RedPanda.label>너구리 판다 캡슐</CapsuleAEXP_RedPanda.label>
+  <CapsuleAEXP_RedPanda.description>배양된 너구리 판다가 들어있는 캡슐입니다.</CapsuleAEXP_RedPanda.description>
+
+  <CapsuleAEXP_WildGoose.label>기러기 캡슐</CapsuleAEXP_WildGoose.label>
+  <CapsuleAEXP_WildGoose.description>배양된 기러기가 들어있는 캡슐입니다.</CapsuleAEXP_WildGoose.description>
+  
+  <CapsuleAEXP_Beaver.label>비버 캡슐</CapsuleAEXP_Beaver.label>
+  <CapsuleAEXP_Beaver.description>배양된 비버가 들어있는 캡슐입니다.</CapsuleAEXP_Beaver.description>
+  
+  <CapsuleAEXP_Badger.label>오소리 캡슐</CapsuleAEXP_Badger.label>
+  <CapsuleAEXP_Badger.description>배양된 오소리가 들어있는 캡슐입니다.</CapsuleAEXP_Badger.description>
+
+
+  <CapsuleAEXP_Koala.label>코알라 캡슐</CapsuleAEXP_Koala.label>
+  <CapsuleAEXP_Koala.description>배양된 코알라가 들어있는 캡슐입니다.</CapsuleAEXP_Koala.description>
+
+  <CapsuleAEXP_Platypus.label>오리너구리 캡슐</CapsuleAEXP_Platypus.label>
+  <CapsuleAEXP_Platypus.description>배양된 오리너구리가 들어있는 캡슐입니다.</CapsuleAEXP_Platypus.description>
+  
+  <CapsuleAEXP_Boombat.label>폭탄 웜뱃 캡슐</CapsuleAEXP_Boombat.label>
+  <CapsuleAEXP_Boombat.description>배양된 폭탄 웜뱃이 들어있는 캡슐입니다.</CapsuleAEXP_Boombat.description>
+  
+  <CapsuleAEXP_Kangaroo.label>캥거루 캡슐</CapsuleAEXP_Kangaroo.label>
+  <CapsuleAEXP_Kangaroo.description>배양된 캥거루가 들어있는 캡슐입니다.</CapsuleAEXP_Kangaroo.description>
+
+
+  <CapsuleAEXP_Lemur.label>여우원숭이 캡슐</CapsuleAEXP_Lemur.label>
+  <CapsuleAEXP_Lemur.description>배양된 여우원숭이가 들어있는 캡슐입니다.</CapsuleAEXP_Lemur.description>
+  
+  <CapsuleAEXP_Mandrill.label>개코원숭이 캡슐</CapsuleAEXP_Mandrill.label>
+  <CapsuleAEXP_Mandrill.description>배양된 개코원숭이가 들어있는 캡슐입니다.</CapsuleAEXP_Mandrill.description>
+  
+  <CapsuleAEXP_Tapir.label>맥 캡슐</CapsuleAEXP_Tapir.label>
+  <CapsuleAEXP_Tapir.description>배양된 맥이 들어있는 캡슐입니다.</CapsuleAEXP_Tapir.description>
+
+  <CapsuleAEXP_Jaguar.label>재규어 캡슐</CapsuleAEXP_Jaguar.label>
+  <CapsuleAEXP_Jaguar.description>배양된 재규어가 들어있는 캡슐입니다.</CapsuleAEXP_Jaguar.description>
+  
+  <CapsuleAEXP_Tiger.label>호랑이 캡슐</CapsuleAEXP_Tiger.label>
+  <CapsuleAEXP_Tiger.description>배양된 호랑이가 들어있는 캡슐입니다.</CapsuleAEXP_Tiger.description>
+  
+  <CapsuleAEXP_Gorilla.label>고릴라 캡슐</CapsuleAEXP_Gorilla.label>
+  <CapsuleAEXP_Gorilla.description>배양된 고릴라가 들어있는 캡슐입니다.</CapsuleAEXP_Gorilla.description>
+
+
+  <CapsuleAEXP_Chihuahua.label>치와와 캡슐</CapsuleAEXP_Chihuahua.label>
+  <CapsuleAEXP_Chihuahua.description>배양된 치와와가 들어있는 캡슐입니다.</CapsuleAEXP_Chihuahua.description>
+  
+  <CapsuleAEXP_Beagle.label>비글 캡슐</CapsuleAEXP_Beagle.label>
+  <CapsuleAEXP_Beagle.description>배양된 비글이 들어있는 캡슐입니다.</CapsuleAEXP_Beagle.description>  
+
+  <CapsuleAEXP_Pug.label>퍼그 캡슐</CapsuleAEXP_Pug.label>
+  <CapsuleAEXP_Pug.description>배양된 퍼그가 들어있는 캡슐입니다.</CapsuleAEXP_Pug.description>
+  
+  <CapsuleAEXP_Shih-Tzu.label>시츄 캡슐</CapsuleAEXP_Shih-Tzu.label>
+  <CapsuleAEXP_Shih-Tzu.description>배양된 시츄가 들어있는 캡슐입니다.</CapsuleAEXP_Shih-Tzu.description>  
+
+  <CapsuleAEXP_Corgi.label>코기 캡슐</CapsuleAEXP_Corgi.label>
+  <CapsuleAEXP_Corgi.description>배양된 코기가 들어있는 캡슐입니다.</CapsuleAEXP_Corgi.description>
+  
+  <CapsuleAEXP_FrenchBulldog.label>프렌치 불독 캡슐</CapsuleAEXP_FrenchBulldog.label>
+  <CapsuleAEXP_FrenchBulldog.description>배양된 프렌치 불독이 들어있는 캡슐입니다.</CapsuleAEXP_FrenchBulldog.description>  
+
+  <CapsuleAEXP_Poodle.label>푸들 캡슐</CapsuleAEXP_Poodle.label>
+  <CapsuleAEXP_Poodle.description>배양된 푸들이 들어있는 캡슐입니다.</CapsuleAEXP_Poodle.description>
+  
+  <CapsuleAEXP_Rottweiler.label>로트와일러 캡슐</CapsuleAEXP_Rottweiler.label>
+  <CapsuleAEXP_Rottweiler.description>배양된 로트와일러가 들어있는 캡슐입니다.</CapsuleAEXP_Rottweiler.description>  
+
+  <CapsuleAEXP_WelshTerrier.label>웰시 테리어 캡슐</CapsuleAEXP_WelshTerrier.label>
+  <CapsuleAEXP_WelshTerrier.description>배양된 웰시 테리어가 들어있는 캡슐입니다.</CapsuleAEXP_WelshTerrier.description>
+  
+  <CapsuleAEXP_GermanShepherd.label>저먼 셰퍼드 캡슐</CapsuleAEXP_GermanShepherd.label>
+  <CapsuleAEXP_GermanShepherd.description>배양된 저먼 셰퍼드가 들어있는 캡슐입니다.</CapsuleAEXP_GermanShepherd.description>  
+
+  <CapsuleAEXP_GreatDane.label>그레이트 데인 캡슐</CapsuleAEXP_GreatDane.label>
+  <CapsuleAEXP_GreatDane.description>배양된 그레이트 데인이 들어있는 캡슐입니다.</CapsuleAEXP_GreatDane.description>
+  
+  <CapsuleAEXP_CatAbyssinian.label>아비시니안 고양이 캡슐</CapsuleAEXP_CatAbyssinian.label>
+  <CapsuleAEXP_CatAbyssinian.description>배양된 아비시니안 고양이가 들어있는 캡슐입니다.</CapsuleAEXP_CatAbyssinian.description>  
+
+  <CapsuleAEXP_CatBengal.label>뱅갈 고양이 캡슐</CapsuleAEXP_CatBengal.label>
+  <CapsuleAEXP_CatBengal.description>배양된 뱅갈 고양이가 들어있는 캡슐입니다.</CapsuleAEXP_CatBengal.description>
+  
+  <CapsuleAEXP_CatBritishShorthair.label>브리티시 숏헤어 고양이 캡슐</CapsuleAEXP_CatBritishShorthair.label>
+  <CapsuleAEXP_CatBritishShorthair.description>배양된 브리티시 숏헤어 고양이가 들어있는 캡슐입니다.</CapsuleAEXP_CatBritishShorthair.description>  
+
+  <CapsuleAEXP_CatMunchkin.label>먼치킨 고양이 캡슐</CapsuleAEXP_CatMunchkin.label>
+  <CapsuleAEXP_CatMunchkin.description>배양된 먼치킨 고양이가 들어있는 캡슐입니다.</CapsuleAEXP_CatMunchkin.description>
+  
+  <CapsuleAEXP_CatPersian.label>페르시안 고양이 캡슐</CapsuleAEXP_CatPersian.label>
+  <CapsuleAEXP_CatPersian.description>배양된 페르시안 고양이가 들어있는 캡슐입니다.</CapsuleAEXP_CatPersian.description>  
+
+  <CapsuleAEXP_CatSiamese.label>샴 고양이 캡슐</CapsuleAEXP_CatSiamese.label>
+  <CapsuleAEXP_CatSiamese.description>배양된 샴 고양이가 들어있는 캡슐입니다.</CapsuleAEXP_CatSiamese.description>  
+
+  <CapsuleAEXP_CatSomali.label>소말리아 고양이 캡슐</CapsuleAEXP_CatSomali.label>
+  <CapsuleAEXP_CatSomali.description>배양된 소말리아 고양이가 들어있는 캡슐입니다.</CapsuleAEXP_CatSomali.description>
+  
+  <CapsuleAEXP_CatSphynx.label>스핑크스 고양이 캡슐</CapsuleAEXP_CatSphynx.label>
+  <CapsuleAEXP_CatSphynx.description>배양된 스핑크스 고양이가 들어있는 캡슐입니다.</CapsuleAEXP_CatSphynx.description>  
+
+  <CapsuleAEXP_CatNorwegianForest.label>노르웨이 숲 고양이 캡슐</CapsuleAEXP_CatNorwegianForest.label>
+  <CapsuleAEXP_CatNorwegianForest.description>배양된 노르웨이 숲 고양이가 들어있는 캡슐입니다.</CapsuleAEXP_CatNorwegianForest.description>
+  
+  <CapsuleAEXP_CatMaineCoon.label>메인쿤 고양이 캡슐</CapsuleAEXP_CatMaineCoon.label>
+  <CapsuleAEXP_CatMaineCoon.description>배양된 메인쿤 고양이가 들어있는 캡슐입니다.</CapsuleAEXP_CatMaineCoon.description>  
+
+
+  <CapsuleMeganeura.label>메가네우라 캡슐</CapsuleMeganeura.label>
+  <CapsuleMeganeura.description>배양된 메가네우라가 들어있는 캡슐입니다.</CapsuleMeganeura.description>  
+
+  <CapsulePulmonoscorpius.label>풀모노스콜피우스 캡슐</CapsulePulmonoscorpius.label>
+  <CapsulePulmonoscorpius.description>배양된 풀모노스콜피우스가 들어있는 캡슐입니다.</CapsulePulmonoscorpius.description>
+  
+  <CapsuleArthropleura.label>아트로플레우라 캡슐</CapsuleArthropleura.label>
+  <CapsuleArthropleura.description>배양된 아트로플레우라가 들어있는 캡슐입니다.</CapsuleArthropleura.description>  
+
+  <CapsuleCastoroides.label>카스토로이데스 캡슐</CapsuleCastoroides.label>
+  <CapsuleCastoroides.description>배양된 카스토로이데스가 들어있는 캡슐입니다.</CapsuleCastoroides.description>  
+
+  <CapsuleSmilodon.label>스밀로돈 캡슐</CapsuleSmilodon.label>
+  <CapsuleSmilodon.description>배양된 스밀로돈이 들어있는 캡슐입니다.</CapsuleSmilodon.description>  
+
+  <CapsuleDinopithecus.label>디노피테쿠스 캡슐</CapsuleDinopithecus.label>
+  <CapsuleDinopithecus.description>배양된 디노피테쿠스가 들어있는 캡슐입니다.</CapsuleDinopithecus.description>  
+
+  <CapsulePalaeeudyptes.label>필라에에우딥테스 캡슐</CapsulePalaeeudyptes.label>
+  <CapsulePalaeeudyptes.description>배양된 필라에에우딥테스가 들어있는 캡슐입니다.</CapsulePalaeeudyptes.description>  
+
+  <CapsuleEnhydriodon.label>수달 캡슐</CapsuleEnhydriodon.label>
+  <CapsuleEnhydriodon.description>배양된 수달이 들어있는 캡슐입니다.</CapsuleEnhydriodon.description>  
+
+  <CapsuleMegalania.label>메갈라니아 캡슐</CapsuleMegalania.label>
+  <CapsuleMegalania.description>배양된 메갈라니아가 들어있는 캡슐입니다.</CapsuleMegalania.description>  
+
+  <CapsuleProcoptodon.label>프롭코토돈 캡슐</CapsuleProcoptodon.label>
+  <CapsuleProcoptodon.description>배양된 프롭코토돈이 들어있는 캡슐입니다.</CapsuleProcoptodon.description>  
+
+  <CapsuleDoedicurus.label>도에디쿠루스 캡슐</CapsuleDoedicurus.label>
+  <CapsuleDoedicurus.description>배양된 도에디쿠루스가 들어있는 캡슐입니다.</CapsuleDoedicurus.description>  
+
+  <CapsuleDaeodon.label>다에오돈 캡슐</CapsuleDaeodon.label>
+  <CapsuleDaeodon.description>배양된 다에오돈이 들어있는 캡슐입니다.</CapsuleDaeodon.description>  
+
+  <CapsuleTitanis.label>티타니스 캡슐</CapsuleTitanis.label>
+  <CapsuleTitanis.description>배양된 티타니스가 들어있는 캡슐입니다.</CapsuleTitanis.description>  
+
+  <CapsuleAurochs.label>오록스 캡슐</CapsuleAurochs.label>
+  <CapsuleAurochs.description>배양된 오록스가 들어있는 캡슐입니다.</CapsuleAurochs.description>  
+
+  <CapsuleQuinkana.label>쿠인카나 캡슐</CapsuleQuinkana.label>
+  <CapsuleQuinkana.description>배양된 쿠인카나가 들어있는 캡슐입니다.</CapsuleQuinkana.description>  
+
+  <CapsuleDinocrocuta.label>디노크로쿠타 캡슐</CapsuleDinocrocuta.label>
+  <CapsuleDinocrocuta.description>배양된 디노크로쿠타가 들어있는 캡슐입니다.</CapsuleDinocrocuta.description>  
+
+  <CapsuleGigantopithecus.label>기간토피테쿠스 캡슐</CapsuleGigantopithecus.label>
+  <CapsuleGigantopithecus.description>배양된 기간토피테쿠스가 들어있는 캡슐입니다.</CapsuleGigantopithecus.description>  
+
+  <CapsuleMacrauchenia.label>마크라우케니아 캡슐</CapsuleMacrauchenia.label>
+  <CapsuleMacrauchenia.description>배양된 마크라우케니아가 들어있는 캡슐입니다.</CapsuleMacrauchenia.description>  
+
+  <CapsuleMegaloceros.label>메갈로세로스 캡슐</CapsuleMegaloceros.label>
+  <CapsuleMegaloceros.description>배양된 메갈로세로스가 들어있는 캡슐입니다.</CapsuleMegaloceros.description>  
+
+  <CapsuleChalicotherium.label>칼리코테리움 캡슐</CapsuleChalicotherium.label>
+  <CapsuleChalicotherium.description>배양된 칼리코테리움이 들어있는 캡슐입니다.</CapsuleChalicotherium.description>  
+
+  <CapsuleElasmotherium.label>엘라스모테리움 캡슐</CapsuleElasmotherium.label>
+  <CapsuleElasmotherium.description>배양된 엘라스모테리움이 들어있는 캡슐입니다.</CapsuleElasmotherium.description>  
+
+  <CapsuleJosephoartigasia.label>요제파오르티가시아 캡슐</CapsuleJosephoartigasia.label>
+  <CapsuleJosephoartigasia.description>배양된 요제파오르티가시아가 들어있는 캡슐입니다.</CapsuleJosephoartigasia.description>  
+
+  <CapsuleDiprotodon.label>디프로토돈 캡슐</CapsuleDiprotodon.label>
+  <CapsuleDiprotodon.description>배양된 디프로토돈이 들어있는 캡슐입니다.</CapsuleDiprotodon.description>  
+
+  <CapsuleShortfacedBear.label>짧은얼굴곰 캡슐</CapsuleShortfacedBear.label>
+  <CapsuleShortfacedBear.description>배양된 짧은얼굴곰이 들어있는 캡슐입니다.</CapsuleShortfacedBear.description>  
+
+  <CapsuleMegalochelys.label>메갈로켈리스 캡슐</CapsuleMegalochelys.label>
+  <CapsuleMegalochelys.description>배양된 메갈로켈리스가 들어있는 캡슐입니다.</CapsuleMegalochelys.description>  
+
+  <CapsulePlatybelodon.label>플라티벨로돈 캡슐</CapsulePlatybelodon.label>
+  <CapsulePlatybelodon.description>배양된 플라티벨로돈이 들어있는 캡슐입니다.</CapsulePlatybelodon.description>  
+
+  <CapsuleUintatherium.label>우인타테리움 캡슐</CapsuleUintatherium.label>
+  <CapsuleUintatherium.description>배양된 우인타테리움이 들어있는 캡슐입니다.</CapsuleUintatherium.description>  
+
+  <CapsuleDinornis.label>디노르니스 캡슐</CapsuleDinornis.label>
+  <CapsuleDinornis.description>배양된 디노르니스가 들어있는 캡슐입니다.</CapsuleDinornis.description>  
+
+  <CapsuleAndrewsarchus.label>앤드류사르쿠스 캡슐</CapsuleAndrewsarchus.label>
+  <CapsuleAndrewsarchus.description>배양된 앤드류사르쿠스가 들어있는 캡슐입니다.</CapsuleAndrewsarchus.description>  
+
+  <CapsuleGomphotaria.label>곰포타리아 캡슐</CapsuleGomphotaria.label>
+  <CapsuleGomphotaria.description>배양된 곰포타리아가 들어있는 캡슐입니다.</CapsuleGomphotaria.description>  
+
+  <CapsuleWoollyMammoth.label>털매머드 캡슐</CapsuleWoollyMammoth.label>
+  <CapsuleWoollyMammoth.description>배양된 털매머드가 들어있는 캡슐입니다.</CapsuleWoollyMammoth.description>  
+
+  <CapsuleZygolophodon.label>지골로포돈 캡슐</CapsuleZygolophodon.label>
+  <CapsuleZygolophodon.description>배양된 지골로포돈이 들어있는 캡슐입니다.</CapsuleZygolophodon.description>  
+
+  <CapsuleDeinotherium.label>데이노테리움 캡슐</CapsuleDeinotherium.label>
+  <CapsuleDeinotherium.description>배양된 데이노테리움이 들어있는 캡슐입니다.</CapsuleDeinotherium.description>  
+
+  <CapsuleSivatherium.label>시바테리움 캡슐</CapsuleSivatherium.label>
+  <CapsuleSivatherium.description>배양된 시바테리움이 들어있는 캡슐입니다.</CapsuleSivatherium.description>  
+
+  <CapsulePurussaurus.label>푸루스사우르스 캡슐</CapsulePurussaurus.label>
+  <CapsulePurussaurus.description>배양된 푸루스사우르스가 들어있는 캡슐입니다.</CapsulePurussaurus.description>  
+
+  <CapsuleGigantophis.label>기간토피스 캡슐</CapsuleGigantophis.label>
+  <CapsuleGigantophis.description>배양된 기간토피스가 들어있는 캡슐입니다.</CapsuleGigantophis.description>  
+
+  <CapsuleTitanoboa.label>티타노보아 캡슐</CapsuleTitanoboa.label>
+  <CapsuleTitanoboa.description>배양된 티타노보아가 들어있는 캡슐입니다.</CapsuleTitanoboa.description>  
+
+  <CapsuleParaceratherium.label>인드리코티어 캡슐</CapsuleParaceratherium.label>
+  <CapsuleParaceratherium.description>배양된 인드리코티어가 들어있는 캡슐입니다.</CapsuleParaceratherium.description>  
+
+
+  <CapsuleDryosaurus.label>드리오사우르스 캡슐</CapsuleDryosaurus.label>
+  <CapsuleDryosaurus.description>배양된 드리오사우르스가 들어있는 캡슐입니다.</CapsuleDryosaurus.description>  
+
+  <CapsuleStygimoloch.label>스티기몰로크 캡슐</CapsuleStygimoloch.label>
+  <CapsuleStygimoloch.description>배양된 스티기몰로크가 들어있는 캡슐입니다.</CapsuleStygimoloch.description>  
+
+  <CapsuleCompsognathus.label>콤프소그나투스 캡슐</CapsuleCompsognathus.label>
+  <CapsuleCompsognathus.description>배양된 콤프소그나투스가 들어있는 캡슐입니다.</CapsuleCompsognathus.description>  
+
+  <CapsuleProtoceratops.label>프로토케라톱스 캡슐</CapsuleProtoceratops.label>
+  <CapsuleProtoceratops.description>배양된 프로토케라톱스가 들어있는 캡슐입니다.</CapsuleProtoceratops.description>  
+
+  <CapsulePteranodon.label>프테라노돈 캡슐</CapsulePteranodon.label>
+  <CapsulePteranodon.description>배양된 프테라노돈이 들어있는 캡슐입니다.</CapsulePteranodon.description>  
+
+  <CapsulePachycephalosaurus.label>파키케팔로사우르스 캡슐</CapsulePachycephalosaurus.label>
+  <CapsulePachycephalosaurus.description>배양된 파키케팔로사우르스가 들어있는 캡슐입니다.</CapsulePachycephalosaurus.description>  
+
+  <CapsuleVelociraptor.label>벨로키랍토르 캡슐</CapsuleVelociraptor.label>
+  <CapsuleVelociraptor.description>배양된 벨로키랍토르가 들어있는 캡슐입니다.</CapsuleVelociraptor.description>  
+
+  <CapsuleGallimimus.label>갈리미무스 캡슐</CapsuleGallimimus.label>
+  <CapsuleGallimimus.description>배양된 갈리미무스가 들어있는 캡슐입니다.</CapsuleGallimimus.description>  
+
+  <CapsuleGigantoraptor.label>기간토랍토르 캡슐</CapsuleGigantoraptor.label>
+  <CapsuleGigantoraptor.description>배양된 기간토랍토르가 들어있는 캡슐입니다.</CapsuleGigantoraptor.description>  
+
+  <CapsuleIguanodon.label>이구아나돈 캡슐</CapsuleIguanodon.label>
+  <CapsuleIguanodon.description>배양된 이구아나돈이 들어있는 캡슐입니다.</CapsuleIguanodon.description>  
+  
+  <CapsuleParasaur.label>파라사우르스 캡슐</CapsuleParasaur.label>
+  <CapsuleParasaur.description>배양된 파라사우르스가 들어있는 캡슐입니다.</CapsuleParasaur.description>  
+
+  <CapsuleCorythosaurus.label>코리토사우르스 캡슐</CapsuleCorythosaurus.label>
+  <CapsuleCorythosaurus.description>배양된 코리토사우르스가 들어있는 캡슐입니다.</CapsuleCorythosaurus.description>  
+
+  <CapsuleDeinocheirus.label>데이노케리루스 캡슐</CapsuleDeinocheirus.label>
+  <CapsuleDeinocheirus.description>배양된 데이노케리루스가 들어있는 캡슐입니다.</CapsuleDeinocheirus.description>  
+
+  <CapsuleTherizinosaurus.label>테리지노사우르스 캡슐</CapsuleTherizinosaurus.label>
+  <CapsuleTherizinosaurus.description>배양된 테리지노사우르스가 들어있는 캡슐입니다.</CapsuleTherizinosaurus.description>  
+
+  <CapsuleMinmi.label>민미 캡슐</CapsuleMinmi.label>
+  <CapsuleMinmi.description>배양된 민미가 들어있는 캡슐입니다.</CapsuleMinmi.description>  
+
+  <CapsuleUtahraptor.label>유타랍토르 캡슐</CapsuleUtahraptor.label>
+  <CapsuleUtahraptor.description>배양된 유타랍토르가 들어있는 캡슐입니다.</CapsuleUtahraptor.description>  
+
+  <CapsuleDakotaraptor.label>다코타랍토르 캡슐</CapsuleDakotaraptor.label>
+  <CapsuleDakotaraptor.description>배양된 다코타랍토르가 들어있는 캡슐입니다.</CapsuleDakotaraptor.description>  
+
+  <CapsuleDilophosaurus.label>딜로포사우르스 캡슐</CapsuleDilophosaurus.label>
+  <CapsuleDilophosaurus.description>배양된 딜로포사우르스가 들어있는 캡슐입니다.</CapsuleDilophosaurus.description>  
+
+  <CapsuleQuetzalcoatlus.label>케찰코아틀루스 캡슐</CapsuleQuetzalcoatlus.label>
+  <CapsuleQuetzalcoatlus.description>배양된 케찰코아틀루스가 들어있는 캡슐입니다.</CapsuleQuetzalcoatlus.description>  
+
+  <CapsuleMagyarosaurus.label>마기아로사우르스 캡슐</CapsuleMagyarosaurus.label>
+  <CapsuleMagyarosaurus.description>배양된 마기아로사우르스가 들어있는 캡슐입니다.</CapsuleMagyarosaurus.description>    
+
+  <CapsuleStegosaurus.label>스테고사우르스 캡슐</CapsuleStegosaurus.label>
+  <CapsuleStegosaurus.description>배양된 스테고사우르스가 들어있는 캡슐입니다.</CapsuleStegosaurus.description>  
+
+  <CapsuleAnkylosaurus.label>안킬로사우르스 캡슐</CapsuleAnkylosaurus.label>
+  <CapsuleAnkylosaurus.description>배양된 안킬로사우르스가 들어있는 캡슐입니다.</CapsuleAnkylosaurus.description>  
+
+  <CapsuleCarnotaurus.label>카르노타우르스 캡슐</CapsuleCarnotaurus.label>
+  <CapsuleCarnotaurus.description>배양된 카르노타우르스가 들어있는 캡슐입니다.</CapsuleCarnotaurus.description>  
+
+  <CapsuleAllosaurus.label>알로사우르스 캡슐</CapsuleAllosaurus.label>
+  <CapsuleAllosaurus.description>배양된 알로사우르스가 들어있는 캡슐입니다.</CapsuleAllosaurus.description>  
+
+  <CapsuleTriceratops.label>트리케라톱스 캡슐</CapsuleTriceratops.label>
+  <CapsuleTriceratops.description>배양된 트리케라톱스가 들어있는 캡슐입니다.</CapsuleTriceratops.description>  
+
+  <CapsuleYutyrannus.label>유티라누스 캡슐</CapsuleYutyrannus.label>
+  <CapsuleYutyrannus.description>배양된 유티라누스가 들어있는 캡슐입니다.</CapsuleYutyrannus.description>  
+
+  <CapsuleBaryonyx.label>바리오닉스 캡슐</CapsuleBaryonyx.label>
+  <CapsuleBaryonyx.description>배양된 바리오닉스가 들어있는 캡슐입니다.</CapsuleBaryonyx.description>  
+
+  <CapsuleTyrannosaurusRex.label>티라노사우르스 렉스 캡슐</CapsuleTyrannosaurusRex.label>
+  <CapsuleTyrannosaurusRex.description>배양된 티라노사우르스 렉스가 들어있는 캡슐입니다.</CapsuleTyrannosaurusRex.description>  
+
+  <CapsuleSpinosaurus.label>스피노사우르스 캡슐</CapsuleSpinosaurus.label>
+  <CapsuleSpinosaurus.description>배양된 스피노사우르스가 들어있는 캡슐입니다.</CapsuleSpinosaurus.description>  
+
+  <CapsuleDiplodocus.label>디플로도쿠스 캡슐</CapsuleDiplodocus.label>
+  <CapsuleDiplodocus.description>배양된 디플로도쿠스가 들어있는 캡슐입니다.</CapsuleDiplodocus.description>  
+
+  <CapsuleBrontosaurus.label>브론토사우르스 캡슐</CapsuleBrontosaurus.label>
+  <CapsuleBrontosaurus.description>배양된 브론토사우르스가 들어있는 캡슐입니다.</CapsuleBrontosaurus.description>  
+
+  <CapsuleBrachiosaurus.label>브라키오사우르스 캡슐</CapsuleBrachiosaurus.label>
+  <CapsuleBrachiosaurus.description>배양된 브라키오사우르스가 들어있는 캡슐입니다.</CapsuleBrachiosaurus.description>  
+
+  <CapsuleGallatross.label>갈라트로스 캡슐</CapsuleGallatross.label>
+  <CapsuleGallatross.description>배양된 갈라트로스가 들어있는 캡슐입니다.</CapsuleGallatross.description>  
+
+  <CapsuleTarGuzzler.label>타르 거즐러 캡슐</CapsuleTarGuzzler.label>
+  <CapsuleTarGuzzler.description>배양된 타르 거즐러가 들어있는 캡슐입니다.</CapsuleTarGuzzler.description>  
+
+  <CapsuleTeratogenicOriginator.label>기형 생명공학체 캡슐</CapsuleTeratogenicOriginator.label>
+  <CapsuleTeratogenicOriginator.description>배양된 기형 생명공학체가 들어있는 캡슐입니다.</CapsuleTeratogenicOriginator.description>  
+
+
+
+
+  <CapsuleMegascarab.label>메가스케럽 캡슐</CapsuleMegascarab.label>
+  <CapsuleMegascarab.description>배양된 메가스케럽이 들어있는 캡슐입니다.</CapsuleMegascarab.description>
+  
+  <CapsuleSpelopede.label>스펠로피드 캡슐</CapsuleSpelopede.label>
+  <CapsuleSpelopede.description>배양된 스펠로피드가 들어있는 캡슐입니다.</CapsuleSpelopede.description>
+
+  <CapsuleMegaspider.label>메가스파이더 캡슐</CapsuleMegaspider.label>
+  <CapsuleMegaspider.description>배양된 메가스파이더가 들어있는 캡슐입니다.</CapsuleMegaspider.description>  
+ 
+</LanguageData>

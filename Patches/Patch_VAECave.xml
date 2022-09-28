@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Caves</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>			
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+                   <ResearchProjectDef>
+                    <defName>Biotechnology_Reasearch_Cave</defName>
+                    <label>cave creatures</label>
+                    <tab>Biotechnology_Tab</tab>
+                    <techLevel>Spacer</techLevel>
+                    <description>Learn how to culture cave creatures.</description>
+                    <baseCost>6000</baseCost>
+                    <prerequisites>
+                    <li>Biotechnology_Reasearch_Insectoids</li>
+                    </prerequisites>
+                    <requiredResearchBuilding>Biotechnology_ResearchBench</requiredResearchBuilding>
+		            <researchViewX>2.00</researchViewX>
+		            <researchViewY>1.40</researchViewY>
+                    </ResearchProjectDef> 
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+                   <ThingDef ParentName="BioSmallBenchBase">
+                   <defName>Biotechnology_CaveLab</defName>
+                   <label>cave creatures lab</label>
+                   <description>A laboratory capable of culture cave creatures.</description>
+                   <graphicData>
+			       <texPath>Things/Buildings/BioCaveLab</texPath>
+                   </graphicData>
+                   <researchPrerequisites>
+                   <li>Biotechnology_Reasearch_Cave</li>
+                   </researchPrerequisites>
+                   </ThingDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+                   <WorkGiverDef>
+                   <defName>DoBillsCaveLab</defName>
+                   <label>do bills at cave creatures lab</label>
+                   <giverClass>WorkGiver_DoBill</giverClass>
+                   <workType>Smithing</workType>
+                   <priorityInType>75</priorityInType>
+                   <fixedBillGiverDefs>
+                   <li>Biotechnology_CaveLab</li>
+                   </fixedBillGiverDefs>
+                   <verb>work</verb>
+                   <gerund>working at</gerund>
+                   <requiredCapacities>
+                   <li>Manipulation</li>
+                   </requiredCapacities>
+                   <prioritizeSustains>true</prioritizeSustains>
+                   </WorkGiverDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingCategoryDef>
+				<defName>BiotechnologyCategory_Cave</defName>
+				<label>cave creatures animals</label>
+				<parent>BiotechnologyCategory_Main</parent>
+				</ThingCategoryDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef Abstract="True" Name="BioCultureCave" ParentName="BioCultureBase" >
+				<thingCategories>
+				<li>BiotechnologyCategory_Cave</li>
+				</thingCategories>
+				</ThingDef>  
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef Abstract="True" Name="BioRecipeCave" ParentName="BioRecipe">
+				<recipeUsers><li>Biotechnology_CaveLab</li></recipeUsers>
+				 <skillRequirements>
+				<Intellectual>10</Intellectual>
+				</skillRequirements>	
+				</RecipeDef> 
+				</value>
+			</li>			
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureCave">
+				<defName>CapsuleVAECaves_BlindSalamander</defName>
+				<label>blind salamander capsule</label>
+				<description>A capsule containing cultured blind salamander.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+				<hatcherPawn>VAECaves_BlindSalamander</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>100</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeCave">
+				<defName>Make_CapsuleVAECaves_BlindSalamander</defName>
+				<label>make cultured blind salamander.</label>
+				<description>Make a cultured blind salamander.</description>
+				<workAmount>3000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Meat_Megaspider</li>
+				</thingDefs>
+				</filter>
+				<count>30.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleVAECaves_BlindSalamander>1</CapsuleVAECaves_BlindSalamander>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureCave">
+				<defName>CapsuleVAECaves_GiantSpiderHatchling</defName>
+				<label>giant spider hatchling capsule</label>
+				<description>A capsule containing cultured giant spider hatchling.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+				<hatcherPawn>VAECaves_GiantSpiderHatchling</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>100</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeCave">
+				<defName>Make_CapsuleVAECaves_GiantSpiderHatchling</defName>
+				<label>make cultured giant spider hatchling.</label>
+				<description>Make a cultured giant spider hatchling.</description>
+				<workAmount>3000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Meat_Megaspider</li>
+				</thingDefs>
+				</filter>
+				<count>30.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleVAECaves_GiantSpiderHatchling>1</CapsuleVAECaves_GiantSpiderHatchling>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureCave">
+				<defName>CapsuleVAECaves_Wyrm</defName>
+				<label>wyrm capsule</label>
+				<description>A capsule containing cultured wyrm.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10.00</hatcherDaystoHatch>
+				<hatcherPawn>VAECaves_Wyrm</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>900</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeCave">
+				<defName>Make_CapsuleVAECaves_Wyrm</defName>
+				<label>make cultured wyrm.</label>
+				<description>Make a cultured wyrm.</description>
+				<workAmount>16000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Meat_Megaspider</li>
+				</thingDefs>
+				</filter>
+				<count>350.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>5</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleVAECaves_Wyrm>1</CapsuleVAECaves_Wyrm>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureCave">
+				<defName>CapsuleVAECaves_CaveBear</defName>
+				<label>cave bear capsule</label>
+				<description>A capsule containing cultured cave bear.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>12.00</hatcherDaystoHatch>
+				<hatcherPawn>VAECaves_Wyrm</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>1000</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeCave">
+				<defName>Make_CapsuleVAECaves_CaveBear</defName>
+				<label>make cultured cave bear.</label>
+				<description>Make a cultured cave bear.</description>
+				<workAmount>18000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Meat_Megaspider</li>
+				</thingDefs>
+				</filter>
+				<count>400.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>6</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleVAECaves_CaveBear>1</CapsuleVAECaves_CaveBear>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+			</operations>
+		</match>
+		
+	</Operation>
+
+
+	
+</Patch>
