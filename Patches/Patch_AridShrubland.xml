@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Arid Shrubland</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>			
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureMedium">
+				<defName>CapsuleAEXP_Coyote</defName>
+				<label>coyote capsule</label>
+				<description>A capsule containing cultured coyote.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Coyote</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>300</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeMedium">
+				<defName>Make_CapsuleAEXP_Coyote</defName>
+				<label>make cultured coyote.</label>
+				<description>Make a cultured coyote.</description>
+				<workAmount>9000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>110.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Coyote>1</CapsuleAEXP_Coyote>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureMedium">
+				<defName>CapsuleAEXP_Crocodile</defName>
+				<label>crocodile capsule</label>
+				<description>A capsule containing cultured crocodile.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>8.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Crocodile</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>550</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeMedium">
+				<defName>Make_CapsuleAEXP_Crocodile</defName>
+				<label>make cultured crocodile.</label>
+				<description>Make a cultured crocodile.</description>
+				<workAmount>13000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>200.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Crocodile>1</CapsuleAEXP_Crocodile>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureMedium">
+				<defName>CapsuleAEXP_Zebra</defName>
+				<label>zebra capsule</label>
+				<description>A capsule containing cultured zebra.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>9.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Zebra</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>800</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeMedium">
+				<defName>Make_CapsuleAEXP_Zebra</defName>
+				<label>make cultured zebra.</label>
+				<description>Make a cultured zebra.</description>
+				<workAmount>15000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>300.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>3</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Zebra>1</CapsuleAEXP_Zebra>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureMedium">
+				<defName>CapsuleAEXP_Cheetah</defName>
+				<label>cheetah capsule</label>
+				<description>A capsule containing cultured cheetah.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Cheetah</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>400</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeMedium">
+				<defName>Make_CapsuleAEXP_Cheetah</defName>
+				<label>make cultured cheetah.</label>
+				<description>Make a cultured cheetah.</description>
+				<workAmount>12000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>150.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Cheetah>1</CapsuleAEXP_Cheetah>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+
+
+
+
+
+
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureLarge">
+				<defName>CapsuleAEXP_Wildebeest</defName>
+				<label>wildebeest capsule</label>
+				<description>A capsule containing cultured wildebeest.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Wildebeest</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>850</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeLarge">
+				<defName>Make_CapsuleAEXP_Wildebeest</defName>
+				<label>make cultured wildebeest.</label>
+				<description>Make a cultured wildebeest.</description>
+				<workAmount>15000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>330.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>3</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Wildebeest>1</CapsuleAEXP_Wildebeest>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureLarge">
+				<defName>CapsuleAEXP_Giraffe</defName>
+				<label>indian giraffe capsule</label>
+				<description>A capsule containing cultured indian giraffe.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>15.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Giraffe</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>1500</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeLarge">
+				<defName>Make_CapsuleAEXP_Giraffe</defName>
+				<label>make cultured indian giraffe.</label>
+				<description>Make a cultured indian giraffe.</description>
+				<workAmount>21000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>600.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>5</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Giraffe>1</CapsuleAEXP_Giraffe>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureLarge">
+				<defName>CapsuleAEXP_Hippopotamus</defName>
+				<label>indian hippopotamus capsule</label>
+				<description>A capsule containing cultured indian hippopotamus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>15.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Hippopotamus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>1500</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeLarge">
+				<defName>Make_CapsuleAEXP_Hippopotamus</defName>
+				<label>make cultured indian hippopotamus.</label>
+				<description>Make a cultured indian hippopotamus.</description>
+				<workAmount>21000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>600.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>5</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Hippopotamus>1</CapsuleAEXP_Hippopotamus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+
+
+
+
+
+
+	
+			</operations>
+		</match>
+		
+	</Operation>
+
+
+	
+</Patch>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <Biotechnology_Reasearch.label>생명공학</Biotechnology_Reasearch.label>
+  <Biotechnology_Reasearch.description>동물의 배양법을 연구하기 위한 연구 작업대를 만들 수 있습니다.</Biotechnology_Reasearch.description>
+
+  <Biotechnology_Reasearch_Small.label>소형 동물</Biotechnology_Reasearch_Small.label>
+  <Biotechnology_Reasearch_Small.description>소형 동물의 배양법을 연구합니다.</Biotechnology_Reasearch_Small.description>
+
+  <Biotechnology_Reasearch_Medium.label>중형 동물</Biotechnology_Reasearch_Medium.label>
+  <Biotechnology_Reasearch_Medium.description>중형 동물의 배양법을 연구합니다.</Biotechnology_Reasearch_Medium.description>
+
+  <Biotechnology_Reasearch_Large.label>대형 동물</Biotechnology_Reasearch_Large.label>
+  <Biotechnology_Reasearch_Large.description>대형 동물의 배양법을 연구합니다.</Biotechnology_Reasearch_Large.description>
+
+  <Biotechnology_Reasearch_Special.label>희귀 동물</Biotechnology_Reasearch_Special.label>
+  <Biotechnology_Reasearch_Special.description>트럼보와 같이 희귀하고 특별한 동물의 배양법을 연구합니다.</Biotechnology_Reasearch_Special.description>
+
+  <Biotechnology_Reasearch_Pet.label>반려동물</Biotechnology_Reasearch_Pet.label>
+  <Biotechnology_Reasearch_Pet.description>귀여운 반려동물의 배양법을 연구합니다.</Biotechnology_Reasearch_Pet.description>
+
+  <Biotechnology_Reasearch_Dinosaurs.label>공룡</Biotechnology_Reasearch_Dinosaurs.label>
+  <Biotechnology_Reasearch_Dinosaurs.description>공룡의 배양법을 연구합니다.</Biotechnology_Reasearch_Dinosaurs.description>
+
+  <Biotechnology_Reasearch_Ancient.label>고대 생물</Biotechnology_Reasearch_Ancient.label>
+  <Biotechnology_Reasearch_Ancient.description>고대 생물의 배양법을 연구합니다.</Biotechnology_Reasearch_Ancient.description>
+
+  <Biotechnology_Reasearch_Insectoids.label>곤충류</Biotechnology_Reasearch_Insectoids.label>
+  <Biotechnology_Reasearch_Insectoids.description>곤충류의 배양법을 연구합니다.</Biotechnology_Reasearch_Insectoids.description>
+
+  <Biotechnology_Reasearch_Cave.label>동굴 생물</Biotechnology_Reasearch_Cave.label>
+  <Biotechnology_Reasearch_Cave.description>동굴 생물의 배양법을 연구합니다.</Biotechnology_Reasearch_Cave.description>
+ 
+  <Biotechnology_Reasearch_Alpha.label>외계 생명체</Biotechnology_Reasearch_Alpha.label>
+  <Biotechnology_Reasearch_Alpha.description>외계 생명체의 배양법을 연구합니다.</Biotechnology_Reasearch_Alpha.description>
+  
+</LanguageData>

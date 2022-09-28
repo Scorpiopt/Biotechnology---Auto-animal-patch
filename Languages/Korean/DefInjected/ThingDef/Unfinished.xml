@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <UnfinishedBioCapsule.label>미완성 캡슐</UnfinishedBioCapsule.label>
+  <UnfinishedBioCapsule.description>미완성된 캡슐입니다.</UnfinishedBioCapsule.description>
+  
+  <UnfinishedCultureMedium.label>배지</UnfinishedCultureMedium.label>
+  <UnfinishedCultureMedium.description>배양 중인 세포입니다.</UnfinishedCultureMedium.description>
+  
+</LanguageData>

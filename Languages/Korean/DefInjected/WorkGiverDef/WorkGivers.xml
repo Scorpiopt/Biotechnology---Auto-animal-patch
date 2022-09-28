@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <DoBillsSmallLab.label>제작</DoBillsSmallLab.label>
+  <DoBillsSmallLab.verb>제작</DoBillsSmallLab.verb>
+  <DoBillsSmallLab.gerund>제작</DoBillsSmallLab.gerund>
+
+  <DoBillsMediumLab.label>제작</DoBillsMediumLab.label>
+  <DoBillsMediumLab.verb>제작</DoBillsMediumLab.verb>
+  <DoBillsMediumLab.gerund>제작</DoBillsMediumLab.gerund>
+
+  <DoBillsLargeLab.label>제작</DoBillsLargeLab.label>
+  <DoBillsLargeLab.verb>제작</DoBillsLargeLab.verb>
+  <DoBillsLargeLab.gerund>제작</DoBillsLargeLab.gerund>
+
+  <DoBillsSpecialLab.label>제작</DoBillsSpecialLab.label>
+  <DoBillsSpecialLab.verb>제작</DoBillsSpecialLab.verb>
+  <DoBillsSpecialLab.gerund>제작</DoBillsSpecialLab.gerund>
+
+  <DoBillsPetLab.label>제작</DoBillsPetLab.label>
+  <DoBillsPetLab.verb>제작</DoBillsPetLab.verb>
+  <DoBillsPetLab.gerund>제작</DoBillsPetLab.gerund>
+
+  <DoBillsInsectoidLab.label>제작</DoBillsInsectoidLab.label>
+  <DoBillsInsectoidLab.verb>제작</DoBillsInsectoidLab.verb>
+  <DoBillsInsectoidLab.gerund>제작</DoBillsInsectoidLab.gerund>
+
+  <DoBillsDinosaursLab.label>제작</DoBillsDinosaursLab.label>
+  <DoBillsDinosaursLab.verb>제작</DoBillsDinosaursLab.verb>
+  <DoBillsDinosaursLab.gerund>제작</DoBillsDinosaursLab.gerund>
+
+  <DoBillsAncientLab.label>제작</DoBillsAncientLab.label>
+  <DoBillsAncientLab.verb>제작</DoBillsAncientLab.verb>
+  <DoBillsAncientLab.gerund>제작</DoBillsAncientLab.gerund>
+
+  <DoBillsCaveLab.label>제작</DoBillsCaveLab.label>
+  <DoBillsCaveLab.verb>제작</DoBillsCaveLab.verb>
+  <DoBillsCaveLab.gerund>제작</DoBillsCaveLab.gerund>  
+  
+</LanguageData>

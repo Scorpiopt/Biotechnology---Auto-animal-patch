@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <Biotechnology_ResearchBench.label>생명공학 연구 작업대</Biotechnology_ResearchBench.label>
+  <Biotechnology_ResearchBench.description>다양한 동물의 배양법을 연구할 수 있는 첨단 벤치입니다. 생명공학과 관련된 모든 연구를 할 수 있습니다.</Biotechnology_ResearchBench.description>
+
+  <Biotechnology_DNAHologram.label>DNA 지도</Biotechnology_DNAHologram.label>
+  <Biotechnology_DNAHologram.description>생명공학 연구와 작업의 효율을 올려줍니다. 생명공학 건물 근처에 배치되어야 합니다.</Biotechnology_DNAHologram.description>
+
+  <Biotechnology_Incubator.label>인큐베이터</Biotechnology_Incubator.label>
+  <Biotechnology_Incubator.description>배양 중인 동물을 보관할 수 있는 인큐베이터입니다.</Biotechnology_Incubator.description>
+
+  <Biotechnology_SmallLab.label>소형 동물 연구대</Biotechnology_SmallLab.label>
+  <Biotechnology_SmallLab.description>소형 동물을 배양할 수 있는 연구대입니다.</Biotechnology_SmallLab.description>
+
+  <Biotechnology_MediumLab.label>중형 동물 연구대</Biotechnology_MediumLab.label>
+  <Biotechnology_MediumLab.description>중형 동물을 배양할 수 있는 연구대입니다.</Biotechnology_MediumLab.description>
+
+  <Biotechnology_LargeLab.label>대형 동물 연구대</Biotechnology_LargeLab.label>
+  <Biotechnology_LargeLab.description>대형 동물을 배양할 수 있는 연구대입니다.</Biotechnology_LargeLab.description>
+
+  <Biotechnology_SpecialLab.label>희귀 동물 연구대</Biotechnology_SpecialLab.label>
+  <Biotechnology_SpecialLab.description>트럼보와 같은 희귀한 동물을 배양할 수 있는 연구대입니다.</Biotechnology_SpecialLab.description>
+
+  <Biotechnology_PetLab.label>반려동물 연구대</Biotechnology_PetLab.label>
+  <Biotechnology_PetLab.description>귀여운 개와 고양이를 배양할 수 있는 연구대입니다.</Biotechnology_PetLab.description>
+
+  <Biotechnology_InsectoidsLab.label>곤충류 연구대</Biotechnology_InsectoidsLab.label>
+  <Biotechnology_InsectoidsLab.description>곤충류를 배양할 수 있는 연구대입니다.</Biotechnology_InsectoidsLab.description>
+
+  <Biotechnology_DinosaursLab.label>공룡 연구대</Biotechnology_DinosaursLab.label>
+  <Biotechnology_DinosaursLab.description>공룡을 배양할 수 있는 연구대입니다.</Biotechnology_DinosaursLab.description>
+
+  <Biotechnology_AncientLab.label>고대 생물 연구대</Biotechnology_AncientLab.label>
+  <Biotechnology_AncientLab.description>고대 생물을 배양할 수 있는 연구대입니다.</Biotechnology_AncientLab.description>
+
+  <Biotechnology_CaveLab.label>동굴 생물 연구대</Biotechnology_CaveLab.label>
+  <Biotechnology_CaveLab.description>동굴 생물을 배양할 수 있는 연구대입니다.</Biotechnology_CaveLab.description>
+
+  <Biotechnology_AlphaLab.label>외계 생명체 연구대</Biotechnology_AlphaLab.label>
+  <Biotechnology_AlphaLab.description>외계 생명체를 배양할 수 있는 연구대입니다.</Biotechnology_AlphaLab.description>
+  
+</LanguageData>

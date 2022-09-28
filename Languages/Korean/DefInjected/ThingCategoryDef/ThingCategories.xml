@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BiotechnologyCategory_Main.label>캡슐</BiotechnologyCategory_Main.label>
+  <BiotechnologyCategory_Small.label>소형 동물</BiotechnologyCategory_Small.label>
+  <BiotechnologyCategory_Medium.label>중형 동물</BiotechnologyCategory_Medium.label>
+  <BiotechnologyCategory_Large.label>대형 동물</BiotechnologyCategory_Large.label>
+  <BiotechnologyCategory_Special.label>희귀 동물</BiotechnologyCategory_Special.label>
+  <BiotechnologyCategory_Pet.label>반려동물</BiotechnologyCategory_Pet.label>
+  <BiotechnologyCategory_Insectoid.label>곤충류</BiotechnologyCategory_Insectoid.label>
+  <BiotechnologyCategory_Cave.label>동굴 생물</BiotechnologyCategory_Cave.label>
+  <BiotechnologyCategory_Ancient.label>고대 생물</BiotechnologyCategory_Ancient.label>
+  <BiotechnologyCategory_Dinosaur.label>공룡</BiotechnologyCategory_Dinosaur.label>
+  <BiotechnologyCategory_Aplha.label>외계 생명체</BiotechnologyCategory_Aplha.label>
+ 
+</LanguageData>

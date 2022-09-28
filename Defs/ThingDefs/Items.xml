@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+  <ThingDef ParentName="ResourceBase">
+    <defName>EmptyCapsule</defName>
+    <label>empty capsule</label>
+    <description>A capsule that can contain cultured cells.</description>
+    <graphicData>
+      <texPath>Things/Item/finishcapsule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>100</MarketValue>
+      <Mass>1</Mass>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>10</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>BiotechnologyCategory_Main</li>
+    </thingCategories>
+  </ThingDef>
+
+ <ThingDef Abstract="True" Name="BioCultureBase" ParentName="OrganicProductBase" >
+    <graphicData>
+      <texPath>Things/Item/finishcapsule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>	
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>10</DeteriorationRate>
+    </statBases>	
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <comps>
+      <li Class="CompProperties_TemperatureRuinable">
+        <minSafeTemperature>-25</minSafeTemperature>
+        <maxSafeTemperature>40</maxSafeTemperature>
+        <progressPerDegreePerTick>0.00005</progressPerDegreePerTick>
+      </li>
+    </comps>	
+    <stackLimit>1</stackLimit>		
+  </ThingDef>
+
+  <ThingDef Abstract="True" Name="BioCultureSmall" ParentName="BioCultureBase" >
+    <thingCategories>
+      <li>BiotechnologyCategory_Small</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef Abstract="True" Name="BioCultureMedium" ParentName="BioCultureBase" >
+    <thingCategories>
+      <li>BiotechnologyCategory_Medium</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef Abstract="True" Name="BioCultureLarge" ParentName="BioCultureBase" >
+    <thingCategories>
+      <li>BiotechnologyCategory_Large</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef Abstract="True" Name="BioCultureSpecial" ParentName="BioCultureBase" >
+    <thingCategories>
+      <li>BiotechnologyCategory_Special</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef Abstract="True" Name="BioCulturePet" ParentName="BioCultureBase" >
+    <thingCategories>
+      <li>BiotechnologyCategory_Pet</li>
+    </thingCategories>
+  </ThingDef>  
+ 
+  <ThingDef Abstract="True" Name="BioCultureInsectoid" ParentName="BioCultureBase" >
+    <thingCategories>
+      <li>BiotechnologyCategory_Insectoid</li>
+    </thingCategories>
+  </ThingDef>  
+
+
+
+
+
+
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleRat</defName>
+    <label>rat capsule</label>
+    <description>A capsule containing cultured rat.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+        <hatcherPawn>Rat</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>150</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleSquirrel</defName>
+    <label>squirrel capsule</label>
+    <description>A capsule containing cultured squirrel.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+        <hatcherPawn>Squirrel</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>150</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+ 
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleChinchilla</defName>
+    <label>chinchilla capsule</label>
+    <description>A capsule containing cultured chinchilla.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.00</hatcherDaystoHatch>
+        <hatcherPawn>Chinchilla</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>200</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleBoomrat</defName>
+    <label>boomrat capsule</label>
+    <description>A capsule containing cultured boomrat.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+        <hatcherPawn>Boomrat</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>150</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleGuineaPig</defName>
+    <label>guinea pig capsule</label>
+    <description>A capsule containing cultured guinea pig.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+        <hatcherPawn>GuineaPig</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>150</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleHare</defName>
+    <label>hare capsule</label>
+    <description>A capsule containing cultured hare.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+        <hatcherPawn>Hare</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>150</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleSnowhare</defName>
+    <label>snowhare capsule</label>
+    <description>A capsule containing cultured snowhare.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+        <hatcherPawn>Snowhare</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>150</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleRaccoon</defName>
+    <label>raccoon capsule</label>
+    <description>A capsule containing cultured raccoon.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.00</hatcherDaystoHatch>
+        <hatcherPawn>Raccoon</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>220</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleAlphabeaver</defName>
+    <label>alphabeaver capsule</label>
+    <description>A capsule containing cultured alphabeaver.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.00</hatcherDaystoHatch>
+        <hatcherPawn>Alphabeaver</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>220</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+  
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleDuck</defName>
+    <label>duck capsule</label>
+    <description>A capsule containing cultured duck.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+        <hatcherPawn>Duck</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>180</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleChicken</defName>
+    <label>chicken capsule</label>
+    <description>A capsule containing cultured chicken.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+        <hatcherPawn>Chicken</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>180</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleEmu</defName>
+    <label>emu capsule</label>
+    <description>A capsule containing cultured emu.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.50</hatcherDaystoHatch>
+        <hatcherPawn>Emu</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>250</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+  
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleGoose</defName>
+    <label>goose capsule</label>
+    <description>A capsule containing cultured goose.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.50</hatcherDaystoHatch>
+        <hatcherPawn>Goose</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>250</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+  
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleTurkey</defName>
+    <label>turkey capsule</label>
+    <description>A capsule containing cultured turkey.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.50</hatcherDaystoHatch>
+        <hatcherPawn>Turkey</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>250</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+  
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleCassowary</defName>
+    <label>cassowary capsule</label>
+    <description>A capsule containing cultured cassowary.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.50</hatcherDaystoHatch>
+        <hatcherPawn>Cassowary</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>250</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleIguana</defName>
+    <label>iguana capsule</label>
+    <description>A capsule containing cultured iguana.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.00</hatcherDaystoHatch>
+        <hatcherPawn>Iguana</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>220</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleCobra</defName>
+    <label>cobra capsule</label>
+    <description>A capsule containing cultured cobra.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.00</hatcherDaystoHatch>
+        <hatcherPawn>Cobra</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>220</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+  
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleTortoise</defName>
+    <label>tortoise capsule</label>
+    <description>A capsule containing cultured tortoise.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.00</hatcherDaystoHatch>
+        <hatcherPawn>Tortoise</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>220</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+ 
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleMonkey</defName>
+    <label>monkey capsule</label>
+    <description>A capsule containing cultured monkey.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.00</hatcherDaystoHatch>
+        <hatcherPawn>Monkey</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>220</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+  
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleFox_Fennec</defName>
+    <label>fennec fox capsule</label>
+    <description>A capsule containing cultured fennec fox.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.50</hatcherDaystoHatch>
+        <hatcherPawn>Fox_Fennec</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>250</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+  
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleFox_Red</defName>
+    <label>red fox capsule</label>
+    <description>A capsule containing cultured red fox.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.50</hatcherDaystoHatch>
+        <hatcherPawn>Fox_Red</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>250</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+  
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleFox_Arctic</defName>
+    <label>arctic fox capsule</label>
+    <description>A capsule containing cultured arctic fox.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.50</hatcherDaystoHatch>
+        <hatcherPawn>Fox_Arctic</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>250</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+  
+  <ThingDef ParentName="BioCultureSmall">
+    <defName>CapsuleLynx</defName>
+    <label>lynx capsule</label>
+    <description>A capsule containing cultured lynx.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.50</hatcherDaystoHatch>
+        <hatcherPawn>Lynx</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>250</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+
+  
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleCapybara</defName>
+    <label>capybara capsule</label>
+    <description>A capsule containing cultured capybara.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5.00</hatcherDaystoHatch>
+        <hatcherPawn>Capybara</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>300</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleSheep</defName>
+    <label>sheep capsule</label>
+    <description>A capsule containing cultured sheep.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5.00</hatcherDaystoHatch>
+        <hatcherPawn>Sheep</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>300</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+  
+    <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleGoat</defName>
+    <label>goat capsule</label>
+    <description>A capsule containing cultured goat.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5.00</hatcherDaystoHatch>
+        <hatcherPawn>Goat</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>300</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+  
+    <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleGazelle</defName>
+    <label>gazelle capsule</label>
+    <description>A capsule containing cultured gazelle.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5.00</hatcherDaystoHatch>
+        <hatcherPawn>Gazelle</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>300</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleCaribou</defName>
+    <label>caribou capsule</label>
+    <description>A capsule containing cultured caribou.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+        <hatcherPawn>Caribou</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>400</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleIbex</defName>
+    <label>ibex capsule</label>
+    <description>A capsule containing cultured ibex.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+        <hatcherPawn>Ibex</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>400</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleAlpaca</defName>
+    <label>alpaca capsule</label>
+    <description>A capsule containing cultured alpaca.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+        <hatcherPawn>Alpaca</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>400</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+  
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleDeer</defName>
+    <label>deer capsule</label>
+    <description>A capsule containing cultured deer.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+        <hatcherPawn>Deer</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>400</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleBoomalope</defName>
+    <label>boomalope capsule</label>
+    <description>A capsule containing cultured boomalope.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>9.00</hatcherDaystoHatch>
+        <hatcherPawn>Boomalope</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>800</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleOstrich</defName>
+    <label>ostrich capsule</label>
+    <description>A capsule containing cultured ostrich.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+        <hatcherPawn>Ostrich</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>400</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleDonkey</defName>
+    <label>donkey capsule</label>
+    <description>A capsule containing cultured donkey.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>8.00</hatcherDaystoHatch>
+        <hatcherPawn>Donkey</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>550</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleHorse</defName>
+    <label>horse capsule</label>
+    <description>A capsule containing cultured horse.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>10.00</hatcherDaystoHatch>
+        <hatcherPawn>Horse</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>900</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleDromedary</defName>
+    <label>dromedary capsule</label>
+    <description>A capsule containing cultured dromedary.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>9.00</hatcherDaystoHatch>
+        <hatcherPawn>Dromedary</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>800</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleElk</defName>
+    <label>elk capsule</label>
+    <description>A capsule containing cultured elk.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>9.00</hatcherDaystoHatch>
+        <hatcherPawn>Elk</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>800</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleYak</defName>
+    <label>yak capsule</label>
+    <description>A capsule containing cultured yak.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>9.00</hatcherDaystoHatch>
+        <hatcherPawn>Yak</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>800</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsulePig</defName>
+    <label>pig capsule</label>
+    <description>A capsule containing cultured pig.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>8.50</hatcherDaystoHatch>
+        <hatcherPawn>Pig</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>650</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleWildBoar</defName>
+    <label>wild boar capsule</label>
+    <description>A capsule containing cultured wild boar.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6.00</hatcherDaystoHatch>
+        <hatcherPawn>WildBoar</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>350</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleWarg</defName>
+    <label>warg capsule</label>
+    <description>A capsule containing cultured warg.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>8.00</hatcherDaystoHatch>
+        <hatcherPawn>Warg</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>550</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleWolf_Arctic</defName>
+    <label>arctic wolf capsule</label>
+    <description>A capsule containing cultured arctic wolf.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6.00</hatcherDaystoHatch>
+        <hatcherPawn>Wolf_Arctic</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>350</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleWolf_Timber</defName>
+    <label>timber wolf capsule</label>
+    <description>A capsule containing cultured timber wolf.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6.00</hatcherDaystoHatch>
+        <hatcherPawn>Wolf_Timber</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>350</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsuleCougar</defName>
+    <label>cougar capsule</label>
+    <description>A capsule containing cultured cougar.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+        <hatcherPawn>Cougar</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>400</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureMedium">
+    <defName>CapsulePanther</defName>
+    <label>panther capsule</label>
+    <description>A capsule containing cultured panther.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+        <hatcherPawn>Panther</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>400</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+
+
+
+  <ThingDef ParentName="BioCultureLarge">
+    <defName>CapsuleCow</defName>
+    <label>cow capsule</label>
+    <description>A capsule containing cultured cow.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>10.00</hatcherDaystoHatch>
+        <hatcherPawn>Cow</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>900</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureLarge">
+    <defName>CapsuleMuffalo</defName>
+    <label>muffalo capsule</label>
+    <description>A capsule containing cultured muffalo.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>10.00</hatcherDaystoHatch>
+        <hatcherPawn>Muffalo</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>900</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureLarge">
+    <defName>CapsuleBison</defName>
+    <label>bison capsule</label>
+    <description>A capsule containing cultured bison.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>10.00</hatcherDaystoHatch>
+        <hatcherPawn>Bison</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>900</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureLarge">
+    <defName>CapsuleBear_Polar</defName>
+    <label>polar bear capsule</label>
+    <description>A capsule containing cultured polar Bear.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>10.00</hatcherDaystoHatch>
+        <hatcherPawn>Bear_Polar</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>800</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureLarge">
+    <defName>CapsuleBear_Grizzly</defName>
+    <label>grizzly bear capsule</label>
+    <description>A capsule containing cultured grizzly Bear.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>10.00</hatcherDaystoHatch>
+        <hatcherPawn>Bear_Grizzly</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>800</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BioCultureLarge">
+    <defName>CapsuleRhinoceros</defName>
+    <label>rhinoceros capsule</label>
+    <description>A capsule containing cultured rhinoceros.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>12.00</hatcherDaystoHatch>
+        <hatcherPawn>Rhinoceros</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>1200</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef> 
+  
+   <ThingDef ParentName="BioCultureLarge">
+    <defName>CapsuleMegasloth</defName>
+    <label>megasloth capsule</label>
+    <description>A capsule containing cultured megasloth.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>15.00</hatcherDaystoHatch>
+        <hatcherPawn>Megasloth</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>1600</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef> 
+
+  <ThingDef ParentName="BioCultureLarge">
+    <defName>CapsuleElephant</defName>
+    <label>elephant capsule</label>
+    <description>A capsule containing cultured elephant.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>15.00</hatcherDaystoHatch>
+        <hatcherPawn>Elephant</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>1600</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>   
+  
+  
+  
+  
+  <ThingDef ParentName="BioCultureSpecial">
+    <defName>CapsuleThrumbo</defName>
+    <label>thrumbo capsule</label>
+    <description>A capsule containing cultured thrumbo.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>20.00</hatcherDaystoHatch>
+        <hatcherPawn>Thrumbo</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>2000</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>     
+  
+  
+  
+  
+  <ThingDef ParentName="BioCulturePet">
+    <defName>CapsuleYorkshireTerrier</defName>
+    <label>yorkshire terrier capsule</label>
+    <description>A capsule containing cultured yorkshire terrier.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+        <hatcherPawn>YorkshireTerrier</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>180</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>     
+  
+  
+  <ThingDef ParentName="BioCulturePet">
+    <defName>CapsuleLabradorRetriever</defName>
+    <label>labrador retriever capsule</label>
+    <description>A capsule containing cultured labrador retriever.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5.00</hatcherDaystoHatch>
+        <hatcherPawn>LabradorRetriever</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>300</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>     
+  
+  
+  <ThingDef ParentName="BioCulturePet">
+    <defName>CapsuleHusky</defName>
+    <label>husky capsule</label>
+    <description>A capsule containing cultured husky.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6.00</hatcherDaystoHatch>
+        <hatcherPawn>Husky</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>360</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>     
+  
+  
+   <ThingDef ParentName="BioCulturePet">
+    <defName>CapsuleCat</defName>
+    <label>cat capsule</label>
+    <description>A capsule containing cultured cat.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+        <hatcherPawn>Cat</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>180</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+  
+
+
+  <ThingDef ParentName="BioCultureInsectoid">
+    <defName>CapsuleMegascarab</defName>
+    <label>megascarab capsule</label>
+    <description>A capsule containing cultured megascarab.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+        <hatcherPawn>Megascarab</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>100</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+  
+  <ThingDef ParentName="BioCultureInsectoid">
+    <defName>CapsuleSpelopede</defName>
+    <label>spelopede capsule</label>
+    <description>A capsule containing cultured spelopede.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.00</hatcherDaystoHatch>
+        <hatcherPawn>Spelopede</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>150</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>
+
+  <ThingDef ParentName="BioCultureInsectoid">
+    <defName>CapsuleMegaspider</defName>
+    <label>megaspider capsule</label>
+    <description>A capsule containing cultured megaspider.</description>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5.00</hatcherDaystoHatch>
+        <hatcherPawn>Megaspider</hatcherPawn>
+      </li>
+    </comps>
+    <statBases>
+	  <MarketValue>200</MarketValue>
+      <Mass>2</Mass>
+    </statBases>	
+  </ThingDef>  
+
+</Defs>
