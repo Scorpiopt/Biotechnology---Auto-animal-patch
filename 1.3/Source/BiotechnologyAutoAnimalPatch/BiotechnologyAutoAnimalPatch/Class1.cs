@@ -303,6 +303,10 @@ namespace BiotechnologyAutoAnimalPatch
                         hatcherPawn = animal
                     }
                 },
+                modExtensions = new List<DefModExtension>
+                {
+                    new HatcheeForcedPlayerFaction()
+                },
                 stackLimit = 1,
                 ingestible = new IngestibleProperties
                 {
