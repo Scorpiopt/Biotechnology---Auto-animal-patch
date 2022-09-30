@@ -1,17 +1,10 @@
 ﻿using CF;
 using HarmonyLib;
 using RimWorld;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.UI;
 using Verse;
-using static RimWorld.ThingSetMaker_RandomGeneralGoods;
 
 namespace BiotechnologyAutoAnimalPatch
 {
@@ -306,7 +299,10 @@ namespace BiotechnologyAutoAnimalPatch
                 },
                 modExtensions = new List<DefModExtension>
                 {
-                    new HatcheeForcedPlayerFaction()
+                    new HatcherExtension
+                    {
+                        hatcheeForcePlayerFaction = true
+                    }
                 },
                 stackLimit = 1,
                 ingestible = new IngestibleProperties
