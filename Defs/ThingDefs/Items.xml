@@ -45,7 +45,12 @@
         <progressPerDegreePerTick>0.00005</progressPerDegreePerTick>
       </li>
     </comps>	
-    <stackLimit>1</stackLimit>		
+    <stackLimit>1</stackLimit>
+<modExtensions>
+    <li Class="CF.HatcherExtension">
+        <hatcheeForcePlayerFaction>true</hatcheeForcePlayerFaction>
+    </li>
+</modExtensions>
   </ThingDef>
 
   <ThingDef Abstract="True" Name="BioCultureSmall" ParentName="BioCultureBase" >
