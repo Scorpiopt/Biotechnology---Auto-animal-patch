@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Cats and Dogs</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>			
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_Chihuahua</defName>
+				<label>chihuahua capsule</label>
+				<description>A capsule containing cultured chihuahua.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Chihuahua</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>150</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_Chihuahua</defName>
+				<label>make cultured chihuahua.</label>
+				<description>Make a cultured chihuahua.</description>
+				<workAmount>3000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>30.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Chihuahua>1</CapsuleAEXP_Chihuahua>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_Beagle</defName>
+				<label>beagle capsule</label>
+				<description>A capsule containing cultured beagle.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Beagle</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>180</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_Beagle</defName>
+				<label>make cultured beagle.</label>
+				<description>Make a cultured beagle.</description>
+				<workAmount>4000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>40.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Beagle>1</CapsuleAEXP_Beagle>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_Pug</defName>
+				<label>pug capsule</label>
+				<description>A capsule containing cultured pug.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Pug</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>180</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_Pug</defName>
+				<label>make cultured pug.</label>
+				<description>Make a cultured pug.</description>
+				<workAmount>4000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>40.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Pug>1</CapsuleAEXP_Pug>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_Shih-Tzu</defName>
+				<label>shih-tzu capsule</label>
+				<description>A capsule containing cultured shih-tzu.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Shih-Tzu</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>180</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_Shih-Tzu</defName>
+				<label>make cultured shih-tzu.</label>
+				<description>Make a cultured shih-tzu.</description>
+				<workAmount>5000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>50.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Shih-Tzu>1</CapsuleAEXP_Shih-Tzu>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_Corgi</defName>
+				<label>corgi capsule</label>
+				<description>A capsule containing cultured corgi.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Corgi</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>200</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_Corgi</defName>
+				<label>make cultured corgi.</label>
+				<description>Make a cultured corgi.</description>
+				<workAmount>6000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>60.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Corgi>1</CapsuleAEXP_Corgi>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_FrenchBulldog</defName>
+				<label>french bulldog capsule</label>
+				<description>A capsule containing cultured french bulldog.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_FrenchBulldog</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>200</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_FrenchBulldog</defName>
+				<label>make cultured french bulldog.</label>
+				<description>Make a cultured french bulldog.</description>
+				<workAmount>6000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>60.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_FrenchBulldog>1</CapsuleAEXP_FrenchBulldog>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_Poodle</defName>
+				<label>poodle capsule</label>
+				<description>A capsule containing cultured poodle.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Poodle</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>300</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_Poodle</defName>
+				<label>make cultured poodle.</label>
+				<description>Make a cultured poodle.</description>
+				<workAmount>9000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>110.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Poodle>1</CapsuleAEXP_Poodle>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_Rottweiler</defName>
+				<label>rottweiler capsule</label>
+				<description>A capsule containing cultured rottweiler.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Rottweiler</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>300</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_Rottweiler</defName>
+				<label>make cultured rottweiler.</label>
+				<description>Make a cultured rottweiler.</description>
+				<workAmount>9000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>110.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Rottweiler>1</CapsuleAEXP_Rottweiler>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_WelshTerrier</defName>
+				<label>welsh terrier capsule</label>
+				<description>A capsule containing cultured welsh terrier.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_WelshTerrier</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>350</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_WelshTerrier</defName>
+				<label>make cultured welsh terrier.</label>
+				<description>Make a cultured welsh terrier.</description>
+				<workAmount>10000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>130.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_WelshTerrier>1</CapsuleAEXP_WelshTerrier>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_GermanShepherd</defName>
+				<label>german shepherd capsule</label>
+				<description>A capsule containing cultured german shepherd.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_GermanShepherd</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>400</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_GermanShepherd</defName>
+				<label>make cultured german shepherd.</label>
+				<description>Make a cultured german shepherd.</description>
+				<workAmount>12000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>150.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_GermanShepherd>1</CapsuleAEXP_GermanShepherd>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+			
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_GreatDane</defName>
+				<label>great dane capsule</label>
+				<description>A capsule containing cultured great dane.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>8.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_GreatDane</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>550</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_GreatDane</defName>
+				<label>make cultured great dane.</label>
+				<description>Make a cultured great dane.</description>
+				<workAmount>13000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>200.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_GreatDane>1</CapsuleAEXP_GreatDane>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>			
+
+
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_CatAbyssinian</defName>
+				<label>abyssinian cat capsule</label>
+				<description>A capsule containing cultured abyssinian cat.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_CatAbyssinian</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>180</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_CatAbyssinian</defName>
+				<label>make cultured abyssinian cat.</label>
+				<description>Make a cultured abyssinian cat.</description>
+				<workAmount>4000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>40.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_CatAbyssinian>1</CapsuleAEXP_CatAbyssinian>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>			
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_CatBengal</defName>
+				<label>bengal cat capsule</label>
+				<description>A capsule containing cultured bengal cat.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_CatBengal</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>180</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_CatBengal</defName>
+				<label>make cultured bengal cat.</label>
+				<description>Make a cultured bengal cat.</description>
+				<workAmount>4000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>40.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_CatBengal>1</CapsuleAEXP_CatBengal>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_CatBritishShorthair</defName>
+				<label>british shorthair cat capsule</label>
+				<description>A capsule containing cultured british shorthair cat.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_CatBritishShorthair</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>180</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_CatBritishShorthair</defName>
+				<label>make cultured british shorthair cat.</label>
+				<description>Make a cultured british shorthair cat.</description>
+				<workAmount>4000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>40.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_CatBritishShorthair>1</CapsuleAEXP_CatBritishShorthair>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_CatMunchkin</defName>
+				<label>munchkin cat capsule</label>
+				<description>A capsule containing cultured munchkin cat.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_CatMunchkin</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>180</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_CatMunchkin</defName>
+				<label>make cultured munchkin cat.</label>
+				<description>Make a cultured munchkin cat.</description>
+				<workAmount>4000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>40.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_CatMunchkin>1</CapsuleAEXP_CatMunchkin>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_CatPersian</defName>
+				<label>persian cat capsule</label>
+				<description>A capsule containing cultured persian cat.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_CatPersian</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>180</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_CatPersian</defName>
+				<label>make cultured persian cat.</label>
+				<description>Make a cultured persian cat.</description>
+				<workAmount>4000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>40.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_CatPersian>1</CapsuleAEXP_CatPersian>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_CatSiamese</defName>
+				<label>siamese cat capsule</label>
+				<description>A capsule containing cultured siamese cat.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_CatSiamese</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>180</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_CatSiamese</defName>
+				<label>make cultured siamese cat.</label>
+				<description>Make a cultured siamese cat.</description>
+				<workAmount>4000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>40.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_CatSiamese>1</CapsuleAEXP_CatSiamese>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_CatSomali</defName>
+				<label>somali cat capsule</label>
+				<description>A capsule containing cultured somali cat.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_CatSomali</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>180</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_CatSomali</defName>
+				<label>make cultured somali cat.</label>
+				<description>Make a cultured somali cat.</description>
+				<workAmount>4000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>40.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_CatSomali>1</CapsuleAEXP_CatSomali>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_CatSphynx</defName>
+				<label>sphynx cat capsule</label>
+				<description>A capsule containing cultured sphynx cat.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_CatSphynx</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>180</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_CatSphynx</defName>
+				<label>make cultured sphynx cat.</label>
+				<description>Make a cultured sphynx cat.</description>
+				<workAmount>4000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>40.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_CatSphynx>1</CapsuleAEXP_CatSphynx>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_CatNorwegianForest</defName>
+				<label>norwegian forest cat capsule</label>
+				<description>A capsule containing cultured norwegian forest cat.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_CatNorwegianForest</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>200</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_CatNorwegianForest</defName>
+				<label>make cultured norwegian forest cat.</label>
+				<description>Make a cultured norwegian forest cat.</description>
+				<workAmount>6000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>60.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_CatNorwegianForest>1</CapsuleAEXP_CatNorwegianForest>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCulturePet">
+				<defName>CapsuleAEXP_CatMaineCoon</defName>
+				<label>maine coon capsule</label>
+				<description>A capsule containing cultured maine coon.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_CatMaineCoon</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>400</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipePet">
+				<defName>Make_CapsuleAEXP_CatMaineCoon</defName>
+				<label>make cultured maine coon.</label>
+				<description>Make a cultured maine coon.</description>
+				<workAmount>12000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>150.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_CatMaineCoon>1</CapsuleAEXP_CatMaineCoon>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+			
+			</operations>
+		</match>
+		
+	</Operation>
+
+
+	
+</Patch>

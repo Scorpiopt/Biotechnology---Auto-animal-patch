@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>Biotechnology_Reasearch</defName>
+    <label>biotechnology</label>
+    <tab>Biotechnology_Tab</tab>
+    <techLevel>Spacer</techLevel>
+    <description>Learn how to build a research bench that studies animal culture methods.</description>
+    <baseCost>3000</baseCost>
+    <prerequisites>
+      <li>MultiAnalyzer</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Biotechnology_Reasearch_Small</defName>
+    <label>small animals</label>
+    <tab>Biotechnology_Tab</tab>
+    <techLevel>Spacer</techLevel>
+    <description>Learn how to culture small animals.</description>
+    <baseCost>3000</baseCost>
+    <prerequisites>
+      <li>Biotechnology_Reasearch</li>
+    </prerequisites>
+    <requiredResearchBuilding>Biotechnology_ResearchBench</requiredResearchBuilding>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+  </ResearchProjectDef> 
+
+  <ResearchProjectDef>
+    <defName>Biotechnology_Reasearch_Medium</defName>
+    <label>medium animals</label>
+    <tab>Biotechnology_Tab</tab>
+    <techLevel>Spacer</techLevel>
+    <description>Learn how to culture medium animals.</description>
+    <baseCost>4500</baseCost>
+    <prerequisites>
+      <li>Biotechnology_Reasearch_Small</li>
+    </prerequisites>
+    <requiredResearchBuilding>Biotechnology_ResearchBench</requiredResearchBuilding>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+  </ResearchProjectDef> 
+ 
+  <ResearchProjectDef>
+    <defName>Biotechnology_Reasearch_Large</defName>
+    <label>large animals</label>
+    <tab>Biotechnology_Tab</tab>
+    <techLevel>Spacer</techLevel>
+    <description>Learn how to culture large animals.</description>
+    <baseCost>6000</baseCost>
+    <prerequisites>
+      <li>Biotechnology_Reasearch_Medium</li>
+    </prerequisites>
+    <requiredResearchBuilding>Biotechnology_ResearchBench</requiredResearchBuilding>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+  </ResearchProjectDef> 
+
+  <ResearchProjectDef>
+    <defName>Biotechnology_Reasearch_Special</defName>
+    <label>special animals</label>
+    <tab>Biotechnology_Tab</tab>
+    <techLevel>Spacer</techLevel>
+    <description>Learn how to culture Special animals like the Thrumbo.</description>
+    <baseCost>12000</baseCost>
+    <prerequisites>
+      <li>Biotechnology_Reasearch_Large</li>
+    </prerequisites>
+    <requiredResearchBuilding>Biotechnology_ResearchBench</requiredResearchBuilding>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+ 
+  <ResearchProjectDef>
+    <defName>Biotechnology_Reasearch_Pet</defName>
+    <label>pets</label>
+    <tab>Biotechnology_Tab</tab>
+    <techLevel>Spacer</techLevel>
+    <description>Learn how to culture pets such as dogs and cats.</description>
+    <baseCost>3000</baseCost>
+    <prerequisites>
+      <li>Biotechnology_Reasearch</li>
+    </prerequisites>
+    <requiredResearchBuilding>Biotechnology_ResearchBench</requiredResearchBuilding>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+  </ResearchProjectDef> 
+
+  <ResearchProjectDef>
+    <defName>Biotechnology_Reasearch_Insectoids</defName>
+    <label>insectoids</label>
+    <tab>Biotechnology_Tab</tab>
+    <techLevel>Spacer</techLevel>
+    <description>Learn how to culture insectoids.</description>
+    <baseCost>3000</baseCost>
+    <prerequisites>
+      <li>Biotechnology_Reasearch</li>
+    </prerequisites>
+    <requiredResearchBuilding>Biotechnology_ResearchBench</requiredResearchBuilding>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>1.40</researchViewY>
+  </ResearchProjectDef> 
+
+</Defs>

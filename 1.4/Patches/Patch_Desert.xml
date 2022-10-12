@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Desert</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>			
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureSmall">
+				<defName>CapsuleAEXP_GilaMonster</defName>
+				<label>gila monster capsule</label>
+				<description>A capsule containing cultured gila monster.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_GilaMonster</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>250</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeSmall">
+				<defName>Make_CapsuleAEXP_GilaMonster</defName>
+				<label>make cultured gila monster.</label>
+				<description>Make a cultured gila monster.</description>
+				<workAmount>6500</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>80.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_GilaMonster>1</CapsuleAEXP_GilaMonster>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureSmall">
+				<defName>CapsuleAEXP_DesertTortoise</defName>
+				<label>desert tortoise capsule</label>
+				<description>A capsule containing cultured desert tortoise.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_DesertTortoise</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>250</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeSmall">
+				<defName>Make_CapsuleAEXP_DesertTortoise</defName>
+				<label>make cultured desert tortoise.</label>
+				<description>Make a cultured desert tortoise.</description>
+				<workAmount>7000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>90.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_DesertTortoise>1</CapsuleAEXP_DesertTortoise>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureMedium">
+				<defName>CapsuleAEXP_Hyena</defName>
+				<label>Hyena capsule</label>
+				<description>A capsule containing cultured Hyena.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5.00</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Hyena</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>300</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeMedium">
+				<defName>Make_CapsuleAEXP_Hyena</defName>
+				<label>make cultured Hyena.</label>
+				<description>Make a cultured Hyena.</description>
+				<workAmount>9000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>110.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Hyena>1</CapsuleAEXP_Hyena>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureMedium">
+				<defName>CapsuleAEXP_Lion</defName>
+				<label>lion capsule</label>
+				<description>A capsule containing cultured lion.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>8.50</hatcherDaystoHatch>
+				<hatcherPawn>AEXP_Lion</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>600</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeMedium">
+				<defName>Make_CapsuleAEXP_Lion</defName>
+				<label>make cultured lion.</label>
+				<description>Make a cultured lion.</description>
+				<workAmount>14000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>250.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>3</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAEXP_Lion>1</CapsuleAEXP_Lion>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+
+
+
+
+
+			
+			</operations>
+		</match>
+		
+	</Operation>
+
+
+	
+</Patch>

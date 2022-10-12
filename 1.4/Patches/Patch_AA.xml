@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>			
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+                    <ResearchProjectDef>
+                    <defName>Biotechnology_Reasearch_Alpha</defName>
+                    <label>alpha animals</label>
+                    <tab>Biotechnology_Tab</tab>
+                    <techLevel>Spacer</techLevel>
+                    <description>Learn how to culture alpha animals.</description>
+                    <baseCost>12000</baseCost>
+                    <prerequisites>
+                      <li>Biotechnology_Reasearch_Large</li>
+                    </prerequisites>
+                    <requiredResearchBuilding>Biotechnology_ResearchBench</requiredResearchBuilding>
+                    <researchViewX>4.00</researchViewX>
+                    <researchViewY>1.40</researchViewY>
+                    </ResearchProjectDef> 
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+                   <ThingDef ParentName="BioSpecialBenchBase">
+                   <defName>Biotechnology_AlphaLab</defName>
+                   <label>alpha animals lab</label>
+                   <description>A laboratory capable of culture alpha animals.</description>
+                   <graphicData>
+                   <texPath>Things/Buildings/BioAALab</texPath>
+                   </graphicData>
+                   <researchPrerequisites>
+                   <li>Biotechnology_Reasearch_Alpha</li>
+                   </researchPrerequisites>
+                   </ThingDef>
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+                   <WorkGiverDef>
+                   <defName>DoBillsAlphaLab</defName>
+                   <label>do bills at alpha animals lab</label>
+                   <giverClass>WorkGiver_DoBill</giverClass>
+                   <workType>Smithing</workType>
+                   <priorityInType>75</priorityInType>
+                   <fixedBillGiverDefs>
+                   <li>Biotechnology_AlphaLab</li>
+                   </fixedBillGiverDefs>
+                   <verb>work</verb>
+                   <gerund>working at</gerund>
+                   <requiredCapacities>
+                   <li>Manipulation</li>
+                   </requiredCapacities>
+                   <prioritizeSustains>true</prioritizeSustains>
+                   </WorkGiverDef> 
+				</value>
+			</li>
+
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingCategoryDef>
+				<defName>BiotechnologyCategory_Alpha</defName>
+				<label>alpha animals</label>
+				<parent>BiotechnologyCategory_Main</parent>
+				</ThingCategoryDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef Abstract="True" Name="BioCultureAlpha" ParentName="BioCultureBase" >
+				<thingCategories>
+				<li>BiotechnologyCategory_Alpha</li>
+				</thingCategories>
+				</ThingDef>  
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef Abstract="True" Name="BioRecipeAlpha" ParentName="BioRecipe">
+				<recipeUsers><li>Biotechnology_AlphaLab</li></recipeUsers>
+				 <skillRequirements>
+				<Intellectual>11</Intellectual>
+				</skillRequirements>	
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureAlpha">
+				<defName>CapsuleGallatross</defName>
+				<label>gallatross capsule</label>
+				<description>A capsule containing cultured gallatross.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>30.00</hatcherDaystoHatch>
+				<hatcherPawn>AA_Gallatross</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>3000</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeAlpha">
+				<defName>Make_CapsuleGallatross</defName>
+				<label>make cultured gallatross.</label>
+				<description>Make a cultured gallatross.</description>
+				<workAmount>18000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>1500.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>15</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleGallatross>1</CapsuleGallatross>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureAlpha">
+				<defName>CapsuleTarGuzzler</defName>
+				<label>tar guzzler capsule</label>
+				<description>A capsule containing cultured tar guzzler.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>12.00</hatcherDaystoHatch>
+				<hatcherPawn>AA_TarGuzzler</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>1200</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeAlpha">
+				<defName>Make_CapsuleTarGuzzler</defName>
+				<label>make cultured tar guzzler.</label>
+				<description>Make a cultured tar guzzler.</description>
+				<workAmount>18000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>400.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>4</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleTarGuzzler>1</CapsuleTarGuzzler>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureAlpha">
+				<defName>CapsuleTeratogenicOriginator</defName>
+				<label>teratogenic originator capsule</label>
+				<description>A capsule containing cultured teratogenic originator.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20.00</hatcherDaystoHatch>
+				<hatcherPawn>AA_TeratogenicOriginator</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>2000</MarketValue>
+				<Mass>2</Mass>
+				</statBases>
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeAlpha">
+				<defName>Make_CapsuleTeratogenicOriginator</defName>
+				<label>make cultured teratogenic originator.</label>
+				<description>Make a cultured teratogenic originator.</description>
+				<workAmount>18000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>1000.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleTeratogenicOriginator>1</CapsuleTeratogenicOriginator>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+	
+			</operations>
+		</match>		
+	</Operation>
+
+	
+</Patch>

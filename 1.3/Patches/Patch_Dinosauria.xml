@@ -1,0 +1,2150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dinosauria</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>			
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+                     <ResearchProjectDef>
+                     <defName>Biotechnology_Reasearch_Dinosaurs</defName>
+                     <label>dinosaurs</label>
+                     <tab>Biotechnology_Tab</tab>
+                     <techLevel>Spacer</techLevel>
+                     <description>Learn how to culture dinosaurs.</description>
+                     <baseCost>9000</baseCost>
+                     <prerequisites>
+                       <li>Biotechnology_Reasearch_Large</li>
+                     </prerequisites>
+                     <requiredResearchBuilding>Biotechnology_ResearchBench</requiredResearchBuilding>
+                     <researchViewX>3.00</researchViewX>
+                     <researchViewY>0.70</researchViewY>
+                     </ResearchProjectDef> 
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+                   <ThingDef ParentName="BioSpecialBenchBase">
+                   <defName>Biotechnology_DinosaursLab</defName>
+                   <label>dinosaurs lab</label>
+                   <description>A laboratory capable of culture dinosaurs.</description>
+                   <graphicData>
+                   <texPath>Things/Buildings/BioDinosaursLab</texPath>
+                   </graphicData>
+                   <researchPrerequisites>
+                   <li>Biotechnology_Reasearch_Dinosaurs</li>
+                   </researchPrerequisites>
+                   </ThingDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+                   <WorkGiverDef>
+                   <defName>DoBillsDinosaursLab</defName>
+                   <label>do bills at dinosaurs lab</label>
+                   <giverClass>WorkGiver_DoBill</giverClass>
+                   <workType>Smithing</workType>
+                   <priorityInType>75</priorityInType>
+                   <fixedBillGiverDefs>
+                   <li>Biotechnology_DinosaursLab</li>
+                   </fixedBillGiverDefs>
+                   <verb>work</verb>
+                   <gerund>working at</gerund>
+                   <requiredCapacities>
+                   <li>Manipulation</li>
+                   </requiredCapacities>
+                   <prioritizeSustains>true</prioritizeSustains>
+                   </WorkGiverDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingCategoryDef>
+				<defName>BiotechnologyCategory_Dinosaur</defName>
+				<label>dinosaurs</label>
+				<parent>BiotechnologyCategory_Main</parent>
+				</ThingCategoryDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef Abstract="True" Name="BioCultureDinosaur" ParentName="BioCultureBase" >
+				<thingCategories>
+				<li>BiotechnologyCategory_Dinosaur</li>
+				</thingCategories>
+				</ThingDef>  
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef Abstract="True" Name="BioRecipeDinosaur" ParentName="BioRecipe">
+				<recipeUsers><li>Biotechnology_DinosaursLab</li></recipeUsers>
+				 <skillRequirements>
+				<Intellectual>11</Intellectual>
+				</skillRequirements>	
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+
+
+
+
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleDryosaurus</defName>
+				<label>dryosaurus capsule</label>
+				<description>A capsule containing cultured dryosaurus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+				<hatcherPawn>Dryosaurus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>150</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleDryosaurus</defName>
+				<label>make cultured dryosaurus.</label>
+				<description>Make a cultured dryosaurus.</description>
+				<workAmount>3000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>30.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleDryosaurus>1</CapsuleDryosaurus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleStygimoloch</defName>
+				<label>stygimoloch capsule</label>
+				<description>A capsule containing cultured stygimoloch.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+				<hatcherPawn>Stygimoloch</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>150</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleStygimoloch</defName>
+				<label>make cultured stygimoloch.</label>
+				<description>Make a cultured stygimoloch.</description>
+				<workAmount>3000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>30.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleStygimoloch>1</CapsuleStygimoloch>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleCompsognathus</defName>
+				<label>compsognathus capsule</label>
+				<description>A capsule containing cultured compsognathus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+				<hatcherPawn>Compsognathus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>150</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleCompsognathus</defName>
+				<label>make cultured compsognathus.</label>
+				<description>Make a cultured compsognathus.</description>
+				<workAmount>3000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>30.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleCompsognathus>1</CapsuleCompsognathus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleProtoceratops</defName>
+				<label>protoceratops capsule</label>
+				<description>A capsule containing cultured protoceratops.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+				<hatcherPawn>Protoceratops</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>150</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleProtoceratops</defName>
+				<label>make cultured protoceratops.</label>
+				<description>Make a cultured protoceratops.</description>
+				<workAmount>3000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>30.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleProtoceratops>1</CapsuleProtoceratops>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsulePteranodon</defName>
+				<label>pteranodon capsule</label>
+				<description>A capsule containing cultured pteranodon.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2.00</hatcherDaystoHatch>
+				<hatcherPawn>Pteranodon</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>150</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsulePteranodon</defName>
+				<label>make cultured pteranodon.</label>
+				<description>Make a cultured pteranodon.</description>
+				<workAmount>3000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>30.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsulePteranodon>1</CapsulePteranodon>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsulePachycephalosaurus</defName>
+				<label>pachycephalosaurus capsule</label>
+				<description>A capsule containing cultured pachycephalosaurus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.00</hatcherDaystoHatch>
+				<hatcherPawn>Pachycephalosaurus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>200</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsulePachycephalosaurus</defName>
+				<label>make cultured pachycephalosaurus.</label>
+				<description>Make a cultured pachycephalosaurus.</description>
+				<workAmount>6000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>60.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsulePachycephalosaurus>1</CapsulePachycephalosaurus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+			
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleVelociraptor</defName>
+				<label>velociraptor capsule</label>
+				<description>A capsule containing cultured velociraptor.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.00</hatcherDaystoHatch>
+				<hatcherPawn>Velociraptor</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>200</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleVelociraptor</defName>
+				<label>make cultured velociraptor.</label>
+				<description>Make a cultured velociraptor.</description>
+				<workAmount>6000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>60.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleVelociraptor>1</CapsuleVelociraptor>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>			
+			
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleGallimimus</defName>
+				<label>gallimimus capsule</label>
+				<description>A capsule containing cultured gallimimus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5.00</hatcherDaystoHatch>
+				<hatcherPawn>Gallimimus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>300</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleGallimimus</defName>
+				<label>make cultured gallimimus.</label>
+				<description>Make a cultured gallimimus.</description>
+				<workAmount>9000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>110.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleGallimimus>1</CapsuleGallimimus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>						
+			
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleGigantoraptor</defName>
+				<label>gigantoraptor capsule</label>
+				<description>A capsule containing cultured gigantoraptor.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5.00</hatcherDaystoHatch>
+				<hatcherPawn>Gigantoraptor</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>300</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleGigantoraptor</defName>
+				<label>make cultured gigantoraptor.</label>
+				<description>Make a cultured gigantoraptor.</description>
+				<workAmount>9000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>110.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleGigantoraptor>1</CapsuleGigantoraptor>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>					
+			
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleIguanodon</defName>
+				<label>iguanodon capsule</label>
+				<description>A capsule containing cultured iguanodon.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+				<hatcherPawn>Iguanodon</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>400</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleIguanodon</defName>
+				<label>make cultured iguanodon.</label>
+				<description>Make a cultured iguanodon.</description>
+				<workAmount>12000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>150.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleIguanodon>1</CapsuleIguanodon>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>						
+
+
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleParasaur</defName>
+				<label>parasaur capsule</label>
+				<description>A capsule containing cultured parasaur.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+				<hatcherPawn>Parasaur</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>400</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleParasaur</defName>
+				<label>make cultured parasaur.</label>
+				<description>Make a cultured parasaur.</description>
+				<workAmount>12000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>150.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleParasaur>1</CapsuleParasaur>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleCorythosaurus</defName>
+				<label>corythosaurus capsule</label>
+				<description>A capsule containing cultured corythosaurus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+				<hatcherPawn>Corythosaurus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>400</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleCorythosaurus</defName>
+				<label>make cultured corythosaurus.</label>
+				<description>Make a cultured corythosaurus.</description>
+				<workAmount>12000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>150.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleCorythosaurus>1</CapsuleCorythosaurus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+			
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleDeinocheirus</defName>
+				<label>deinocheirus capsule</label>
+				<description>A capsule containing cultured deinocheirus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+				<hatcherPawn>Deinocheirus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>400</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleDeinocheirus</defName>
+				<label>make cultured deinocheirus.</label>
+				<description>Make a cultured deinocheirus.</description>
+				<workAmount>12000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>150.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleDeinocheirus>1</CapsuleDeinocheirus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>		
+		
+		
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleTherizinosaurus</defName>
+				<label>therizinosaurus capsule</label>
+				<description>A capsule containing cultured therizinosaurus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.00</hatcherDaystoHatch>
+				<hatcherPawn>Therizinosaurus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>400</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleTherizinosaurus</defName>
+				<label>make cultured therizinosaurus.</label>
+				<description>Make a cultured therizinosaurus.</description>
+				<workAmount>12000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>150.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleTherizinosaurus>1</CapsuleTherizinosaurus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>				
+		
+		
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleMinmi</defName>
+				<label>minmi capsule</label>
+				<description>A capsule containing cultured minmi.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.50</hatcherDaystoHatch>
+				<hatcherPawn>Minmi</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>500</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleMinmi</defName>
+				<label>make cultured minmi.</label>
+				<description>Make a cultured minmi.</description>
+				<workAmount>13000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>180.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleMinmi>1</CapsuleMinmi>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>				
+				
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleUtahraptor</defName>
+				<label>utahraptor capsule</label>
+				<description>A capsule containing cultured utahraptor.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.50</hatcherDaystoHatch>
+				<hatcherPawn>Utahraptor</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>500</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleUtahraptor</defName>
+				<label>make cultured utahraptor.</label>
+				<description>Make a cultured utahraptor.</description>
+				<workAmount>13000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>180.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleUtahraptor>1</CapsuleUtahraptor>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>			
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleDakotaraptor</defName>
+				<label>dakotaraptor capsule</label>
+				<description>A capsule containing cultured dakotaraptor.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.50</hatcherDaystoHatch>
+				<hatcherPawn>Dakotaraptor</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>500</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleDakotaraptor</defName>
+				<label>make cultured dakotaraptor.</label>
+				<description>Make a cultured dakotaraptor.</description>
+				<workAmount>13000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>180.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleDakotaraptor>1</CapsuleDakotaraptor>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>			
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleDilophosaurus</defName>
+				<label>dilophosaurus capsule</label>
+				<description>A capsule containing cultured dilophosaurus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.50</hatcherDaystoHatch>
+				<hatcherPawn>Dilophosaurus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>500</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleDilophosaurus</defName>
+				<label>make cultured dilophosaurus.</label>
+				<description>Make a cultured dilophosaurus.</description>
+				<workAmount>13000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>180.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleDilophosaurus>1</CapsuleDilophosaurus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>			
+			
+			
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleQuetzalcoatlus</defName>
+				<label>quetzalcoatlus capsule</label>
+				<description>A capsule containing cultured quetzalcoatlus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.50</hatcherDaystoHatch>
+				<hatcherPawn>Quetzalcoatlus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>500</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleQuetzalcoatlus</defName>
+				<label>make cultured quetzalcoatlus.</label>
+				<description>Make a cultured quetzalcoatlus.</description>
+				<workAmount>13000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>180.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleQuetzalcoatlus>1</CapsuleQuetzalcoatlus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>			
+						
+			
+			
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleMagyarosaurus</defName>
+				<label>magyarosaurus capsule</label>
+				<description>A capsule containing cultured magyarosaurus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>9.00</hatcherDaystoHatch>
+				<hatcherPawn>Magyarosaurus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>700</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleMagyarosaurus</defName>
+				<label>make cultured magyarosaurus.</label>
+				<description>Make a cultured magyarosaurus.</description>
+				<workAmount>15000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>300.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>3</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleMagyarosaurus>1</CapsuleMagyarosaurus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>			
+									
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleStegosaurus</defName>
+				<label>stegosaurus capsule</label>
+				<description>A capsule containing cultured stegosaurus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10.00</hatcherDaystoHatch>
+				<hatcherPawn>Stegosaurus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>900</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleStegosaurus</defName>
+				<label>make cultured stegosaurus.</label>
+				<description>Make a cultured stegosaurus.</description>
+				<workAmount>16000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>350.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>3</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleStegosaurus>1</CapsuleStegosaurus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleAnkylosaurus</defName>
+				<label>ankylosaurus capsule</label>
+				<description>A capsule containing cultured ankylosaurus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10.00</hatcherDaystoHatch>
+				<hatcherPawn>Ankylosaurus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>900</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleAnkylosaurus</defName>
+				<label>make cultured ankylosaurus.</label>
+				<description>Make a cultured ankylosaurus.</description>
+				<workAmount>16000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>350.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>3</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAnkylosaurus>1</CapsuleAnkylosaurus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleCarnotaurus</defName>
+				<label>carnotaurus capsule</label>
+				<description>A capsule containing cultured carnotaurus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>11.00</hatcherDaystoHatch>
+				<hatcherPawn>Carnotaurus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>1100</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleCarnotaurus</defName>
+				<label>make cultured carnotaurus.</label>
+				<description>Make a cultured carnotaurus.</description>
+				<workAmount>18000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>450.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>4</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleCarnotaurus>1</CapsuleCarnotaurus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleAllosaurus</defName>
+				<label>allosaurus capsule</label>
+				<description>A capsule containing cultured allosaurus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>11.00</hatcherDaystoHatch>
+				<hatcherPawn>Allosaurus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>1100</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleAllosaurus</defName>
+				<label>make cultured allosaurus.</label>
+				<description>Make a cultured allosaurus.</description>
+				<workAmount>18000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>450.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>4</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleAllosaurus>1</CapsuleAllosaurus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleTriceratops</defName>
+				<label>triceratops capsule</label>
+				<description>A capsule containing cultured triceratops.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>12.00</hatcherDaystoHatch>
+				<hatcherPawn>Triceratops</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>1200</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleTriceratops</defName>
+				<label>make cultured triceratops.</label>
+				<description>Make a cultured triceratops.</description>
+				<workAmount>18000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>450.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>4</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleTriceratops>1</CapsuleTriceratops>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleYutyrannus</defName>
+				<label>yutyrannus capsule</label>
+				<description>A capsule containing cultured yutyrannus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>13.50</hatcherDaystoHatch>
+				<hatcherPawn>Yutyrannus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>1350</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleYutyrannus</defName>
+				<label>make cultured yutyrannus.</label>
+				<description>Make a cultured yutyrannus.</description>
+				<workAmount>19500</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>520.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>4</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleYutyrannus>1</CapsuleYutyrannus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleBaryonyx</defName>
+				<label>baryonyx capsule</label>
+				<description>A capsule containing cultured baryonyx.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>15.00</hatcherDaystoHatch>
+				<hatcherPawn>Baryonyx</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>1500</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleBaryonyx</defName>
+				<label>make cultured baryonyx.</label>
+				<description>Make a cultured baryonyx.</description>
+				<workAmount>21000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>600.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>5</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleBaryonyx>1</CapsuleBaryonyx>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleTyrannosaurusRex</defName>
+				<label>tyrannosaurus rex capsule</label>
+				<description>A capsule containing cultured tyrannosaurus rex.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>15.00</hatcherDaystoHatch>
+				<hatcherPawn>TyrannosaurusRex</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>1500</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleTyrannosaurusRex</defName>
+				<label>make cultured tyrannosaurus rex.</label>
+				<description>Make a cultured tyrannosaurus rex.</description>
+				<workAmount>21000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>600.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>6</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleTyrannosaurusRex>1</CapsuleTyrannosaurusRex>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleSpinosaurus</defName>
+				<label>spinosaurus capsule</label>
+				<description>A capsule containing cultured spinosaurus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>18.00</hatcherDaystoHatch>
+				<hatcherPawn>Spinosaurus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>1800</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleSpinosaurus</defName>
+				<label>make cultured spinosaurus.</label>
+				<description>Make a cultured spinosaurus.</description>
+				<workAmount>24000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>750.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>6</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleSpinosaurus>1</CapsuleSpinosaurus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+			
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleDiplodocus</defName>
+				<label>diplodocus capsule</label>
+				<description>A capsule containing cultured diplodocus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>24.00</hatcherDaystoHatch>
+				<hatcherPawn>Diplodocus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>3800</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleDiplodocus</defName>
+				<label>make cultured diplodocus.</label>
+				<description>Make a cultured diplodocus.</description>
+				<workAmount>32000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>1600.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleDiplodocus>1</CapsuleDiplodocus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleBrontosaurus</defName>
+				<label>brontosaurus capsule</label>
+				<description>A capsule containing cultured brontosaurus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>24.00</hatcherDaystoHatch>
+				<hatcherPawn>Brontosaurus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>3800</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleBrontosaurus</defName>
+				<label>make cultured brontosaurus.</label>
+				<description>Make a cultured brontosaurus.</description>
+				<workAmount>32000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>1600.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleBrontosaurus>1</CapsuleBrontosaurus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+
+			
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureDinosaur">
+				<defName>CapsuleBrachiosaurus</defName>
+				<label>brachiosaurus capsule</label>
+				<description>A capsule containing cultured brachiosaurus.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>24.00</hatcherDaystoHatch>
+				<hatcherPawn>Brachiosaurus</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>3800</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeDinosaur">
+				<defName>Make_CapsuleBrachiosaurus</defName>
+				<label>make cultured brachiosaurus.</label>
+				<description>Make a cultured brachiosaurus.</description>
+				<workAmount>32000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>1600.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleBrachiosaurus>1</CapsuleBrachiosaurus>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>
+			
+		
+		
+			</operations>
+		</match>		
+	</Operation>
+
+
+</Patch>

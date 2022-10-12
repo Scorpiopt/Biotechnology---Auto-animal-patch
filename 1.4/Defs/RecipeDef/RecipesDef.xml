@@ -1,0 +1,2370 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+   <RecipeDef>
+    <defName>Make_EmptyCapsule</defName>
+    <label>make empty capsule</label>
+    <description>Make a empty capsule.</description>
+    <jobString>Making empty capsule.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5000</workAmount>
+    <unfinishedThingDef>UnfinishedBioCapsule</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>	    
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>	  
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+		<li>ComponentIndustrial</li>
+        <li>Plasteel</li>		
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EmptyCapsule>1</EmptyCapsule>
+    </products>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  
+  
+   <RecipeDef Abstract="True" Name="BioRecipe">
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Surgery</effectWorking>
+    <soundWorking>Recipe_Surgery</soundWorking>
+    <unfinishedThingDef>UnfinishedCultureMedium</unfinishedThingDef>
+    <jobString>Culturing.</jobString>	
+	<workSkill>Crafting</workSkill>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+      <thingDefs>
+		<li>Neutroamine</li>	  
+        <li>EmptyCapsule</li>
+      </thingDefs>
+    </fixedIngredientFilter>	
+   </RecipeDef> 
+ 
+   <RecipeDef Abstract="True" Name="BioRecipeSmall" ParentName="BioRecipe">
+	<recipeUsers><li>Biotechnology_SmallLab</li></recipeUsers>
+    <skillRequirements>
+      <Intellectual>6</Intellectual>
+    </skillRequirements>	
+   </RecipeDef> 
+ 
+   <RecipeDef Abstract="True" Name="BioRecipeMedium" ParentName="BioRecipe">
+	<recipeUsers><li>Biotechnology_MediumLab</li></recipeUsers>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>	
+   </RecipeDef> 
+
+    <RecipeDef Abstract="True" Name="BioRecipeLarge" ParentName="BioRecipe">
+	<recipeUsers><li>Biotechnology_LargeLab</li></recipeUsers>
+    <skillRequirements>
+      <Intellectual>10</Intellectual>
+    </skillRequirements>	
+   </RecipeDef> 
+
+   <RecipeDef Abstract="True" Name="BioRecipeSpecial" ParentName="BioRecipe">
+	<recipeUsers><li>Biotechnology_SpecialLab</li></recipeUsers>
+    <skillRequirements>
+      <Intellectual>12</Intellectual>
+    </skillRequirements>	
+   </RecipeDef> 
+
+   <RecipeDef Abstract="True" Name="BioRecipePet" ParentName="BioRecipe">
+	<recipeUsers><li>Biotechnology_PetLab</li></recipeUsers>
+    <skillRequirements>
+      <Intellectual>6</Intellectual>
+    </skillRequirements>	
+   </RecipeDef> 
+
+   <RecipeDef Abstract="True" Name="BioRecipeInsectoid" ParentName="BioRecipe">
+	<recipeUsers><li>Biotechnology_InsectoidsLab</li></recipeUsers>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>	
+   </RecipeDef> 
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleRat</defName>
+    <label>make cultured rat</label>
+    <description>Make a cultured rat.</description>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>30.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleRat>1</CapsuleRat>
+    </products>
+  </RecipeDef>  
+ 
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleSquirrel</defName>
+    <label>make cultured squirrel</label>
+    <description>Make a cultured squirrel.</description>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>30.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleSquirrel>1</CapsuleSquirrel>
+    </products>
+  </RecipeDef>  
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleChinchilla</defName>
+    <label>make cultured chinchilla</label>
+    <description>Make a cultured chinchilla.</description>
+    <workAmount>6000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>60.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleChinchilla>1</CapsuleChinchilla>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleBoomrat</defName>
+    <label>make cultured boomrat</label>
+    <description>Make a cultured boomrat.</description>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>30.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleBoomrat>1</CapsuleBoomrat>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleGuineaPig</defName>
+    <label>make cultured guinea pig</label>
+    <description>Make a cultured guinea pig.</description>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>30.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleGuineaPig>1</CapsuleGuineaPig>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleHare</defName>
+    <label>make cultured hare</label>
+    <description>Make a cultured hare.</description>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>30.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleHare>1</CapsuleHare>
+    </products>
+  </RecipeDef>  
+  
+  
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleSnowhare</defName>
+    <label>make cultured snowhare</label>
+    <description>Make a cultured snowhare.</description>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>30.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleSnowhare>1</CapsuleSnowhare>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleRaccoon</defName>
+    <label>make cultured raccoon</label>
+    <description>Make a cultured raccoon.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>70.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleRaccoon>1</CapsuleRaccoon>
+    </products>
+  </RecipeDef>  
+  
+  
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleAlphabeaver</defName>
+    <label>make cultured alphabeaver</label>
+    <description>Make a cultured alphabeaver.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>70.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleAlphabeaver>1</CapsuleAlphabeaver>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleDuck</defName>
+    <label>make cultured duck</label>
+    <description>Make a cultured duck.</description>
+    <workAmount>5000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>50.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleDuck>1</CapsuleDuck>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleChicken</defName>
+    <label>make cultured chicken</label>
+    <description>Make a cultured chicken.</description>
+    <workAmount>5000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>50.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleChicken>1</CapsuleChicken>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleEmu</defName>
+    <label>make cultured emu</label>
+    <description>Make a cultured emu.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>90.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleEmu>1</CapsuleEmu>
+    </products>
+  </RecipeDef>  
+  
+  
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleGoose</defName>
+    <label>make cultured goose</label>
+    <description>Make a cultured goose.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>90.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleGoose>1</CapsuleGoose>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleTurkey</defName>
+    <label>make cultured turkey</label>
+    <description>Make a cultured turkey.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>90.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleTurkey>1</CapsuleTurkey>
+    </products>
+  </RecipeDef>  
+  
+  
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleCassowary</defName>
+    <label>make cultured cassowary</label>
+    <description>Make a cultured cassowary.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>90.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleCassowary>1</CapsuleCassowary>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleIguana</defName>
+    <label>make cultured iguana</label>
+    <description>Make a cultured iguana.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>70.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleIguana>1</CapsuleIguana>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleCobra</defName>
+    <label>make cultured cobra</label>
+    <description>Make a cultured cobra.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>70.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleCobra>1</CapsuleCobra>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleTortoise</defName>
+    <label>make cultured tortoise</label>
+    <description>Make a cultured tortoise.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>70.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleTortoise>1</CapsuleTortoise>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleMonkey</defName>
+    <label>make cultured monkey</label>
+    <description>Make a cultured monkey.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>70.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleMonkey>1</CapsuleMonkey>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleFox_Fennec</defName>
+    <label>make cultured fennec fox</label>
+    <description>Make a cultured fennec fox.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>90.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleFox_Fennec>1</CapsuleFox_Fennec>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleFox_Red</defName>
+    <label>make cultured red fox</label>
+    <description>Make a cultured red fox.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>90.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleFox_Red>1</CapsuleFox_Red>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleFox_Arctic</defName>
+    <label>make cultured arctic fox</label>
+    <description>Make a cultured arctic fox.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>90.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleFox_Arctic>1</CapsuleFox_Arctic>
+    </products>
+  </RecipeDef>  
+
+
+   <RecipeDef ParentName="BioRecipeSmall">
+    <defName>Make_CapsuleLynx</defName>
+    <label>make cultured lynx</label>
+    <description>Make a cultured lynx.</description>
+    <workAmount>7000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>90.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleLynx>1</CapsuleLynx>
+    </products>
+  </RecipeDef>  
+
+
+
+
+
+
+
+
+
+
+
+
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleCapybara</defName>
+    <label>make cultured capybara</label>
+    <description>Make a cultured capybara.</description>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>110.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleCapybara>1</CapsuleCapybara>
+    </products>
+  </RecipeDef>  
+
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleSheep</defName>
+    <label>make cultured sheep</label>
+    <description>Make a cultured sheep.</description>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>110.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleSheep>1</CapsuleSheep>
+    </products>
+  </RecipeDef>  
+
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleGoat</defName>
+    <label>make cultured goat</label>
+    <description>Make a cultured goat.</description>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>110.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleGoat>1</CapsuleGoat>
+    </products>
+  </RecipeDef>  
+
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleGazelle</defName>
+    <label>make cultured gazelle</label>
+    <description>Make a cultured gazelle.</description>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>110.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleGazelle>1</CapsuleGazelle>
+    </products>
+  </RecipeDef>  
+
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleCaribou</defName>
+    <label>make cultured caribou</label>
+    <description>Make a cultured caribou.</description>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>150.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleCaribou>1</CapsuleCaribou>
+    </products>
+  </RecipeDef>  
+
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleIbex</defName>
+    <label>make cultured ibex</label>
+    <description>Make a cultured ibex.</description>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>150.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleIbex>1</CapsuleIbex>
+    </products>
+  </RecipeDef>  
+
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleAlpaca</defName>
+    <label>make cultured alpaca</label>
+    <description>Make a cultured alpaca.</description>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>150.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleAlpaca>1</CapsuleAlpaca>
+    </products>
+  </RecipeDef>  
+  
+    <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleDeer</defName>
+    <label>make cultured deer</label>
+    <description>Make a cultured deer.</description>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>150.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleDeer>1</CapsuleDeer>
+    </products>
+  </RecipeDef>   
+  
+     <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleBoomalope</defName>
+    <label>make cultured boomalope</label>
+    <description>Make a cultured boomalope.</description>
+    <workAmount>15000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>300.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleBoomalope>1</CapsuleBoomalope>
+    </products>
+  </RecipeDef>    
+  
+     <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleOstrich</defName>
+    <label>make cultured ostrich</label>
+    <description>Make a cultured ostrich.</description>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>150.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleOstrich>1</CapsuleOstrich>
+    </products>
+  </RecipeDef>    
+  
+     <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleDonkey</defName>
+    <label>make cultured donkey</label>
+    <description>Make a cultured donkey.</description>
+    <workAmount>13000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>200.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleDonkey>1</CapsuleDonkey>
+    </products>
+  </RecipeDef>    
+  
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleHorse</defName>
+    <label>make cultured horse</label>
+    <description>Make a cultured horse.</description>
+    <workAmount>16000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>350.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleHorse>1</CapsuleHorse>
+    </products>
+  </RecipeDef>    
+  
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleDromedary</defName>
+    <label>make cultured dromedary</label>
+    <description>Make a cultured dromedary.</description>
+    <workAmount>15000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>300.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleDromedary>1</CapsuleDromedary>
+    </products>
+  </RecipeDef>     
+  
+    <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleElk</defName>
+    <label>make cultured elk</label>
+    <description>Make a cultured elk.</description>
+    <workAmount>15000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>300.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleElk>1</CapsuleElk>
+    </products>
+  </RecipeDef>    
+  
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleYak</defName>
+    <label>make cultured yak</label>
+    <description>Make a cultured yak.</description>
+    <workAmount>15000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>300.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleYak>1</CapsuleYak>
+    </products>
+  </RecipeDef>     
+  
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsulePig</defName>
+    <label>make cultured pig</label>
+    <description>Make a cultured pig.</description>
+    <workAmount>14000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>250.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsulePig>1</CapsulePig>
+    </products>
+  </RecipeDef>     
+
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleWildBoar</defName>
+    <label>make cultured wild boar</label>
+    <description>Make a cultured wild boar.</description>
+    <workAmount>11000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>130.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleWildBoar>1</CapsuleWildBoar>
+    </products>
+  </RecipeDef>     
+
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleWarg</defName>
+    <label>make cultured warg</label>
+    <description>Make a cultured warg.</description>
+    <workAmount>13000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>200.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleWarg>1</CapsuleWarg>
+    </products>
+  </RecipeDef>     
+
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleWolf_Arctic</defName>
+    <label>make cultured arctic wolf</label>
+    <description>Make a cultured arctic wolf.</description>
+    <workAmount>11000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>130.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleWolf_Arctic>1</CapsuleWolf_Arctic>
+    </products>
+  </RecipeDef>  
+
+   <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleWolf_Timber</defName>
+    <label>make cultured timber wolf</label>
+    <description>Make a cultured timber wolf.</description>
+    <workAmount>11000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>130.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleWolf_Timber>1</CapsuleWolf_Timber>
+    </products>
+  </RecipeDef> 
+  
+    <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsuleCougar</defName>
+    <label>make cultured cougar</label>
+    <description>Make a cultured cougar.</description>
+    <workAmount>12000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>150.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleCougar>1</CapsuleCougar>
+    </products>
+  </RecipeDef>  
+  
+    <RecipeDef ParentName="BioRecipeMedium">
+    <defName>Make_CapsulePanther</defName>
+    <label>make cultured panther</label>
+    <description>Make a cultured panther.</description>
+    <workAmount>12000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>150.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsulePanther>1</CapsulePanther>
+    </products>
+  </RecipeDef>   
+  
+  
+  
+  
+    <RecipeDef ParentName="BioRecipeLarge">
+    <defName>Make_CapsuleCow</defName>
+    <label>make cultured cow</label>
+    <description>Make a cultured cow.</description>
+    <workAmount>16000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>350.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleCow>1</CapsuleCow>
+    </products>
+  </RecipeDef>     
+
+    <RecipeDef ParentName="BioRecipeLarge">
+    <defName>Make_CapsuleMuffalo</defName>
+    <label>make cultured muffalo</label>
+    <description>Make a cultured muffalo.</description>
+    <workAmount>16000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>350.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleMuffalo>1</CapsuleMuffalo>
+    </products>
+  </RecipeDef> 
+
+    <RecipeDef ParentName="BioRecipeLarge">
+    <defName>Make_CapsuleBison</defName>
+    <label>make cultured bison</label>
+    <description>Make a cultured bison.</description>
+    <workAmount>16000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>350.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleBison>1</CapsuleBison>
+    </products>
+  </RecipeDef> 
+
+
+    <RecipeDef ParentName="BioRecipeLarge">
+    <defName>Make_CapsuleBear_Polar</defName>
+    <label>make cultured polar bear</label>
+    <description>Make a cultured polar bear.</description>
+    <workAmount>15000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>300.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleBear_Polar>1</CapsuleBear_Polar>
+    </products>
+  </RecipeDef> 
+
+
+    <RecipeDef ParentName="BioRecipeLarge">
+    <defName>Make_CapsuleBear_Grizzly</defName>
+    <label>make cultured grizzly bear</label>
+    <description>Make a cultured grizzly bear.</description>
+    <workAmount>15000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>300.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleBear_Grizzly>1</CapsuleBear_Grizzly>
+    </products>
+  </RecipeDef> 
+
+
+    <RecipeDef ParentName="BioRecipeLarge">
+    <defName>Make_CapsuleRhinoceros</defName>
+    <label>make cultured rhinoceros</label>
+    <description>Make a cultured rhinoceros.</description>
+    <workAmount>18000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>450.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleRhinoceros>1</CapsuleRhinoceros>
+    </products>
+  </RecipeDef> 
+
+
+    <RecipeDef ParentName="BioRecipeLarge">
+    <defName>Make_CapsuleMegasloth</defName>
+    <label>make cultured megasloth</label>
+    <description>Make a cultured megasloth.</description>
+    <workAmount>20000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>550.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleMegasloth>1</CapsuleMegasloth>
+    </products>
+  </RecipeDef> 
+
+
+    <RecipeDef ParentName="BioRecipeLarge">
+    <defName>Make_CapsuleElephant</defName>
+    <label>make cultured elephant</label>
+    <description>Make a cultured elephant.</description>
+    <workAmount>21000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>600.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleElephant>1</CapsuleElephant>
+    </products>
+  </RecipeDef> 
+
+
+
+    <RecipeDef ParentName="BioRecipeSpecial">
+    <defName>Make_CapsuleThrumbo</defName>
+    <label>make cultured thrumbo</label>
+    <description>Make a cultured thrumbo.</description>
+    <workAmount>21000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>800.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleThrumbo>1</CapsuleThrumbo>
+    </products>
+  </RecipeDef> 
+
+
+
+    <RecipeDef ParentName="BioRecipePet">
+    <defName>Make_CapsuleYorkshireTerrier</defName>
+    <label>make cultured yorkshire terrier</label>
+    <description>Make a cultured yorkshire terrier.</description>
+    <workAmount>5000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>50.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleYorkshireTerrier>1</CapsuleYorkshireTerrier>
+    </products>
+  </RecipeDef> 
+
+    <RecipeDef ParentName="BioRecipePet">
+    <defName>Make_CapsuleLabradorRetriever</defName>
+    <label>make cultured labrador retriever</label>
+    <description>Make a cultured labrador retriever.</description>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>110.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleLabradorRetriever>1</CapsuleLabradorRetriever>
+    </products>
+  </RecipeDef> 
+  
+     <RecipeDef ParentName="BioRecipePet">
+    <defName>Make_CapsuleHusky</defName>
+    <label>make cultured husky</label>
+    <description>Make a cultured husky.</description>
+    <workAmount>11000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>130.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleHusky>1</CapsuleHusky>
+    </products>
+  </RecipeDef>    
+
+
+	<RecipeDef ParentName="BioRecipePet">
+    <defName>Make_CapsuleCat</defName>
+    <label>make cultured cat</label>
+    <description>Make a cultured cat.</description>
+    <workAmount>5000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>50.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleCat>1</CapsuleCat>
+    </products>
+  </RecipeDef> 
+
+
+   
+
+   <RecipeDef ParentName="BioRecipeInsectoid">
+    <defName>Make_CapsuleMegascarab</defName>
+    <label>make cultured megascarab</label>
+    <description>Make a cultured megascarab.</description>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Megaspider</li>
+          </thingDefs>
+        </filter>
+        <count>30.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleMegascarab>1</CapsuleMegascarab>
+    </products>
+  </RecipeDef>  
+  
+  
+   <RecipeDef ParentName="BioRecipeInsectoid">
+    <defName>Make_CapsuleSpelopede</defName>
+    <label>make cultured spelopede</label>
+    <description>Make a cultured spelopede.</description>
+    <workAmount>4000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Megaspider</li>
+          </thingDefs>
+        </filter>
+        <count>120.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleSpelopede>1</CapsuleSpelopede>
+    </products>
+  </RecipeDef>  
+  
+  
+   <RecipeDef ParentName="BioRecipeInsectoid">
+    <defName>Make_CapsuleMegaspider</defName>
+    <label>make cultured megaspider</label>
+    <description>Make a cultured megaspider.</description>
+    <workAmount>6000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Megaspider</li>
+          </thingDefs>
+        </filter>
+        <count>180.00</count>
+      </li>	  	
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li> 	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EmptyCapsule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li> 	  
+    </ingredients>
+    <products>
+      <CapsuleMegaspider>1</CapsuleMegaspider>
+    </products>
+  </RecipeDef>  
+  
+  
+
+
+
+
+
+
+</Defs>

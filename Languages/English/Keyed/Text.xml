@@ -3,6 +3,6 @@
 
 	<Biotechnology.CapsuleEndSentence> capsule.</Biotechnology.CapsuleEndSentence>
 	<Biotechnology.CultureDescription>A capsule containing cultured {0}.</Biotechnology.CultureDescription>
-	<Biotechnology.MakeRecipeLabel>make cultured {0}.</Biotechnology.MakeRecipeLabel>
+	<Biotechnology.MakeRecipeLabel>make cultured {0}</Biotechnology.MakeRecipeLabel>
 	<Biotechnology.MakeRecipeDescription>Make a cultured {0}.</Biotechnology.MakeRecipeDescription>
 </LanguageData>

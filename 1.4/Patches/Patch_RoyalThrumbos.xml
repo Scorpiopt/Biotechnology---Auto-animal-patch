@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royal Thrumbos</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>			
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<ThingDef ParentName="BioCultureSpecial">
+				<defName>CapsuleRoyalThrumbo</defName>
+				<label>royal thrumbo capsule</label>
+				<description>A capsule containing cultured royal thrumbo.</description>
+				<comps>
+				<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20.00</hatcherDaystoHatch>
+				<hatcherPawn>RoyalThrumbo</hatcherPawn>
+				</li>
+				</comps>
+				<statBases>
+				<MarketValue>2000</MarketValue>
+				<Mass>2</Mass>
+				</statBases>	
+				</ThingDef>
+				</value>
+			</li>	
+
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+				<RecipeDef ParentName="BioRecipeSpecial">
+				<defName>Make_CapsuleRoyalThrumbo</defName>
+				<label>make cultured royal thrumbo.</label>
+				<description>Make a cultured royal thrumbo.</description>
+				<workAmount>21000</workAmount>
+				<ingredients>
+				<li>
+				<filter>
+				<categories>
+				<li>MeatRaw</li>
+				</categories>
+				</filter>
+				<count>800.00</count>
+				</li>	  	
+				<li>
+				<filter>
+				<thingDefs>
+				<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+				</li> 	  
+				<li>
+				<filter>
+				<thingDefs>
+				<li>EmptyCapsule</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+				</li> 	  
+				</ingredients>
+				<products>
+				<CapsuleRoyalThrumbo>1</CapsuleRoyalThrumbo>
+				</products>
+				</RecipeDef> 
+				</value>
+			</li>	
+
+			
+			</operations>
+		</match>
+		
+	</Operation>
+
+
+	
+</Patch>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>A Dog Said... Animal Prosthetics</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>			
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "TableAnimalProsthetics"]/graphicData/drawSize</xpath>
+					<value><drawSize>(3.5,1.5)</drawSize></value>
+				</li>
+				
+			</operations>
+		</match>
+		
+	</Operation>
+
+	
+</Patch>
