@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>BiotechnologyCategory_Main</defName>
+    <label>capsule</label>
+    <parent>Manufactured</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>BiotechnologyCategory_Small</defName>
+    <label>small animals</label>
+    <parent>BiotechnologyCategory_Main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>BiotechnologyCategory_Medium</defName>
+    <label>medium animals</label>
+    <parent>BiotechnologyCategory_Main</parent>
+  </ThingCategoryDef>
+ 
+  <ThingCategoryDef>
+    <defName>BiotechnologyCategory_Large</defName>
+    <label>large animals</label>
+    <parent>BiotechnologyCategory_Main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>BiotechnologyCategory_Special</defName>
+    <label>special animals</label>
+    <parent>BiotechnologyCategory_Main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>BiotechnologyCategory_Pet</defName>
+    <label>pets</label>
+    <parent>BiotechnologyCategory_Main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>BiotechnologyCategory_Insectoid</defName>
+    <label>insectoids</label>
+    <parent>BiotechnologyCategory_Main</parent>
+  </ThingCategoryDef>
+
+</Defs>
